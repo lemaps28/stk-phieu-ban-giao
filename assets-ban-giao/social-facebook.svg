@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="item">
+<rect width="48" height="48" rx="24" fill="white"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M31.875 13.5H16.125C14.6773 13.5 13.5 14.6773 13.5 16.125V31.875C13.5 33.3227 14.6773 34.5 16.125 34.5H24V27.2812H21.375V24H24V21.375C24 20.3307 24.4148 19.3292 25.1533 18.5908C25.8917 17.8523 26.8932 17.4375 27.9375 17.4375H30.5625V20.7188H29.25C28.5255 20.7188 27.9375 20.6505 27.9375 21.375V24H31.2188L29.9062 27.2812H27.9375V34.5H31.875C33.3227 34.5 34.5 33.3227 34.5 31.875V16.125C34.5 14.6773 33.3227 13.5 31.875 13.5Z" fill="#2563EB"/>
+</g>
+</svg>
