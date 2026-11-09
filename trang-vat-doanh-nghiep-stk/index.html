@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Báo Giá Doanh Nghiệp &amp; Xuất Hóa Đơn GTGT (VAT) Tài Khoản AI | STK Tech</title>
-  <meta name="description" content="Cung cấp tài khoản AI và phần mềm bản quyền (ChatGPT, Gemini, CapCut, Adobe, M365) cho doanh nghiệp: Giá đã gồm VAT, gộp 1 hợp đồng, xuất hóa đơn điện tử trong ngày.">
+  <title>Cung Cấp Tài Khoản AI &amp; Phần Mềm Doanh Nghiệp: Đủ Hợp Đồng, Xuất Hóa Đơn VAT | STK Tech</title>
+  <meta name="description" content="Cung cấp tài khoản AI và phần mềm bản quyền (ChatGPT, Gemini, CapCut, Adobe, M365, Zoom) cho doanh nghiệp. Báo giá VNĐ đã gồm VAT, ký hợp đồng đóng dấu, xuất hóa đơn GTGT trong ngày tại Công ty TNHH Công Nghệ STK (MST 0319648130).">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://stktech.ai/chinh-sach-thanh-toan-vat">
+  <link rel="canonical" href="https://stktech.ai/thong-tin-doanh-nghiep">
 
   <!-- Google Fonts: Be Vietnam Pro & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,23 +15,28 @@
 
   <style>
     :root {
-      --navy-950: #060E24;
-      --navy-900: #0A1938;
-      --navy-800: #112654;
+      --navy-950: #050C24;
+      --navy-900: #091736;
+      --navy-800: #102554;
+      --blue-600: #2159F5;
+      --blue-500: #3B82F6;
+      --blue-50: #EFF5FF;
       --ink-900: #0F172A;
       --ink-700: #334155;
       --ink-500: #64748B;
-      --brand-600: #2159F5;
-      --brand-700: #1744C9;
-      --brand-50: #EEF4FF;
-      --emerald-600: #0D7A55;
-      --emerald-50: #E6F7F0;
-      --danger-600: #DC2626;
-      --danger-50: #FEF2F2;
+      --ok-700: #0D7A56;
+      --ok-100: #DCFCE7;
+      --danger-700: #B91C1C;
+      --danger-100: #FEE2E2;
+      --bg-canvas: #FFFFFF;
+      --bg-subtle: #F6F9FC;
       --line: #E2E8F0;
-      --line-soft: #EDF2F7;
-      --bg-page: #FFFFFF;
-      --bg-soft: #F8FAFC;
+      --line-blue: #C9DAFA;
+      --shadow-xs: 0 2px 8px rgba(15, 23, 42, 0.04);
+      --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 16px 38px rgba(15, 23, 42, 0.09);
+      --radius-xl: 20px;
+      --radius-2xl: 26px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -40,45 +45,65 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--ink-900);
-      background: var(--bg-page);
-      line-height: 1.6;
+      background: var(--bg-canvas);
+      line-height: 1.58;
       font-size: 15px;
       font-variant-numeric: tabular-nums;
       -webkit-font-smoothing: antialiased;
     }
     h1, h2, h3, h4 {
       font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
-      color: var(--navy-900);
       letter-spacing: -0.02em;
       text-wrap: balance;
     }
-    a { color: var(--brand-600); text-decoration: none; transition: all 0.2s ease; }
+    a { color: var(--blue-600); text-decoration: none; transition: all 0.2s ease; }
     img { max-width: 100%; height: auto; display: block; }
 
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 22px; }
-    .sec { padding: 68px 0; }
-    .sec.alt { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .wrap { max-width: 1220px; margin: 0 auto; padding: 0 22px; }
+    .sec { padding: 64px 0; }
+    .sec.alt {
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
     .sec-head {
-      max-width: 760px;
-      margin: 0 auto 36px;
       text-align: center;
+      max-width: 780px;
+      margin: 0 auto 36px;
+    }
+    .sec-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 11.5px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--blue-600);
+      margin-bottom: 8px;
+    }
+    .sec-eyebrow::before,
+    .sec-eyebrow::after {
+      content: "";
+      width: 18px; height: 2px;
+      background: var(--blue-500);
+      border-radius: 2px;
+      opacity: 0.55;
     }
     .sec-head h2 {
       font-size: clamp(25px, 2.8vw, 33px);
-      line-height: 1.26;
-      font-weight: 800;
+      line-height: 1.25;
       color: var(--navy-900);
-      margin-bottom: 10px;
+      font-weight: 800;
+      margin-bottom: 8px;
     }
+    .sec-head h2 span { color: var(--blue-600); }
     .sec-head p {
-      font-size: 15.5px;
       color: var(--ink-500);
-      line-height: 1.62;
+      font-size: 15px;
+      line-height: 1.58;
     }
 
     /* ==========================================================================
-       LIVE SITE HEADER (Giữ nguyên 100% nhận diện stktech.ai)
+       LIVE SITE HEADER (Giữ nguyên 100% cấu trúc stktech.ai)
        ========================================================================== */
     .live-header-wrap {
       position: sticky; top: 0; z-index: 40;
@@ -91,8 +116,8 @@
       height: 64px;
       display: flex; align-items: center; justify-content: space-between;
       border-radius: 9999px;
-      border: 1px solid rgba(226, 232, 240, 0.95);
-      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
@@ -118,16 +143,14 @@
     .live-menu > li > a,
     .live-menu > li > button {
       font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
-      font-size: 15px; font-weight: 500; color: var(--ink-900);
+      font-size: 15px; font-weight: 500; color: #0F172A;
       background: none; border: 0; cursor: pointer;
       display: inline-flex; align-items: center; gap: 4px;
-      padding: 6px 2px;
-      white-space: nowrap;
-      transition: color 0.18s ease;
+      padding: 6px 2px; white-space: nowrap;
+      transition: color 0.2s ease;
     }
     .live-menu > li > a:hover,
-    .live-menu > li > a.active,
-    .live-menu > li > button:hover { color: var(--brand-600); font-weight: 600; }
+    .live-menu > li > button:hover { color: #2159F5; }
     .live-dropdown {
       position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
       padding-top: 14px; display: none; z-index: 50;
@@ -135,760 +158,670 @@
     .live-menu > li:hover .live-dropdown,
     .live-menu > li:focus-within .live-dropdown { display: block; }
     .live-dropdown-box {
-      width: 330px; background: #fff;
-      border: 1px solid var(--line); border-radius: 14px;
-      padding: 8px; box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+      width: 340px; background: #fff;
+      border: 1px solid #DBE3F2; border-radius: 16px;
+      padding: 8px; box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
       list-style: none;
     }
     .live-dropdown-box li a {
-      display: block; padding: 9px 13px; border-radius: 9px;
-      font-size: 14px; font-weight: 600; color: var(--ink-900);
+      display: block; padding: 10px 14px; border-radius: 12px;
+      font-size: 14px; font-weight: 600; color: #0F172A;
     }
-    .live-dropdown-box li a:hover { background: var(--bg-soft); color: var(--brand-600); }
+    .live-dropdown-box li a:hover { background: #F4F7FC; color: #2159F5; }
     .live-quote-btn {
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       height: 48px; padding: 0 20px 0 22px;
       border-radius: 9999px;
-      background: var(--navy-900); color: #fff;
+      background: #0F172A; color: #fff;
       font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
       font-size: 14.5px; font-weight: 600;
       white-space: nowrap;
     }
-    .live-quote-btn:hover { background: var(--brand-600); color: #fff; }
+    .live-quote-btn:hover { background: var(--blue-600); color: #fff; }
     .live-quote-btn svg { width: 18px; height: 18px; }
 
-    /* Thanh chuyển đổi 2 trang độc lập */
-    .page-switch-wrap {
-      max-width: 1180px;
-      margin: 12px auto 0;
-      padding: 0 16px;
-    }
-    .page-switch-bar {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 12px;
-      background: #F8FAFC;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 6px 8px 6px 8px;
-    }
-    .page-tabs { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-    .page-tab {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 14px;
-      border-radius: 10px;
-      font-size: 13px; font-weight: 600; color: var(--ink-700);
-      white-space: nowrap;
-    }
-    .page-tab:hover { color: var(--brand-600); background: #fff; }
-    .page-tab.is-active {
-      background: #fff;
-      color: var(--brand-600);
-      font-weight: 700;
-      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
-      border: 1px solid #DBEAFE;
-    }
-    .page-switch-meta {
-      font-size: 12.5px; color: var(--ink-500);
-      padding-right: 10px; white-space: nowrap;
-    }
-    .page-switch-meta strong { color: var(--navy-900); }
-
     /* ==========================================================================
-       HERO SECTION — BỐ CỤC KHUNG SANG TRỌNG (MẪU WINESHOP ANH DUYỆT)
+       HERO SECTION — KHUNG BO GÓC WINESHOP + CONTENT GÃY GỌN ĐÁNH THẲNG VÀO VẤN ĐỀ
        ========================================================================== */
-    .hero-outer {
-      padding: 20px 0 36px;
-    }
-    .hero-showcase-card {
-      background: linear-gradient(135deg, #F3F7FF 0%, #E6F0FF 55%, #EEF5FF 100%);
-      border: 1px solid #CFE0FF;
-      border-radius: 26px;
-      padding: 44px 44px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.38fr) minmax(320px, 0.62fr);
-      gap: 40px;
-      align-items: center;
+    .ws-hero-outer { padding: 18px 0 22px; }
+    .ws-business-gift {
       position: relative;
       overflow: hidden;
-      box-shadow: 0 18px 42px rgba(15, 35, 75, 0.06);
+      border-radius: 24px;
+      border: 1px solid #C9DAFA;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.8), transparent 34%),
+        radial-gradient(circle at 88% 14%, rgba(33, 89, 245, 0.08), transparent 28%),
+        linear-gradient(135deg, #F4F8FF 0%, #EBF3FF 48%, #E2EEFF 100%);
+      box-shadow: 0 18px 44px rgba(9, 23, 54, 0.08);
+      padding: 38px 40px;
     }
-    .hero-kicker {
+    .ws-business-gift__top-bar {
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #091736, #2159F5, #60A5FA, #091736);
+    }
+    .ws-business-gift__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.42fr) minmax(320px, 0.58fr);
+      gap: 36px;
+      align-items: center;
+    }
+    .ws-business-gift__eyebrow {
       display: inline-flex; align-items: center; gap: 10px;
+      margin: 0 0 12px;
       font-size: 12px; font-weight: 800;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: var(--brand-600);
-      margin-bottom: 14px;
+      letter-spacing: 0.07em; text-transform: uppercase;
+      color: var(--blue-600);
     }
-    .hero-kicker::before {
-      content: "";
-      width: 28px; height: 2px;
-      background: var(--brand-600);
-      border-radius: 2px;
+    .ws-business-gift__eyebrow::before {
+      content: ""; width: 26px; height: 2px;
+      border-radius: 999px; background: var(--blue-600);
     }
-    .hero-left h1 {
-      font-size: clamp(28px, 3.2vw, 39px);
-      line-height: 1.22;
+    .ws-business-gift__title {
+      font-size: clamp(27px, 3.1vw, 37px);
+      line-height: 1.2;
       font-weight: 800;
       color: var(--navy-900);
       margin-bottom: 16px;
     }
-    .hero-lead {
-      font-size: 15.5px;
-      line-height: 1.65;
-      color: var(--ink-700);
-      margin-bottom: 10px;
-      max-width: 62ch;
-    }
-    .hero-bold-note {
-      font-size: 15px;
-      line-height: 1.6;
-      font-weight: 700;
-      color: var(--navy-900);
-      margin-bottom: 26px;
-      max-width: 60ch;
-    }
-    /* 3 ô quyền lợi ngang ở đáy Hero (Chuẩn mẫu Wineshop) */
-    .hero-perk-grid {
+    .ws-business-gift__title span { color: var(--blue-600); }
+
+    /* 3 gạch đầu dòng đánh thẳng vào nỗi đau thay cho đoạn văn dài */
+    .hero-bullet-problems {
+      list-style: none;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
+      gap: 9px;
+      margin-bottom: 22px;
     }
-    .hero-perk-card {
-      background: #FFFFFF;
-      border: 1px solid #D8E6FF;
-      border-radius: 14px;
-      padding: 14px 15px;
+    .hero-bullet-problems li {
       display: flex;
       align-items: flex-start;
       gap: 10px;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+      font-size: 14.8px;
+      color: var(--ink-700);
+      line-height: 1.5;
     }
-    .hero-perk-icon {
-      width: 22px; height: 22px;
-      border-radius: 999px;
-      background: #E8F1FF;
-      color: var(--brand-600);
+    .hero-bullet-problems li .dot-chk {
+      width: 20px; height: 20px;
+      border-radius: 6px;
+      background: var(--blue-600);
+      color: #FFFFFF;
+      font-size: 11px; font-weight: 800;
       display: inline-flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
+      flex-shrink: 0; margin-top: 2px;
     }
-    .hero-perk-icon svg { width: 13px; height: 13px; }
-    .hero-perk-card span {
-      font-size: 13.5px;
-      font-weight: 600;
+    .hero-bullet-problems li strong {
       color: var(--navy-900);
-      line-height: 1.42;
+      font-weight: 700;
     }
 
-    /* Cột phải Hero: Thẻ Báo Giá Nhanh 15 Phút */
-    .hero-action-panel {
-      background: linear-gradient(160deg, #0D224C 0%, #07132E 100%);
-      color: #FFFFFF;
-      border-radius: 22px;
-      padding: 32px 28px;
-      box-shadow: 0 22px 44px rgba(7, 19, 46, 0.24);
-      position: relative;
-      overflow: hidden;
+    /* 3 ô lợi ích trắng ở đáy Hero */
+    .ws-business-gift__highlights {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
     }
-    .hero-action-panel::after {
-      content: "";
-      position: absolute;
-      top: -50px; right: -50px;
-      width: 150px; height: 150px;
-      border-radius: 50%;
-      background: rgba(59, 130, 246, 0.14);
-      pointer-events: none;
+    .ws-business-gift__item {
+      display: flex; align-items: center; gap: 9px;
+      padding: 12px 14px;
+      border-radius: 13px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(33, 89, 245, 0.14);
+      box-shadow: 0 6px 16px rgba(9, 23, 54, 0.04);
+      font-size: 13px; font-weight: 700; color: var(--navy-900);
+      line-height: 1.38;
     }
-    .panel-tag {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #93C5FD;
-      margin-bottom: 10px;
-      display: block;
+    .ws-business-gift__icon {
+      width: 20px; height: 20px;
+      border-radius: 999px;
+      background: rgba(33, 89, 245, 0.12);
+      color: var(--blue-600);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 800; flex-shrink: 0;
     }
-    .hero-action-panel h2 {
-      font-size: 23px;
-      line-height: 1.28;
-      font-weight: 800;
-      color: #FFFFFF;
-      margin-bottom: 10px;
+
+    /* Cột Phải Hero: Thẻ Báo Giá 15 Phút */
+    .ws-business-gift__consult {
+      position: relative; overflow: hidden;
+      border-radius: 20px;
+      padding: 28px 26px;
+      background:
+        radial-gradient(circle at top right, rgba(96, 165, 250, 0.22), transparent 36%),
+        linear-gradient(160deg, #0D2559 0%, #091A42 52%, #051029 100%);
+      color: #fff;
+      box-shadow: 0 20px 42px rgba(5, 16, 41, 0.24);
     }
-    .hero-action-panel p {
-      font-size: 13.5px;
-      line-height: 1.58;
-      color: #CBD5E1;
-      margin-bottom: 20px;
+    .ws-business-gift__consult-label {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #93C5FD; margin-bottom: 8px;
     }
-    .panel-hotline-lbl {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #93C5FD;
-      margin-bottom: 4px;
-      display: block;
+    .ws-business-gift__consult-title {
+      font-size: 22px; line-height: 1.26;
+      font-weight: 800; color: #fff; margin-bottom: 8px;
     }
-    .panel-hotline-num {
-      display: block;
+    .ws-business-gift__consult-desc {
+      font-size: 13.2px; line-height: 1.52;
+      color: rgba(255, 255, 255, 0.84);
+      margin-bottom: 16px;
+    }
+    .ws-business-gift__hotline-label {
+      font-size: 10.5px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #93C5FD; margin-bottom: 3px;
+    }
+    .ws-business-gift__phone {
+      display: inline-block; margin-bottom: 16px;
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 27px;
-      font-weight: 800;
-      color: #FFFFFF;
-      margin-bottom: 20px;
-      letter-spacing: -0.01em;
+      font-size: 26px; line-height: 1.1; font-weight: 800;
+      color: #fff;
     }
-    .panel-hotline-num:hover { color: #93C5FD; }
-    .panel-btn-white {
+    .ws-business-gift__btn {
       display: flex; align-items: center; justify-content: center;
-      width: 100%; height: 48px;
-      background: #FFFFFF;
-      color: var(--navy-900);
+      width: 100%; min-height: 45px; padding: 10px 16px;
+      border-radius: 11px; background: #fff; color: var(--navy-900);
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 14.5px; font-weight: 700;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.16);
+      font-size: 14px; font-weight: 700;
+      margin-bottom: 9px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
     }
-    .panel-btn-white:hover { background: #EEF4FF; color: var(--brand-600); }
-    .panel-btn-outline {
-      display: flex; align-items: center; justify-content: center;
-      width: 100%; height: 46px;
-      background: rgba(255, 255, 255, 0.06);
-      color: #FFFFFF;
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 14px; font-weight: 600;
-      border-radius: 12px;
+    .ws-business-gift__btn:hover { background: var(--blue-50); color: var(--blue-600); }
+    .ws-business-gift__btn--secondary {
+      margin-bottom: 0; background: transparent; color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.32); box-shadow: none;
     }
-    .panel-btn-outline:hover { background: rgba(255, 255, 255, 0.14); border-color: #FFFFFF; color: #FFFFFF; }
+    .ws-business-gift__btn--secondary:hover { background: rgba(255, 255, 255, 0.12); color: #fff; border-color: #fff; }
 
     /* ==========================================================================
-       MỤC 1: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
-       (Giữ đúng 2 Card Trắng vs Navy của Ảnh 1, chỉ giữ tiêu đề 1 dòng ngắn gọn)
+       DẢI 4 CON SỐ UY TÍN LỚN NGAY DƯỚI HERO
        ========================================================================== */
-    .compare-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-      align-items: stretch;
-    }
-    .cmp-card {
-      border-radius: 22px;
-      padding: 32px 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .cmp-card.pain {
+    .stats-strip-wrap { margin-bottom: 8px; }
+    .stats-strip {
       background: #FFFFFF;
       border: 1px solid var(--line);
-      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      padding: 20px 26px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
     }
-    .cmp-card.solution {
-      background: linear-gradient(155deg, #071533 0%, #0C214E 100%);
-      color: #FFFFFF;
-      border: 1px solid #1E3A8A;
-      box-shadow: 0 18px 38px rgba(7, 21, 51, 0.18);
+    .stat-box {
+      display: flex; align-items: center; gap: 13px;
+      padding-right: 14px;
+      border-right: 1px solid var(--line);
     }
-    .cmp-pill {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 11.5px; font-weight: 800;
-      letter-spacing: 0.04em; text-transform: uppercase;
-      padding: 6px 12px; border-radius: 999px;
-      margin-bottom: 14px; width: fit-content;
+    .stat-box:last-child { border-right: 0; padding-right: 0; }
+    .stat-num {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 27px; font-weight: 800; line-height: 1.05;
+      color: var(--blue-600); letter-spacing: -0.03em;
+      white-space: nowrap;
     }
-    .cmp-card.pain .cmp-pill {
-      background: var(--danger-50);
-      color: var(--danger-600);
+    .stat-label {
+      font-size: 13px; line-height: 1.38; color: var(--ink-700); font-weight: 500;
     }
-    .cmp-card.solution .cmp-pill {
-      background: rgba(16, 185, 129, 0.16);
-      color: #6EE7B7;
-      border: 1px solid rgba(110, 231, 183, 0.3);
-    }
-    .cmp-card h3 {
-      font-size: 23px;
-      font-weight: 800;
-      margin-bottom: 20px;
-      line-height: 1.3;
-    }
-    .cmp-card.solution h3 { color: #FFFFFF; }
-
-    .cmp-list {
-      list-style: none;
-    }
-    .cmp-list li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 15px 0;
-      border-top: 1px dashed var(--line);
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 1.45;
-    }
-    .cmp-card.pain .cmp-list li { color: var(--ink-900); }
-    .cmp-card.solution .cmp-list li {
-      border-top: 1px solid rgba(255, 255, 255, 0.12);
-      color: #FFFFFF;
-    }
-    .cmp-ic {
-      width: 24px; height: 24px;
-      border-radius: 999px;
-      display: inline-flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      font-size: 12px; font-weight: 800;
-    }
-    .cmp-card.pain .cmp-ic {
-      background: var(--danger-50);
-      color: var(--danger-600);
-    }
-    .cmp-card.solution .cmp-ic {
-      background: rgba(16, 185, 129, 0.2);
-      color: #34D399;
+    .stat-label strong {
+      display: block; color: var(--navy-900); font-weight: 700;
     }
 
     /* ==========================================================================
-       MỤC 2: QUY TRÌNH 6 BƯỚC TRIỂN KHAI & CHỨNG TỪ THỰC TẾ (GỘP CHUNG)
+       MỤC 01: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
+       - Khối 1A: 3 Bộ phận (Kế toán · Thu mua · Quản trị IT) & Chiết khấu số lượng (Gọn, sắc bén)
+       - Khối 1B: Bảng Đối Chiếu "Vs" (Chỉ giữ tiêu đề 1 dòng theo Ảnh 1)
        ========================================================================== */
-    .process-6-grid {
+    .role-3-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-bottom: 26px;
+    }
+    .role-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 22px;
+      box-shadow: var(--shadow-xs);
+      transition: all 0.2s ease;
+    }
+    .role-card:hover {
+      border-color: var(--blue-600);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-2px);
+    }
+    .role-pill {
+      display: inline-block;
+      background: var(--blue-50); color: var(--blue-600);
+      font-size: 11px; font-weight: 800;
+      padding: 4px 10px; border-radius: 999px;
+      letter-spacing: 0.04em; margin-bottom: 10px;
+    }
+    .role-card h3 {
+      font-size: 17.5px; font-weight: 800; color: var(--navy-900);
+      line-height: 1.32; margin-bottom: 12px;
+    }
+    .role-points {
+      list-style: none; display: grid; gap: 8px;
+      padding-top: 12px; border-top: 1px dashed var(--line);
+    }
+    .role-points li {
+      font-size: 13.8px; color: var(--ink-700); line-height: 1.45;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .role-points li i {
+      color: var(--ok-700); font-style: normal; font-weight: 800; flex-shrink: 0;
+    }
+    .role-points li strong { color: var(--navy-900); }
+
+    /* Khối 1B: Bảng So Sánh Đối Xứng Có Nút "Vs" Ở Giữa (Chuẩn Ảnh 1 — Chỉ giữ tiêu đề 1 dòng) */
+    .vs-matrix-container { max-width: 1120px; margin: 0 auto; }
+    .vs-Unified-Box {
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid #CBD5E1;
+    }
+    .vs-Header-Row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: linear-gradient(90deg, #F1F5F9 0%, #F1F5F9 50%, #071433 50%, #0C2151 100%);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    }
+    .vs-Header-Cell { padding: 22px 32px 18px; }
+    .vs-Header-Cell.left { color: var(--ink-900); }
+    .vs-Header-Cell.right { color: #FFFFFF; }
+    .vs-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 800;
+      padding: 4px 12px; border-radius: 999px;
+      margin-bottom: 8px; letter-spacing: 0.03em;
+    }
+    .vs-Header-Cell h3 { font-size: 20px; font-weight: 800; line-height: 1.3; }
+    .vs-Header-Cell.right h3 { color: #FFFFFF; }
+
+    .vs-row-pair {
+      display: grid;
+      grid-template-columns: 1fr 54px 1fr;
+      align-items: center;
+      background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 50%, #0B1E4B 50%, #0E275E 100%);
+      border-top: 1px solid rgba(148, 163, 184, 0.18);
+    }
+    .vs-row-pair:first-child { border-top: 0; }
+    .vs-cell-left {
+      padding: 16px 24px 16px 32px;
+      display: flex; align-items: center; gap: 12px;
+      font-size: 14.8px; font-weight: 700; color: var(--ink-900);
+    }
+    .vs-cell-right {
+      padding: 16px 32px 16px 24px;
+      display: flex; align-items: center; gap: 12px;
+      font-size: 14.8px; font-weight: 700; color: #FFFFFF;
+    }
+    .vs-center-pill {
+      width: 36px; height: 36px; margin: 0 auto;
+      border-radius: 50%; background: var(--blue-600); color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 11.5px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 0 4px #FFFFFF, 0 4px 10px rgba(33, 89, 245, 0.3);
+      position: relative; z-index: 3;
+    }
+    .mark-no {
+      width: 23px; height: 23px; border-radius: 50%;
+      background: var(--danger-100); color: #DC2626;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 11.5px; font-weight: 800; flex-shrink: 0;
+    }
+    .mark-yes {
+      width: 23px; height: 23px; border-radius: 50%;
+      background: rgba(89, 209, 168, 0.22); color: #59D1A8;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 800; flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       MỤC 02 (GỘP CHUNG): QUY TRÌNH 6 BƯỚC SỐ LỚN (01->06) + 6 CHỨNG TỪ THỰC TẾ
+       ========================================================================== */
+    .process-row-6 {
       display: grid;
       grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 14px;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
-    .step-card {
+    .proc-col-card {
       background: #FFFFFF;
-      border: 1px solid var(--line);
+      border: 1px solid var(--line-blue);
       border-radius: 16px;
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
+      padding: 18px 15px 15px;
+      display: flex; flex-direction: column; justify-content: space-between;
       transition: all 0.2s ease;
     }
-    .step-card:hover {
-      border-color: var(--brand-600);
+    .proc-col-card:hover {
+      border-color: var(--blue-600);
+      box-shadow: var(--shadow-sm);
       transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
     }
-    .step-shot {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid var(--line-soft);
-      background: var(--bg-soft);
-      cursor: zoom-in;
-      margin-bottom: 12px;
-      padding: 0;
-    }
-    .step-shot img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      transition: transform 0.25s ease;
-    }
-    .step-card:hover .step-shot img { transform: scale(1.04); }
-    .step-badge-row {
-      display: flex; align-items: center; gap: 7px;
-      margin-bottom: 5px;
-    }
-    .step-num-pill {
-      background: var(--brand-50);
-      color: var(--brand-600);
+    .proc-big-num {
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 11.5px; font-weight: 800;
-      padding: 2px 7px; border-radius: 6px;
+      font-size: 34px; font-weight: 800; line-height: 1;
+      color: #BFDBFE;
+      margin-bottom: 8px;
     }
-    .step-card h3 {
-      font-size: 14.5px;
-      font-weight: 700;
-      color: var(--navy-900);
-      line-height: 1.3;
+    .proc-col-card h3 {
+      font-size: 14.5px; font-weight: 800; color: var(--navy-900);
+      line-height: 1.3; margin-bottom: 5px;
     }
-    .step-card p {
-      font-size: 12.5px;
-      color: var(--ink-500);
-      line-height: 1.48;
+    .proc-col-card p {
+      font-size: 12.5px; color: var(--ink-500); line-height: 1.45;
+      margin-bottom: 10px;
+    }
+    .proc-out-tag {
+      padding-top: 8px; border-top: 1px dashed var(--line);
+      font-size: 11.5px; font-weight: 700; color: var(--ok-700);
+      white-space: nowrap;
     }
 
-    /* Khối 6 Chứng từ thực tế gắn liền bên dưới Quy trình */
-    .docs-showcase-box {
+    /* Khối 6 Chứng từ thực tế */
+    .real-docs-showcase {
       background: #FFFFFF;
       border: 1px solid var(--line);
-      border-radius: 22px;
+      border-radius: var(--radius-2xl);
       padding: 28px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.03);
+      box-shadow: var(--shadow-xs);
     }
-    .docs-bar-head {
+    .real-docs-header {
       display: flex; align-items: center; justify-content: space-between;
       gap: 16px; flex-wrap: wrap;
-      margin-bottom: 22px;
-      padding-bottom: 16px;
+      margin-bottom: 20px; padding-bottom: 14px;
       border-bottom: 1px solid var(--line);
     }
-    .docs-bar-head h3 {
-      font-size: 19px; font-weight: 800; color: var(--navy-900);
+    .real-docs-header h3 {
+      font-size: 18.5px; font-weight: 800; color: var(--navy-900);
     }
-    .docs-bar-head span {
-      font-size: 13px; color: var(--ink-500);
+    .doc4-pill-strip { display: flex; flex-wrap: wrap; gap: 6px; }
+    .doc4-pill-strip span {
+      background: var(--blue-50); border: 1px solid var(--line-blue);
+      border-radius: 999px; padding: 5px 11px;
+      font-size: 12px; font-weight: 700; color: var(--navy-900);
     }
-    .doc-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
+    .doc4-pill-strip span b { color: var(--blue-600); }
+
+    .doc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .doc-card-wrap {
+      background: var(--bg-subtle); border: 1px solid var(--line); border-radius: 14px;
+      padding: 12px; transition: all 0.2s ease;
     }
-    .doc-item {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 12px;
-      background: var(--bg-soft);
-      text-align: left;
-      cursor: zoom-in;
-      font: inherit;
-      transition: all 0.2s ease;
-      display: flex;
-      flex-direction: column;
+    .doc-card-wrap:hover {
+      background: #FFFFFF; border-color: var(--blue-500);
+      box-shadow: var(--shadow-sm); transform: translateY(-2px);
     }
-    .doc-item:hover {
-      background: #FFFFFF;
-      border-color: var(--brand-600);
-      box-shadow: 0 10px 24px rgba(33, 89, 245, 0.08);
-      transform: translateY(-2px);
+    .doc-card {
+      display: flex; flex-direction: column; text-align: left;
+      background: none; border: 0; padding: 0; cursor: zoom-in; font: inherit; width: 100%;
     }
-    .doc-thumb {
-      position: relative;
-      width: 100%; height: 205px;
-      border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      background: #FFFFFF;
-      margin-bottom: 12px;
+    .doc-thumb-box {
+      position: relative; width: 100%; height: 210px; border-radius: 9px;
+      overflow: hidden; border: 1px solid var(--line); background: #FFFFFF;
     }
-    .doc-thumb img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: top;
-    }
-    .doc-tag {
+    .doc-thumb-box img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .doc-type-badge {
       position: absolute; top: 8px; left: 8px;
-      background: rgba(10, 25, 56, 0.88);
-      color: #FFFFFF;
-      font-size: 11px; font-weight: 700;
-      padding: 3px 9px; border-radius: 999px;
+      background: rgba(9, 23, 54, 0.88); color: #fff;
+      font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px;
     }
-    .doc-zoom {
+    .doc-zoom-pill {
       position: absolute; bottom: 8px; right: 8px;
-      background: var(--brand-600);
-      color: #FFFFFF;
-      font-size: 11px; font-weight: 700;
-      padding: 3px 9px; border-radius: 6px;
+      background: var(--blue-600); color: #fff;
+      font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 6px;
     }
-    .doc-title {
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 14.5px; font-weight: 700;
-      color: var(--navy-900);
-      margin-bottom: 3px;
+    .doc-name { font-weight: 800; font-size: 14.5px; color: var(--navy-900); margin-top: 10px; }
+    .doc-meta { font-size: 12.5px; color: var(--ink-500); margin-top: 2px; }
+
+    /* ==========================================================================
+       MỤC 03: VĂN PHÒNG THỰC TẾ & ĐỊNH DANH PHÁP NHÂN + QR TRA CỨU (GỌN, SẮC NÉT)
+       ========================================================================== */
+    .ws-experience-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-2xl);
+      padding: 32px;
+      box-shadow: var(--shadow-xs);
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 32px;
+      align-items: center;
     }
-    .doc-sub {
-      font-size: 12.5px; color: var(--ink-500);
+    .ws-photo-frame {
+      display: block; width: 100%;
+      border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--line); cursor: zoom-in; padding: 0; background: #091736;
+    }
+    .ws-photo-frame img {
+      width: 100%; height: 340px; object-fit: cover;
+    }
+    .legal-right-head { margin-bottom: 14px; }
+    .legal-right-head h2 {
+      font-size: 23px; font-weight: 800; color: var(--navy-900); margin-bottom: 4px;
+    }
+    .legal-right-head p { font-size: 13.5px; color: var(--ink-500); }
+    .legal-compact-box {
+      display: grid;
+      grid-template-columns: 1fr 148px;
+      gap: 16px;
+      align-items: center;
+    }
+    .legal-cells-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    .lc-item {
+      background: var(--bg-subtle); border: 1px solid var(--line);
+      border-radius: 10px; padding: 10px 12px;
+    }
+    .lc-item.span-2 { grid-column: span 2; }
+    .lc-item span {
+      display: block; font-size: 11px; font-weight: 700; color: var(--ink-500);
+      text-transform: uppercase; margin-bottom: 2px;
+    }
+    .lc-item strong {
+      font-size: 13.5px; font-weight: 700; color: var(--navy-900); line-height: 1.4;
+    }
+    .lc-qr-box {
+      background: var(--bg-subtle); border: 1px solid var(--line-blue);
+      border-radius: 14px; padding: 12px 10px; text-align: center;
+    }
+    .lc-qr-btn {
+      width: 116px; height: 116px; margin: 0 auto 8px;
+      padding: 5px; background: #fff; border: 1px solid var(--line);
+      border-radius: 10px; cursor: zoom-in; display: block;
+    }
+    .lc-qr-btn img { width: 100%; height: 100%; object-fit: contain; }
+    .lc-qr-box small {
+      display: block; font-size: 11.5px; font-weight: 700; color: var(--navy-900); line-height: 1.35;
     }
 
     /* ==========================================================================
-       MỤC 3: ĐĂNG KÝ NHẬN BÁO GIÁ (MẪU KINGTECHCARE SÁNG THOÁNG, KHÔNG HỘP ĐEN THÔ)
+       MỤC 04: ĐĂNG KÝ NHẬN BÁO GIÁ DOANH NGHIỆP (CÂN ĐỐI 2 CỘT, ĐỒNG CHIỀU CAO)
        ========================================================================== */
-    .quote-sec {
-      padding: 72px 0;
-      background: linear-gradient(180deg, #FFFFFF 0%, #F4F8FF 100%);
-      border-bottom: 1px solid var(--line);
+    .quote-sec { padding: 64px 0; background: var(--bg-canvas); }
+    .ws-quote-shell {
+      position: relative; overflow: hidden;
+      border-radius: 24px; border: 1px solid #C9DAFA;
+      background: linear-gradient(145deg, #FFFFFF 0%, #F4F8FF 100%);
+      box-shadow: 0 20px 48px rgba(9, 23, 54, 0.07);
+      padding: 38px;
     }
-    .quote-split-layout {
+    .ws-quote-shell::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, #091736 0%, #2159F5 52%, #60A5FA 100%);
+    }
+    .kt-quote-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-      gap: 44px;
-      align-items: center;
+      grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+      gap: 32px; align-items: stretch;
     }
-    .quote-form-card {
-      background: #FFFFFF;
-      border: 1px solid #DCE6F7;
-      border-radius: 24px;
-      padding: 36px 36px;
-      box-shadow: 0 20px 48px rgba(15, 23, 42, 0.06);
+    .kt-quote-card {
+      background: #FFFFFF; border-radius: 18px; padding: 30px;
+      border: 1px solid #DCE6F7; box-shadow: var(--shadow-xs);
     }
-    .quote-form-card h2 {
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--navy-900);
-      margin-bottom: 6px;
+    .kt-quote-card h2 {
+      font-size: 26px; font-weight: 800; color: var(--navy-900); margin-bottom: 4px;
     }
-    .quote-form-card h2 span { color: var(--brand-600); }
-    .quote-form-lead {
-      font-size: 14px;
-      color: var(--ink-500);
-      margin-bottom: 24px;
+    .kt-quote-card h2 span { color: var(--blue-600); }
+    .kt-quote-sub { font-size: 13.5px; color: var(--ink-500); margin-bottom: 18px; }
+    .kt-form { display: grid; gap: 13px; }
+    .kt-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .kt-field label {
+      display: block; font-size: 12.5px; font-weight: 700; color: var(--navy-900); margin-bottom: 5px;
     }
-    .f-grid { display: grid; gap: 16px; }
-    .f-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .f-field label {
-      display: block;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--navy-900);
-      margin-bottom: 6px;
+    .kt-field label .req { color: #EF4444; }
+    .kt-input {
+      width: 100%; height: 42px; padding: 0 13px;
+      border-radius: 9px; border: 1px solid #CBD5E1; background: #F8FAFC;
+      font: inherit; font-size: 13.5px; color: var(--ink-900);
     }
-    .f-field label .req { color: var(--danger-600); }
-    .f-input {
-      width: 100%; height: 44px;
-      padding: 0 14px;
-      border-radius: 10px;
-      border: 1px solid #CBD5E1;
-      background: #FFFFFF;
-      font: inherit; font-size: 14px; color: var(--ink-900);
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-    .f-input::placeholder { color: #94A3B8; }
-    .f-input:focus {
-      outline: none;
-      border-color: var(--brand-600);
+    .kt-input:focus {
+      outline: none; background: #FFFFFF; border-color: var(--blue-600);
       box-shadow: 0 0 0 3px rgba(33, 89, 245, 0.12);
     }
-    .f-radio-group {
-      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
-      padding-top: 2px;
+    .kt-radios { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .kt-radio-item {
+      display: flex; align-items: center; gap: 7px;
+      padding: 9px 11px; border-radius: 9px; border: 1px solid #CBD5E1;
+      background: #F8FAFC; font-size: 13px; font-weight: 600; cursor: pointer;
     }
-    .f-radio-item {
-      display: inline-flex; align-items: center; gap: 7px;
-      font-size: 13.5px; font-weight: 600; color: var(--ink-900);
-      cursor: pointer;
+    .kt-radio-item:has(input:checked) {
+      border-color: var(--blue-600); background: #EFF6FF; color: var(--blue-600);
     }
-    .f-radio-item input {
-      accent-color: var(--brand-600);
-      width: 16px; height: 16px;
-    }
-    .f-submit-row {
-      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
-      margin-top: 6px;
-    }
-    .f-submit-btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-      height: 48px; padding: 0 28px;
-      border-radius: 999px;
-      border: 0;
-      background: var(--brand-600);
-      color: #FFFFFF;
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 14.5px; font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(33, 89, 245, 0.26);
-      transition: all 0.2s ease;
-    }
-    .f-submit-btn:hover { background: var(--brand-700); transform: translateY(-1px); }
-
-    /* Cột phải Form: Visual Showcase Sáng Thoáng (Ảnh Đội Ngũ + Floating Cards tinh tế) */
-    .quote-visual-stage {
-      position: relative;
-      padding: 14px 0;
-    }
-    .quote-main-photo {
-      border-radius: 24px;
-      overflow: hidden;
-      border: 4px solid #FFFFFF;
-      box-shadow: 0 22px 48px rgba(15, 23, 42, 0.10);
-      background: #E2E8F0;
-      position: relative;
-    }
-    .quote-main-photo img {
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-    }
-    .quote-photo-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(6, 14, 36, 0) 45%, rgba(6, 14, 36, 0.82) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 22px 24px;
-      color: #FFFFFF;
-    }
-    .quote-photo-overlay span {
-      font-size: 12px; font-weight: 700; color: #93C5FD;
-      text-transform: uppercase; letter-spacing: 0.05em;
-      margin-bottom: 4px;
-    }
-    .quote-photo-overlay h3 {
-      font-size: 18px; font-weight: 800; color: #FFFFFF;
-      line-height: 1.35;
-    }
-
-    /* 3 Thẻ cam kết nổi dưới ảnh (Sáng, sắc nét, không bị thô) */
-    .quote-trust-strip {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-top: 16px;
-    }
-    .q-trust-card {
-      background: #FFFFFF;
-      border: 1px solid #DCE6F7;
-      border-radius: 16px;
-      padding: 16px 18px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-    }
-    .q-trust-ic {
-      width: 38px; height: 38px;
-      border-radius: 10px;
-      background: var(--brand-50);
-      color: var(--brand-600);
-      display: inline-flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .q-trust-ic svg { width: 20px; height: 20px; }
-    .q-trust-card h4 {
-      font-size: 14px; font-weight: 700; color: var(--navy-900);
-      margin-bottom: 3px;
-    }
-    .q-trust-card p {
-      font-size: 12.5px; color: var(--ink-500); line-height: 1.45;
-    }
-    .q-bank-bar {
-      margin-top: 14px;
-      background: #FFFFFF;
-      border: 1px solid #DCE6F7;
-      border-radius: 16px;
-      padding: 14px 18px;
+    .kt-submit-row {
       display: flex; align-items: center; justify-content: space-between;
-      gap: 14px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+      gap: 14px; flex-wrap: wrap; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--line);
     }
-    .q-bank-info span {
-      display: block; font-size: 11.5px; font-weight: 700; color: var(--brand-600);
-      text-transform: uppercase; letter-spacing: 0.04em;
+    .kt-submit-btn {
+      height: 44px; padding: 0 24px; border-radius: 10px; border: 0;
+      background: var(--blue-600); color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif; font-size: 14px; font-weight: 700;
+      cursor: pointer; box-shadow: 0 6px 16px rgba(33, 89, 245, 0.25);
     }
-    .q-bank-info strong {
-      display: block; font-size: 14px; font-weight: 800; color: var(--navy-900);
-      margin-top: 2px;
+    .kt-submit-btn:hover { background: #1947CC; }
+
+    /* Cột Phải Form: Bàn Tiếp Nhận B2B Gọn Sắc Nét */
+    .kt-concierge-panel {
+      background: linear-gradient(155deg, #06122E 0%, #0D2559 60%, #153885 100%);
+      border-radius: 18px; padding: 28px 26px; color: #FFFFFF;
+      display: flex; flex-direction: column; justify-content: space-between;
     }
-    .q-bank-info small {
-      font-size: 12px; color: var(--ink-500);
+    .kt-concierge-badge {
+      display: inline-flex; width: fit-content; padding: 4px 11px; border-radius: 999px;
+      background: rgba(89, 209, 168, 0.16); border: 1px solid rgba(89, 209, 168, 0.36);
+      color: #59D1A8; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+      margin-bottom: 10px;
     }
-    .q-qr-mini {
-      width: 56px; height: 56px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 4px; background: #fff;
-      cursor: zoom-in; flex-shrink: 0;
+    .kt-concierge-panel h3 {
+      font-size: 20px; font-weight: 800; color: #FFFFFF; margin-bottom: 14px; line-height: 1.3;
+    }
+    .kt-sla-list { display: grid; gap: 10px; margin-bottom: 16px; }
+    .kt-sla-item {
+      display: flex; align-items: center; gap: 11px;
+      padding: 11px 13px; border-radius: 11px;
+      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.13);
+    }
+    .kt-sla-tag {
+      flex-shrink: 0; min-width: 78px; text-align: center;
+      padding: 5px 8px; border-radius: 7px;
+      background: rgba(255, 255, 255, 0.14); color: #93C5FD;
+      font-family: 'Be Vietnam Pro', sans-serif; font-size: 11px; font-weight: 800;
+    }
+    .kt-sla-body strong {
+      display: block; font-size: 13.5px; font-weight: 700; color: #FFFFFF;
+    }
+    .kt-sla-body span {
+      display: block; font-size: 12px; color: #CBD5E1;
+    }
+    .kt-concierge-footer {
+      background: #FFFFFF; color: var(--navy-900);
+      border-radius: 12px; padding: 12px 15px;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .kt-cf-left small {
+      display: block; font-size: 10px; font-weight: 800; color: var(--blue-600); text-transform: uppercase;
+    }
+    .kt-cf-left a.cf-phone {
+      font-family: 'Be Vietnam Pro', sans-serif; font-size: 19px; font-weight: 800; color: var(--navy-900);
+    }
+    .kt-cf-left span { display: block; font-size: 11.5px; color: var(--ink-500); }
+    .kt-cf-qr {
+      width: 50px; height: 50px; border: 1px solid #CBD5E1;
+      border-radius: 8px; padding: 3px; background: #FFFFFF; cursor: zoom-in;
     }
 
     /* ==========================================================================
-       MỤC 4 (CUỐI CÙNG TRƯỚC FOOTER): CÂU HỎI THƯỜNG GẶP VỀ VAT & BÁO GIÁ
+       MỤC 05 (CUỐI CÙNG TRƯỚC FOOTER): CÂU HỎI THƯỜNG GẶP (NGẮN GỌN, TRỰC DIỆN)
        ========================================================================== */
-    .faq-container {
-      max-width: 880px;
-      margin: 0 auto;
-      display: grid;
-      gap: 12px;
+    .faq-wrap-narrow { max-width: 880px; margin: 0 auto; display: grid; gap: 10px; }
+    details.faq-item {
+      background: #FFFFFF; border: 1px solid var(--line); border-radius: 14px;
+      padding: 16px 20px;
     }
-    details.faq-box {
-      background: #FFFFFF;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 18px 22px;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-    details.faq-box[open] {
-      border-color: #BFDBFE;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-    }
-    details.faq-box summary {
+    details.faq-item[open] { border-color: var(--blue-500); box-shadow: var(--shadow-xs); }
+    details.faq-item summary {
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 15.5px;
-      font-weight: 700;
-      color: var(--navy-900);
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
+      font-weight: 700; font-size: 15px; color: var(--navy-900);
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
     }
-    details.faq-box summary::-webkit-details-marker { display: none; }
-    details.faq-box summary::after {
-      content: "+";
-      width: 26px; height: 26px;
-      border-radius: 8px;
-      background: var(--bg-soft);
-      color: var(--brand-600);
-      display: inline-flex; align-items: center; justify-content: center;
-      font-size: 18px; font-weight: 600; flex-shrink: 0;
-    }
-    details.faq-box[open] summary::after {
-      content: "−";
-      background: var(--brand-600);
-      color: #FFFFFF;
-    }
-    details.faq-box p {
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid var(--line-soft);
-      font-size: 14.5px;
-      color: var(--ink-700);
-      line-height: 1.65;
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::after { content: "+"; font-size: 20px; color: var(--blue-600); font-weight: 700; }
+    details.faq-item[open] summary::after { content: "−"; }
+    details.faq-item p {
+      margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line);
+      font-size: 14px; color: var(--ink-700); line-height: 1.6;
     }
 
     /* Footer */
     footer.site-footer {
-      background: var(--navy-950);
-      color: #94A3B8;
-      padding: 52px 0 32px;
-      font-size: 13.5px;
+      background: var(--navy-950); color: #94A3B8; padding: 48px 0 28px; font-size: 13.5px;
     }
-    .footer-grid { display: grid; grid-template-columns: 1.45fr 1fr 1fr 1.1fr; gap: 28px; margin-bottom: 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.45fr 1fr 1fr 1.1fr; gap: 28px; margin-bottom: 28px; }
     .footer-brand img { height: 36px; width: auto; background: #fff; padding: 5px 10px; border-radius: 8px; margin-bottom: 12px; }
-    .footer-brand p { color: #CBD5E1; line-height: 1.62; margin-bottom: 10px; }
-    .footer-col h4 { color: #fff; font-size: 14.5px; font-weight: 700; margin-bottom: 12px; }
-    .footer-col ul { list-style: none; display: grid; gap: 8px; }
-    .footer-col ul a { color: #CBD5E1; }
+    .footer-brand p { color: #CBD5E1; line-height: 1.6; margin-bottom: 8px; }
+    .footer-col h4 { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+    .footer-col ul { list-style: none; display: grid; gap: 7px; }
+    .footer-col ul a, .footer-col ul li { color: #CBD5E1; }
     .footer-col ul a:hover { color: #60A5FA; }
-    .footer-bottom { padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 12.5px; }
+    .footer-bottom { padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12.5px; }
 
     /* Lightbox */
-    .lb { position: fixed; inset: 0; background: rgba(6, 14, 36, 0.94); display: none; z-index: 90; flex-direction: column; }
+    .lb { position: fixed; inset: 0; background: rgba(5, 12, 36, 0.94); display: none; z-index: 90; flex-direction: column; }
     .lb.open { display: flex; }
     .lb-bar { display: flex; align-items: center; gap: 8px; padding: 12px 18px; color: #fff; flex-wrap: wrap; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
-    .lb-bar .grow { flex: 1; font-size: 14px; font-weight: 600; min-width: 180px; }
+    .lb-bar .grow { flex: 1; font-size: 14px; font-weight: 600; }
     .lb-bar button {
       background: rgba(255, 255, 255, 0.14); color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 8px;
       padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer;
     }
-    .lb-bar button:hover { background: rgba(255, 255, 255, 0.24); }
-    .lb-stage { flex: 1; overflow: auto; padding: 16px; cursor: grab; }
-    .lb-stage img { display: block; margin: 0 auto; background: #fff; border-radius: 6px; max-width: none; }
+    .lb-stage { flex: 1; overflow: auto; padding: 16px; }
+    .lb-stage img { display: block; margin: 0 auto; background: #fff; border-radius: 8px; max-width: none; }
 
-    @media (max-width: 1040px) {
-      .hero-showcase-card,
-      .compare-cards-grid,
-      .quote-split-layout { grid-template-columns: 1fr; }
-      .process-6-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .doc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 1080px) {
+      .ws-business-gift__inner, .role-3-grid, .ws-experience-card, .kt-quote-grid { grid-template-columns: 1fr; }
+      .ws-business-gift__highlights { grid-template-columns: 1fr; }
+      .stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .process-row-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .vs-Header-Row, .vs-row-pair { grid-template-columns: 1fr; background: #fff; }
+      .vs-Header-Cell.right, .vs-cell-right { background: #0B1E4B; }
+      .vs-center-pill { display: none; }
       .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .live-menu { display: none; }
     }
-    @media (max-width: 720px) {
+    @media (max-width: 760px) {
       .sec { padding: 48px 0; }
-      .hero-showcase-card { padding: 26px 22px; }
-      .hero-perk-grid,
-      .process-6-grid,
-      .doc-grid,
-      .f-row-2,
-      .quote-trust-strip,
-      .footer-grid { grid-template-columns: 1fr; }
-      .page-switch-meta { display: none; }
+      .ws-business-gift, .ws-quote-shell { padding: 24px 18px; }
+      .kt-row-2, .kt-radios, .stats-strip, .process-row-6, .doc-grid, .legal-compact-box, .legal-cells-grid, .footer-grid { grid-template-columns: 1fr; }
+      .lc-item.span-2 { grid-column: span 1; }
+      .stat-box { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+      .stat-box:last-child { border-bottom: 0; padding-bottom: 0; }
     }
   </style>
 </head>
@@ -905,7 +838,7 @@
         <li>
           <button type="button" aria-haspopup="true">
             Dịch vụ
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
           <div class="live-dropdown">
             <ul class="live-dropdown-box">
@@ -920,480 +853,608 @@
             </ul>
           </div>
         </li>
-        <li><a href="../trang-minh-bach-stk-v5/index.html">Hồ sơ pháp nhân</a></li>
-        <li><a href="index.html" class="active">Báo giá &amp; Xuất VAT</a></li>
+        <li><a href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener noreferrer">Cá nhân</a></li>
+        <li><a href="#dang-ky-bao-gia">Doanh nghiệp</a></li>
         <li><a href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener noreferrer">Liên hệ</a></li>
       </ul>
       <a class="live-quote-btn" href="#dang-ky-bao-gia">
         Nhận báo giá
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
       </a>
     </nav>
   </header>
 
-  <!-- Thanh chuyển đổi nhanh giữa 2 trang độc lập -->
-  <div class="page-switch-wrap">
-    <div class="page-switch-bar">
-      <div class="page-tabs">
-        <a class="page-tab" href="../trang-minh-bach-stk-v5/index.html">01. Hồ sơ Pháp nhân &amp; Bảng giá Phần mềm</a>
-        <a class="page-tab is-active" href="index.html">02. Báo giá Doanh nghiệp &amp; Xuất Hóa đơn VAT</a>
+  <!-- ========================================================================
+       HERO: KHUNG WINESHOP + 3 GẠCH ĐẦU DÒNG ĐÁNH THẲNG VÀO NỖI ĐAU DOANH NGHIỆP
+       ======================================================================== -->
+  <section class="ws-hero-outer">
+    <div class="wrap">
+      <div class="ws-business-gift">
+        <div class="ws-business-gift__top-bar" aria-hidden="true"></div>
+        <div class="ws-business-gift__inner">
+          <div class="ws-business-gift__content">
+            <p class="ws-business-gift__eyebrow">PHÁP NHÂN B2B · CÔNG TY TNHH CÔNG NGHỆ STK (MST 0319648130)</p>
+            <h1 class="ws-business-gift__title">
+              Cung cấp Tài khoản AI &amp; Phần mềm:<br>
+              <span>Đủ Hợp đồng, Xuất Hóa đơn VAT, Kích hoạt chính chủ</span>
+            </h1>
+
+            <ul class="hero-bullet-problems">
+              <li>
+                <span class="dot-chk">✓</span>
+                <span><strong>Hạch toán chi phí hợp lệ 100%:</strong> Giá báo VNĐ đã gồm thuế GTGT (0% phí ẩn), xuất hóa đơn điện tử SePay eInvoice ngay trong ngày.</span>
+              </li>
+              <li>
+                <span class="dot-chk">✓</span>
+                <span><strong>Gom 01 hợp đồng – Chiết khấu số lượng:</strong> Gộp ChatGPT, Gemini/Veo 3, CapCut, Adobe, M365, Zoom... vào chung một bộ hồ sơ thanh toán.</span>
+              </li>
+              <li>
+                <span class="dot-chk">✓</span>
+                <span><strong>Quản trị an toàn cho công ty:</strong> Nâng cấp trực tiếp trên email công ty (không dùng chung), hỗ trợ đổi user khi nhân sự nghỉ việc.</span>
+              </li>
+            </ul>
+
+            <div class="ws-business-gift__highlights">
+              <div class="ws-business-gift__item">
+                <span class="ws-business-gift__icon">✓</span>
+                <span>Báo giá theo bậc số lượng, có VAT</span>
+              </div>
+              <div class="ws-business-gift__item">
+                <span class="ws-business-gift__icon">✓</span>
+                <span>Hợp đồng &amp; Nghiệm thu đóng dấu đỏ</span>
+              </div>
+              <div class="ws-business-gift__item">
+                <span class="ws-business-gift__icon">✓</span>
+                <span>Bảo hành kỹ thuật 08:00 – 23:00</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="ws-business-gift__consult" aria-label="Nhận báo giá doanh nghiệp trong 15 phút">
+            <p class="ws-business-gift__consult-label">BỘ PHẬN KHÁCH HÀNG DOANH NGHIỆP</p>
+            <h2 class="ws-business-gift__consult-title">Nhận báo giá &amp; hợp đồng mẫu trong 15 phút</h2>
+            <p class="ws-business-gift__consult-desc">Chiết khấu theo số lượng user &amp; kỳ hạn 06–12 tháng. Gửi ngay báo giá VNĐ đóng dấu.</p>
+            <div class="ws-business-gift__hotline-label">HOTLINE TƯ VẤN (08:00 – 23:00)</div>
+            <a class="ws-business-gift__phone" href="tel:0353797919">0353 797 919</a>
+            <a class="ws-business-gift__btn" href="#dang-ky-bao-gia">Nhận báo giá doanh nghiệp</a>
+            <a class="ws-business-gift__btn ws-business-gift__btn--secondary" href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener">Chat Zalo OA STK Tech</a>
+          </aside>
+        </div>
       </div>
-      <span class="page-switch-meta">Pháp nhân: <strong>Công ty TNHH Công Nghệ STK</strong> · MST: <strong>0319648130</strong></span>
+    </div>
+  </section>
+
+  <!-- DẢI 4 CON SỐ UY TÍN LỚN -->
+  <div class="wrap stats-strip-wrap">
+    <div class="stats-strip" aria-label="Năng lực phục vụ khách hàng doanh nghiệp">
+      <div class="stat-box">
+        <div class="stat-num">7+ Năm</div>
+        <div class="stat-label">Kinh nghiệm triển khai<strong>tài khoản AI &amp; phần mềm</strong></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1.000+</div>
+        <div class="stat-label">Khách hàng doanh nghiệp<strong>đã ký kết &amp; đồng hành</strong></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Đơn hàng phát hành<strong>Hóa đơn GTGT hợp lệ</strong></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">15 Phút</div>
+        <div class="stat-label">Phản hồi báo giá VNĐ<strong>&amp; dự thảo hợp đồng</strong></div>
+      </div>
     </div>
   </div>
 
   <!-- ========================================================================
-       HERO: KHUNG BÁO GIÁ & XUẤT VAT DOANH NGHIỆP (BỐ CỤC MẪU WINESHOP)
+       MỤC 01: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
+       (Kết hợp 3 Bộ phận Kế toán - Thu mua - IT + Bảng Đối Chiếu "Vs" ngắn gọn)
        ======================================================================== -->
-  <section class="hero-outer">
+  <section class="sec" id="nhu-cau-doanh-nghiep">
     <div class="wrap">
-      <div class="hero-showcase-card">
-        <div class="hero-left">
-          <div class="hero-kicker">GIẢI PHÁP AI &amp; PHẦN MỀM CHO DOANH NGHIỆP</div>
-          <h1>Mua tài khoản AI &amp; phần mềm cho team: Đủ Hợp đồng, Hóa đơn VAT, kích hoạt trong 15 phút</h1>
-          <p class="hero-lead">
-            Cung cấp bản quyền chính chủ <strong>ChatGPT, Gemini/Veo 3, CapCut Pro, Adobe, Microsoft 365, Zoom</strong> cho đội nhóm từ 01 đến 100+ nhân sự. Một đầu mối pháp nhân duy nhất lo trọn từ báo giá, hợp đồng đến xuất hóa đơn điện tử.
-          </p>
-          <p class="hero-bold-note">
-            Giá niêm yết đã bao gồm thuế GTGT (0% phí ẩn) — thanh toán chuyển khoản VNĐ và nhận hóa đơn ngay trong ngày.
-          </p>
+      <div class="sec-head">
+        <span class="sec-eyebrow">Giải quyết bài toán mua sắm B2B</span>
+        <h2>Doanh nghiệp cần gì khi mua <span>tài khoản AI &amp; phần mềm?</span></h2>
+        <p>Đáp ứng trọn vẹn yêu cầu hạch toán thuế của Kế toán, tối ưu ngân sách của Thu mua và an toàn dữ liệu của IT.</p>
+      </div>
 
-          <div class="hero-perk-grid">
-            <div class="hero-perk-card">
-              <span class="hero-perk-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              </span>
-              <span>Báo giá theo số lượng user, có hóa đơn VAT</span>
+      <!-- Khối 1A: 3 Bộ Phận Trọng Tâm (Ngắn gọn, chỉ giữ bullet quyền lợi cốt lõi) -->
+      <div class="role-3-grid">
+        <article class="role-card">
+          <span class="role-pill">01 · PHÒNG KẾ TOÁN</span>
+          <h3>Đủ chứng từ hạch toán chi phí hợp lệ</h3>
+          <ul class="role-points">
+            <li><i>✓</i><span><strong>Hóa đơn GTGT điện tử</strong> xuất đúng MST công ty</span></li>
+            <li><i>✓</i><span>Đầy đủ <strong>Báo giá, Hợp đồng đóng dấu &amp; Nghiệm thu</strong></span></li>
+            <li><i>✓</i><span>Chuyển khoản VNĐ vào <strong>TK Pháp nhân ACB 7796368</strong></span></li>
+          </ul>
+        </article>
+
+        <article class="role-card">
+          <span class="role-pill">02 · BỘ PHẬN THU MUA</span>
+          <h3>Gom 01 đầu mối &amp; chiết khấu số lượng</h3>
+          <ul class="role-points">
+            <li><i>✓</i><span><strong>Gộp nhiều phần mềm</strong> vào 01 hợp đồng duy nhất</span></li>
+            <li><i>✓</i><span><strong>Chiết khấu thương mại</strong> theo số user &amp; gói 06–12 tháng</span></li>
+            <li><i>✓</i><span>Giá VNĐ cố định <strong>đã gồm VAT</strong>, duyệt chi nhanh</span></li>
+          </ul>
+        </article>
+
+        <article class="role-card">
+          <span class="role-pill">03 · BỘ PHẬN IT &amp; QUẢN LÝ</span>
+          <h3>Kích hoạt chính chủ &amp; đổi user linh hoạt</h3>
+          <ul class="role-points">
+            <li><i>✓</i><span>Cấp quyền trên <strong>email công ty / Workspace riêng</strong></span></li>
+            <li><i>✓</i><span><strong>Không dùng tài khoản share</strong>, bảo mật dữ liệu nội bộ</span></li>
+            <li><i>✓</i><span>Hỗ trợ <strong>thu hồi / đổi user</strong> khi nhân sự nghỉ việc</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Khối 1B: Bảng Đối Chiếu "Vs" (Chỉ giữ tiêu đề 1 dòng theo đúng Ảnh 1) -->
+      <div class="vs-matrix-container">
+        <div class="vs-Unified-Box">
+          <div class="vs-Header-Row">
+            <div class="vs-Header-Cell left">
+              <span class="vs-badge" style="background:#FEE2E2;color:#B91C1C">✕ VƯỚNG MẮC KHI MUA TỰ TÚC</span>
+              <h3>Tự mua bằng thẻ cá nhân</h3>
             </div>
-            <div class="hero-perk-card">
-              <span class="hero-perk-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              </span>
-              <span>Gộp nhiều phần mềm vào 01 hợp đồng</span>
+            <div class="vs-Header-Cell right">
+              <span class="vs-badge" style="background:rgba(89,209,168,0.2);color:#59D1A8;border:1px solid rgba(89,209,168,0.38)">✓ CHUẨN HỒ SƠ DOANH NGHIỆP</span>
+              <h3>Mua qua pháp nhân STK Tech</h3>
             </div>
-            <div class="hero-perk-card">
-              <span class="hero-perk-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-              </span>
-              <span>Nâng cấp chính chủ theo email công ty</span>
+          </div>
+
+          <div class="vs-rows-wrap">
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Không có hóa đơn GTGT — không hạch toán được</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
+                <span class="mark-yes">✓</span>
+                <span>Hóa đơn GTGT điện tử hợp lệ cho mọi đơn</span>
+              </div>
+            </div>
+
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Cần thẻ quốc tế, tự xử lý khi lỗi thanh toán</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
+                <span class="mark-yes">✓</span>
+                <span>Thanh toán chuyển khoản VNĐ, không cần thẻ quốc tế</span>
+              </div>
+            </div>
+
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Không hợp đồng, không ai chịu trách nhiệm</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
+                <span class="mark-yes">✓</span>
+                <span>Báo giá – Hợp đồng dịch vụ – Nghiệm thu ký đóng dấu</span>
+              </div>
+            </div>
+
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Tự mò cách dùng, tự canh ngày gia hạn</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
+                <span class="mark-yes">✓</span>
+                <span>Hướng dẫn sử dụng, nhắc gia hạn, hỗ trợ 08:00–23:00</span>
+              </div>
             </div>
           </div>
         </div>
-
-        <aside class="hero-action-panel" aria-label="Nhận báo giá nhanh">
-          <span class="panel-tag">BỘ PHẬN KHÁCH HÀNG DOANH NGHIỆP</span>
-          <h2>Nhận báo giá &amp; hợp đồng mẫu trong 15 phút</h2>
-          <p>
-            Gửi tên phần mềm và số lượng tài khoản cần mua. Chuyên viên B2B gửi ngay báo giá VNĐ kèm dự thảo hợp đồng.
-          </p>
-          <span class="panel-hotline-lbl">HOTLINE TƯ VẤN B2B (08:00 – 23:00)</span>
-          <a class="panel-hotline-num" href="tel:0353797919">0353 797 919</a>
-          <a class="panel-btn-white" href="#dang-ky-bao-gia">Nhận báo giá doanh nghiệp</a>
-          <a class="panel-btn-outline" href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener">Chat Zalo nhận mẫu hợp đồng</a>
-        </aside>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 1: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
-       (Giữ nguyên 2 Card đối lập của Ảnh 1, rút gọn chỉ giữ tiêu đề 1 dòng)
-       ======================================================================== -->
-  <section class="sec" id="so-sanh-b2b" style="padding-top: 28px;">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>Doanh nghiệp cần gì khi mua tài khoản AI &amp; phần mềm?</h2>
-        <p>Khác biệt thực tế giữa việc nhân sự tự quẹt thẻ cá nhân và mua tập trung qua pháp nhân STK Tech.</p>
-      </div>
-
-      <div class="compare-cards-grid">
-        <!-- Card Trái: Tự mua bằng thẻ cá nhân -->
-        <article class="cmp-card pain">
-          <div>
-            <span class="cmp-pill">✕ VƯỚNG MẮC KHI MUA TỰ TÚC</span>
-            <h3>Tự mua bằng thẻ cá nhân</h3>
-            <ul class="cmp-list">
-              <li>
-                <span class="cmp-ic">✕</span>
-                <span>Không có hóa đơn GTGT — không hạch toán được chi phí</span>
-              </li>
-              <li>
-                <span class="cmp-ic">✕</span>
-                <span>Cần thẻ quốc tế, tự xử lý khi lỗi thanh toán</span>
-              </li>
-              <li>
-                <span class="cmp-ic">✕</span>
-                <span>Không hợp đồng, không ai chịu trách nhiệm bảo hành</span>
-              </li>
-              <li>
-                <span class="cmp-ic">✕</span>
-                <span>Tự mò cách dùng, tự canh ngày gia hạn</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Card Phải: Mua qua pháp nhân STK Tech -->
-        <article class="cmp-card solution">
-          <div>
-            <span class="cmp-pill">✓ CHUẨN HỒ SƠ DOANH NGHIỆP</span>
-            <h3>Mua qua pháp nhân STK Tech</h3>
-            <ul class="cmp-list">
-              <li>
-                <span class="cmp-ic">✓</span>
-                <span>Hóa đơn GTGT điện tử hợp lệ cho mọi đơn hàng</span>
-              </li>
-              <li>
-                <span class="cmp-ic">✓</span>
-                <span>Thanh toán chuyển khoản VNĐ, không cần thẻ quốc tế</span>
-              </li>
-              <li>
-                <span class="cmp-ic">✓</span>
-                <span>Báo giá – Hợp đồng dịch vụ – Nghiệm thu ký đóng dấu</span>
-              </li>
-              <li>
-                <span class="cmp-ic">✓</span>
-                <span>Hướng dẫn sử dụng, nhắc gia hạn, hỗ trợ 08:00–23:00</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       MỤC 2: QUY TRÌNH 6 BƯỚC TRIỂN KHAI & CHỨNG TỪ THỰC TẾ (GỘP CHUNG)
+       MỤC 02 (GỘP CHUNG): QUY TRÌNH 6 BƯỚC & BỘ CHỨNG TỪ THỰC TẾ
        ======================================================================== -->
   <section class="sec alt" id="quy-trinh-chung-tu">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Quy trình 6 bước triển khai &amp; bàn giao chứng từ</h2>
-        <p>Từ lúc yêu cầu báo giá đến khi kích hoạt tài khoản và nhận hóa đơn GTGT chỉ gói gọn trong ngày.</p>
+        <span class="sec-eyebrow">Quy trình &amp; Hồ sơ thực tế</span>
+        <h2>Quy trình 6 bước triển khai &amp; <span>bàn giao chứng từ</span></h2>
+        <p>Từ lúc gửi yêu cầu đến khi kích hoạt tài khoản và nhận Hóa đơn GTGT điện tử chỉ gói gọn trong ngày.</p>
       </div>
 
-      <!-- 6 Bước trực quan có hình minh họa -->
-      <div class="process-6-grid">
-        <article class="step-card">
-          <button type="button" class="step-shot lb-trigger" data-src="assets/images/buoc-1-tu-van-kiem-tra-nhu-cau.webp" data-title="Bước 1: Chốt nhu cầu" data-note="Xác định phần mềm, số lượng user và kỳ hạn.">
-            <img src="assets/images/buoc-1-tu-van-kiem-tra-nhu-cau.webp" alt="Bước 1: Chốt nhu cầu" loading="lazy">
-          </button>
-          <div class="step-badge-row">
-            <span class="step-num-pill">01</span>
+      <div class="process-row-6" aria-label="Quy trình 6 bước triển khai">
+        <article class="proc-col-card">
+          <div>
+            <div class="proc-big-num">01</div>
             <h3>Chốt nhu cầu</h3>
+            <p>Xác định phần mềm, số lượng user và kỳ hạn.</p>
           </div>
-          <p>Xác định danh mục phần mềm, số lượng user và kỳ hạn.</p>
+          <div class="proc-out-tag">✓ Phương án tối ưu</div>
         </article>
 
-        <article class="step-card">
-          <button type="button" class="step-shot lb-trigger" data-src="assets/images/buoc-2-bao-gia-ro-rang.webp" data-title="Bước 2: Gửi báo giá VNĐ" data-note="Báo giá đóng dấu đã gồm VAT trong 15 phút.">
-            <img src="assets/images/buoc-2-bao-gia-ro-rang.webp" alt="Bước 2: Gửi báo giá VNĐ" loading="lazy">
-          </button>
-          <div class="step-badge-row">
-            <span class="step-num-pill">02</span>
-            <h3>Gửi báo giá VNĐ</h3>
+        <article class="proc-col-card">
+          <div>
+            <div class="proc-big-num">02</div>
+            <h3>Báo giá VNĐ</h3>
+            <p>Gửi báo giá đóng dấu (đã gồm VAT) trong 15 phút.</p>
           </div>
-          <p>Nhận báo giá đóng dấu (đã gồm VAT) trong 15 phút.</p>
+          <div class="proc-out-tag">✓ 01. Báo giá dịch vụ</div>
         </article>
 
-        <article class="step-card">
-          <button type="button" class="step-shot lb-trigger" data-src="assets/images/buoc-3-xac-nhan-dich-vu.webp" data-title="Bước 3: Ký hợp đồng" data-note="Ký hợp đồng dịch vụ và chuyển khoản VNĐ.">
-            <img src="assets/images/buoc-3-xac-nhan-dich-vu.webp" alt="Bước 3: Ký hợp đồng" loading="lazy">
-          </button>
-          <div class="step-badge-row">
-            <span class="step-num-pill">03</span>
+        <article class="proc-col-card">
+          <div>
+            <div class="proc-big-num">03</div>
             <h3>Ký hợp đồng</h3>
+            <p>Ký hợp đồng pháp nhân và chuyển khoản TK ACB.</p>
           </div>
-          <p>Ký hợp đồng pháp nhân và chuyển khoản TK công ty.</p>
+          <div class="proc-out-tag">✓ 02. Hợp đồng đóng dấu</div>
         </article>
 
-        <article class="step-card">
-          <button type="button" class="step-shot lb-trigger" data-src="assets/images/buoc-4-kich-hoat-dich-vu.webp" data-title="Bước 4: Kích hoạt chính chủ" data-note="Nâng cấp trực tiếp trên email hoặc Workspace công ty.">
-            <img src="assets/images/buoc-4-kich-hoat-dich-vu.webp" alt="Bước 4: Kích hoạt chính chủ" loading="lazy">
-          </button>
-          <div class="step-badge-row">
-            <span class="step-num-pill">04</span>
+        <article class="proc-col-card">
+          <div>
+            <div class="proc-big-num">04</div>
             <h3>Kích hoạt gói</h3>
+            <p>Cấp quyền chính chủ trên email / Workspace công ty.</p>
           </div>
-          <p>Nâng cấp trực tiếp trên email hoặc Workspace công ty.</p>
+          <div class="proc-out-tag">✓ Bàn giao đúng user</div>
         </article>
 
-        <article class="step-card">
-          <button type="button" class="step-shot lb-trigger" data-src="assets/images/buoc-5-huong-dan-su-dung.webp" data-title="Bước 5: Xuất VAT &amp; Bàn giao" data-note="Phát hành Hóa đơn GTGT điện tử và biên bản nghiệm thu.">
-            <img src="assets/images/buoc-5-huong-dan-su-dung.webp" alt="Bước 5: Xuất VAT & Bàn giao" loading="lazy">
-          </button>
-          <div class="step-badge-row">
-            <span class="step-num-pill">05</span>
-            <h3>Xuất hóa đơn</h3>
+        <article class="proc-col-card">
+          <div>
+            <div class="proc-big-num">05</div>
+            <h3>Xuất VAT &amp; Nghiệm thu</h3>
+            <p>Gửi Hóa đơn GTGT điện tử (SePay) ngay trong ngày.</p>
           </div>
-          <p>Gửi hóa đơn GTGT điện tử và biên bản nghiệm thu.</p>
+          <div class="proc-out-tag">✓ 03. VAT &amp; 04. Nghiệm thu</div>
         </article>
 
-        <article class="step-card">
-          <button type="button" class="step-shot lb-trigger" data-src="assets/images/buoc-6-dong-hanh-su-dung.webp" data-title="Bước 6: Bảo hành trọn kỳ" data-note="Hỗ trợ kỹ thuật 08:00–23:00 và chủ động nhắc gia hạn.">
-            <img src="assets/images/buoc-6-dong-hanh-su-dung.webp" alt="Bước 6: Bảo hành trọn kỳ" loading="lazy">
-          </button>
-          <div class="step-badge-row">
-            <span class="step-num-pill">06</span>
-            <h3>Bảo hành 1:1</h3>
+        <article class="proc-col-card">
+          <div>
+            <div class="proc-big-num">06</div>
+            <h3>Bảo hành &amp; Đổi user</h3>
+            <p>Hỗ trợ kỹ thuật 08:00–23:00, đổi user &amp; nhắc gia hạn.</p>
           </div>
-          <p>Hỗ trợ kỹ thuật 08:00–23:00 và nhắc trước kỳ gia hạn.</p>
+          <div class="proc-out-tag">✓ Đồng hành trọn kỳ</div>
         </article>
       </div>
 
-      <!-- 6 Mẫu chứng từ thực tế -->
-      <div class="docs-showcase-box">
-        <div class="docs-bar-head">
-          <h3>Mẫu Hóa đơn GTGT, Báo giá &amp; Hợp đồng thực tế tại STK Tech</h3>
-          <span>Bấm vào từng chứng từ để phóng to kiểm tra chữ ký số &amp; con dấu (thông tin bên mua đã ẩn danh)</span>
+      <!-- Khối 6 Chứng từ thực tế -->
+      <div class="real-docs-showcase" id="chung-tu">
+        <div class="real-docs-header">
+          <h3>Hóa đơn GTGT &amp; chứng từ giao dịch thực tế (Bấm vào ảnh để phóng to)</h3>
+          <div class="doc4-pill-strip">
+            <span><b>01.</b> Báo giá VNĐ</span>
+            <span><b>02.</b> Hợp đồng đóng dấu</span>
+            <span><b>03.</b> Hóa đơn GTGT (SePay)</span>
+            <span><b>04.</b> Biên bản nghiệm thu</span>
+          </div>
         </div>
 
         <div class="doc-grid">
-          <button type="button" class="doc-item lb-trigger" data-src="assets/images/hoa-don-gtgt-capcut-pro.webp" data-title="Hóa đơn GTGT điện tử — Gói CapCut Pro" data-note="Phát hành bởi Công ty TNHH Công Nghệ STK (MST 0319648130).">
-            <div class="doc-thumb">
-              <img src="assets/images/thumbnail-hoa-don-gtgt-capcut-pro.webp" alt="Hóa đơn GTGT CapCut Pro" loading="lazy">
-              <span class="doc-tag">Hóa đơn GTGT</span>
-              <span class="doc-zoom">Phóng to</span>
-            </div>
-            <div class="doc-title">Hóa đơn GTGT — Gói CapCut Pro</div>
-            <div class="doc-sub">Ký số hợp lệ qua hệ thống SePay eInvoice</div>
-          </button>
+          <article class="doc-card-wrap">
+            <button type="button" class="doc-card lb-trigger" data-src="assets/images/hoa-don-gtgt-capcut-pro.webp" data-title="Hóa đơn GTGT điện tử — Dịch vụ CapCut Pro" data-note="Ký số hợp lệ bởi Công ty TNHH Công Nghệ STK (MST 0319648130).">
+              <div class="doc-thumb-box">
+                <img src="assets/images/thumbnail-hoa-don-gtgt-capcut-pro.webp" alt="Hóa đơn GTGT CapCut Pro" loading="lazy">
+                <span class="doc-type-badge">Hóa đơn GTGT</span>
+                <span class="doc-zoom-pill">Xem tài liệu →</span>
+              </div>
+              <span class="doc-name">Hóa đơn GTGT — Gói CapCut Pro</span>
+              <span class="doc-meta">Ký số hợp lệ bởi Công ty TNHH Công Nghệ STK</span>
+            </button>
+          </article>
 
-          <button type="button" class="doc-item lb-trigger" data-src="assets/images/hoa-don-gtgt-google-ai.webp" data-title="Hóa đơn GTGT điện tử — Gói Google AI" data-note="Phát hành bởi Công ty TNHH Công Nghệ STK (MST 0319648130).">
-            <div class="doc-thumb">
-              <img src="assets/images/thumbnail-hoa-don-gtgt-google-ai.webp" alt="Hóa đơn GTGT Google AI" loading="lazy">
-              <span class="doc-tag">Hóa đơn GTGT</span>
-              <span class="doc-zoom">Phóng to</span>
-            </div>
-            <div class="doc-title">Hóa đơn GTGT — Gói Google AI</div>
-            <div class="doc-sub">Ký số hợp lệ qua hệ thống SePay eInvoice</div>
-          </button>
+          <article class="doc-card-wrap">
+            <button type="button" class="doc-card lb-trigger" data-src="assets/images/hoa-don-gtgt-google-ai.webp" data-title="Hóa đơn GTGT điện tử — Dịch vụ Google AI" data-note="Ký số hợp lệ bởi Công ty TNHH Công Nghệ STK (MST 0319648130).">
+              <div class="doc-thumb-box">
+                <img src="assets/images/thumbnail-hoa-don-gtgt-google-ai.webp" alt="Hóa đơn GTGT Google AI" loading="lazy">
+                <span class="doc-type-badge">Hóa đơn GTGT</span>
+                <span class="doc-zoom-pill">Xem tài liệu →</span>
+              </div>
+              <span class="doc-name">Hóa đơn GTGT — Gói Google AI</span>
+              <span class="doc-meta">Phát hành tự động qua nền tảng SePay eInvoice</span>
+            </button>
+          </article>
 
-          <button type="button" class="doc-item lb-trigger" data-src="assets/images/bao-gia-dich-vu-zoom-pro.webp" data-title="Báo giá dịch vụ đóng dấu — Gói Zoom Pro" data-note="Báo giá số BG-2026/132 có chữ ký số doanh nghiệp.">
-            <div class="doc-thumb">
-              <img src="assets/images/thumbnail-bao-gia-dich-vu-zoom-pro.webp" alt="Báo giá Zoom Pro" loading="lazy">
-              <span class="doc-tag">Báo giá B2B</span>
-              <span class="doc-zoom">Phóng to</span>
-            </div>
-            <div class="doc-title">Báo giá đóng dấu — Gói Zoom Pro</div>
-            <div class="doc-sub">Thể hiện rõ đơn giá VNĐ đã gồm VAT</div>
-          </button>
+          <article class="doc-card-wrap">
+            <button type="button" class="doc-card lb-trigger" data-src="assets/images/bao-gia-dich-vu-zoom-pro.webp" data-title="Báo giá dịch vụ — Zoom Pro 12 tháng" data-note="Báo giá đóng dấu pháp nhân Công ty TNHH Công Nghệ STK.">
+              <div class="doc-thumb-box">
+                <img src="assets/images/thumbnail-bao-gia-dich-vu-zoom-pro.webp" alt="Báo giá dịch vụ Zoom Pro" loading="lazy">
+                <span class="doc-type-badge">Báo giá</span>
+                <span class="doc-zoom-pill">Xem tài liệu →</span>
+              </div>
+              <span class="doc-name">Báo giá đóng dấu — Gói Zoom Pro</span>
+              <span class="doc-meta">Thể hiện rõ đơn giá VNĐ đã gồm thuế GTGT</span>
+            </button>
+          </article>
 
-          <button type="button" class="doc-item lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-1.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang 1" data-note="Hợp đồng số 131/2026/HĐDV-STK triển khai cho doanh nghiệp.">
-            <div class="doc-thumb">
-              <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-1.webp" alt="Hợp đồng ChatGPT Trang 1" loading="lazy">
-              <span class="doc-tag">Hợp đồng</span>
-              <span class="doc-zoom">Phóng to</span>
-            </div>
-            <div class="doc-title">Hợp đồng B2B — Trang thông tin</div>
-            <div class="doc-sub">Thông tin pháp nhân hai bên &amp; danh mục gói</div>
-          </button>
+          <article class="doc-card-wrap">
+            <button type="button" class="doc-card lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-1.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang 1" data-note="Thông tin pháp nhân hai bên và giá trị hợp đồng.">
+              <div class="doc-thumb-box">
+                <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-1.webp" alt="Hợp đồng dịch vụ trang 1" loading="lazy">
+                <span class="doc-type-badge">Hợp đồng</span>
+                <span class="doc-zoom-pill">Xem tài liệu →</span>
+              </div>
+              <span class="doc-name">Hợp đồng B2B — Trang thông tin</span>
+              <span class="doc-meta">Thông tin pháp nhân hai bên &amp; danh mục gói</span>
+            </button>
+          </article>
 
-          <button type="button" class="doc-item lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-2.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang 2" data-note="Điều khoản thanh toán, bảo mật và cam kết hỗ trợ.">
-            <div class="doc-thumb">
-              <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-2.webp" alt="Hợp đồng ChatGPT Trang 2" loading="lazy">
-              <span class="doc-tag">Hợp đồng</span>
-              <span class="doc-zoom">Phóng to</span>
-            </div>
-            <div class="doc-title">Hợp đồng B2B — Điều khoản</div>
-            <div class="doc-sub">Quy định rõ trách nhiệm bảo hành &amp; xuất VAT</div>
-          </button>
+          <article class="doc-card-wrap">
+            <button type="button" class="doc-card lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-2.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang 2" data-note="Điều khoản thanh toán, bảo mật và trách nhiệm bảo hành.">
+              <div class="doc-thumb-box">
+                <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-2.webp" alt="Hợp đồng dịch vụ trang 2" loading="lazy">
+                <span class="doc-type-badge">Hợp đồng</span>
+                <span class="doc-zoom-pill">Xem tài liệu →</span>
+              </div>
+              <span class="doc-name">Hợp đồng B2B — Điều khoản</span>
+              <span class="doc-meta">Cam kết bảo hành kỹ thuật &amp; xuất hóa đơn VAT</span>
+            </button>
+          </article>
 
-          <button type="button" class="doc-item lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang ký đóng dấu" data-note="Chữ ký Giám đốc Lê Thị Kim Ngân và dấu đỏ pháp nhân.">
-            <div class="doc-thumb">
-              <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" alt="Hợp đồng ChatGPT Trang ký tên" loading="lazy">
-              <span class="doc-tag">Hợp đồng</span>
-              <span class="doc-zoom">Phóng to</span>
-            </div>
-            <div class="doc-title">Hợp đồng B2B — Ký &amp; đóng dấu</div>
-            <div class="doc-sub">Con dấu pháp nhân Công ty TNHH Công Nghệ STK</div>
-          </button>
+          <article class="doc-card-wrap">
+            <button type="button" class="doc-card lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang ký xác nhận" data-note="Chữ ký Giám đốc Lê Thị Kim Ngân và dấu đỏ Công ty TNHH Công Nghệ STK.">
+              <div class="doc-thumb-box">
+                <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" alt="Hợp đồng dịch vụ trang ký xác nhận" loading="lazy">
+                <span class="doc-type-badge">Hợp đồng</span>
+                <span class="doc-zoom-pill">Xem tài liệu →</span>
+              </div>
+              <span class="doc-name">Hợp đồng B2B — Trang ký &amp; đóng dấu</span>
+              <span class="doc-meta">Chữ ký Giám đốc &amp; con dấu đỏ pháp nhân STK Tech</span>
+            </button>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 3: ĐĂNG KÝ NHẬN BÁO GIÁ (THIẾT KẾ SÁNG THOÁNG NHƯ KINGTECHCARE)
+       MỤC 03: VĂN PHÒNG THỰC TẾ & ĐỊNH DANH PHÁP NHÂN + MÃ QR TRA CỨU
+       ======================================================================== -->
+  <section class="sec" id="xac-minh">
+    <div class="wrap">
+      <div class="ws-experience-card">
+        <button type="button" class="ws-photo-frame lb-trigger" data-src="assets/images/intro-office.webp" data-title="Đội ngũ nhân sự &amp; Văn phòng làm việc thực tế tại STK Tech" data-note="Đội ngũ kỹ thuật viên và chuyên viên B2B làm việc tại văn phòng TP.HCM.">
+          <img src="assets/images/intro-office.webp" alt="Văn phòng làm việc và đội ngũ nhân sự thực tế tại STK Tech" loading="lazy">
+        </button>
+
+        <div>
+          <div class="legal-right-head">
+            <span class="sec-eyebrow" style="margin-bottom:4px">Thông tin xác minh doanh nghiệp</span>
+            <h2>Đối chiếu pháp nhân &amp; văn phòng thực tế</h2>
+            <p>Quý doanh nghiệp chỉ giao dịch và chuyển khoản theo đúng thông tin pháp nhân dưới đây:</p>
+          </div>
+
+          <div class="legal-compact-box">
+            <div class="legal-cells-grid">
+              <div class="lc-item">
+                <span>Pháp nhân xuất hóa đơn</span>
+                <strong>CÔNG TY TNHH CÔNG NGHỆ STK</strong>
+              </div>
+              <div class="lc-item">
+                <span>Mã số thuế / MSĐKDN</span>
+                <strong>0319648130 (Lê Thị Kim Ngân)</strong>
+              </div>
+              <div class="lc-item span-2">
+                <span>Tài khoản ngân hàng công ty</span>
+                <strong>Ngân hàng Á Châu (ACB) — STK: 7796368</strong>
+              </div>
+              <div class="lc-item span-2">
+                <span>Trụ sở ĐKKD &amp; Văn phòng TP.HCM</span>
+                <strong>ĐKKD: 490/49/7 Hương Lộ 2, P. Bình Trị Đông · VP: 497/24/9G Phan Văn Trị, P. An Nhơn</strong>
+              </div>
+              <div class="lc-item span-2">
+                <span>Kênh chính thức (08:00–23:00)</span>
+                <strong><a href="tel:0353797919">0353.7979.19</a> · <a href="mailto:contacts@stktech.ai">contacts@stktech.ai</a> · <a href="https://stktech.ai/">stktech.ai</a></strong>
+              </div>
+            </div>
+
+            <div class="lc-qr-box">
+              <button type="button" class="lc-qr-btn lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="QR tra cứu thông tin doanh nghiệp — MST 0319648130" data-note="Quét mã QR để kiểm tra thông tin pháp nhân Công ty TNHH Công Nghệ STK.">
+                <img src="assets/images/qr-masothue-stk.png" alt="Mã QR tra cứu MST 0319648130" loading="lazy">
+              </button>
+              <small>Quét QR kiểm tra<br>ĐKKD (Bấm phóng to)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MỤC 04: ĐĂNG KÝ NHẬN BÁO GIÁ DOANH NGHIỆP (CÂN ĐỐI 2 CỘT)
        ======================================================================== -->
   <section class="quote-sec" id="dang-ky-bao-gia">
     <div class="wrap">
-      <div class="quote-split-layout">
-        <!-- Cột trái: Biểu mẫu Đăng ký nhận báo giá -->
-        <div class="quote-form-card">
-          <h2>Đăng Ký <span>Nhận Báo Giá</span></h2>
-          <p class="quote-form-lead">Nhận báo giá chiết khấu &amp; tư vấn 1:1 — cam kết phản hồi ngay trong vòng 15 phút</p>
+      <div class="ws-quote-shell">
+        <div class="kt-quote-grid">
+          <div class="kt-quote-card">
+            <h2>Đăng Ký <span>Nhận Báo Giá</span></h2>
+            <p class="kt-quote-sub">Nhận Báo Giá Chiết Khấu &amp; Hợp Đồng Mẫu — phản hồi trong 15 phút</p>
 
-          <form class="f-grid" id="b2b-quote-form">
-            <div class="f-row-2">
-              <div class="f-field">
-                <label for="q-name">Họ và tên <span class="req">*</span></label>
-                <input class="f-input" id="q-name" type="text" placeholder="Nhập tên của bạn" required>
+            <form class="kt-form" id="b2b-quote-form">
+              <div class="kt-row-2">
+                <div class="kt-field">
+                  <label for="q-name">Họ và tên <span class="req">*</span></label>
+                  <input class="kt-input" id="q-name" type="text" placeholder="Nhập họ tên người liên hệ" required>
+                </div>
+                <div class="kt-field">
+                  <label for="q-phone">Số điện thoại / Zalo <span class="req">*</span></label>
+                  <input class="kt-input" id="q-phone" type="tel" placeholder="0353 xxx xxx" required>
+                </div>
               </div>
-              <div class="f-field">
-                <label for="q-phone">Số điện thoại <span class="req">*</span></label>
-                <input class="f-input" id="q-phone" type="tel" placeholder="0353 xxx xxx" required>
+
+              <div class="kt-field">
+                <label>Hình thức nhận báo giá</label>
+                <div class="kt-radios">
+                  <label class="kt-radio-item"><input type="radio" name="contact_way" value="Chat qua Zalo" checked><span>Qua Zalo</span></label>
+                  <label class="kt-radio-item"><input type="radio" name="contact_way" value="Gọi điện trực tiếp"><span>Gọi trực tiếp</span></label>
+                  <label class="kt-radio-item"><input type="radio" name="contact_way" value="Nhận qua Email"><span>Qua Email</span></label>
+                </div>
               </div>
-            </div>
 
-            <div class="f-field">
-              <label>Hình thức liên hệ</label>
-              <div class="f-radio-group">
-                <label class="f-radio-item"><input type="radio" name="contact_way" value="Chat qua Zalo" checked> Chat qua Zalo</label>
-                <label class="f-radio-item"><input type="radio" name="contact_way" value="Gọi điện trực tiếp"> Gọi điện trực tiếp</label>
-                <label class="f-radio-item"><input type="radio" name="contact_way" value="Nhận qua Email"> Nhận qua Email</label>
+              <div class="kt-field">
+                <label for="q-org">Đơn vị tổ chức / Mã số thuế</label>
+                <input class="kt-input" id="q-org" type="text" placeholder="Nhập tên công ty hoặc Mã số thuế xuất hóa đơn">
               </div>
-            </div>
 
-            <div class="f-field">
-              <label for="q-company">Đơn vị tổ chức / Mã số thuế</label>
-              <input class="f-input" id="q-company" type="text" placeholder="Nhập tên công ty hoặc Mã số thuế xuất hóa đơn">
-            </div>
-
-            <div class="f-row-2">
-              <div class="f-field">
-                <label for="q-qty">Số lượng dự kiến</label>
-                <input class="f-input" id="q-qty" type="text" placeholder="Nhập số lượng user">
+              <div class="kt-row-2">
+                <div class="kt-field">
+                  <label for="q-qty">Số lượng user dự kiến</label>
+                  <input class="kt-input" id="q-qty" type="text" placeholder="VD: 05 user, 20 user...">
+                </div>
+                <div class="kt-field">
+                  <label for="q-budget">Phần mềm &amp; kỳ hạn</label>
+                  <input class="kt-input" id="q-budget" type="text" placeholder="VD: ChatGPT, Gemini, CapCut...">
+                </div>
               </div>
-              <div class="f-field">
-                <label for="q-soft">Phần mềm cần mua</label>
-                <input class="f-input" id="q-soft" type="text" placeholder="VD: ChatGPT, Gemini, CapCut...">
+
+              <div class="kt-field">
+                <label for="q-note">Ghi chú về hợp đồng &amp; chứng từ</label>
+                <input class="kt-input" id="q-note" type="text" placeholder="Yêu cầu hợp đồng, nghiệm thu hoặc kỳ hạn 06–12 tháng">
               </div>
-            </div>
 
-            <div class="f-field">
-              <label for="q-note">Ghi chú cho chúng tôi</label>
-              <input class="f-input" id="q-note" type="text" placeholder="Lưu ý về hợp đồng, xuất hóa đơn VAT hoặc kỳ hạn 06–12 tháng">
-            </div>
-
-            <div class="f-submit-row">
-              <button type="submit" class="f-submit-btn">Gửi thông tin →</button>
-              <span style="font-size:13px;color:var(--ink-500)">Hoặc gọi: <a href="tel:0353797919" style="font-weight:700;color:var(--navy-900)">0353.7979.19</a></span>
-            </div>
-          </form>
-        </div>
-
-        <!-- Cột phải: Visual Showcase Sáng Thoáng (Ảnh Đội Ngũ Thực Tế + Thẻ Cam Kết) -->
-        <div class="quote-visual-stage">
-          <div class="quote-main-photo">
-            <img src="assets/images/intro-office.webp" alt="Đội ngũ chuyên viên B2B tại văn phòng STK Tech TP.HCM" loading="lazy">
-            <div class="quote-photo-overlay">
-              <span>ĐỘI NGŨ CHUYÊN VIÊN PHỤ TRÁCH DOANH NGHIỆP (1:1)</span>
-              <h3>Hỗ trợ trọn gói từ Báo giá, Hợp đồng đến kích hoạt &amp; xuất VAT trong ngày</h3>
-            </div>
+              <div class="kt-submit-row">
+                <button type="submit" class="kt-submit-btn">Gửi yêu cầu báo giá →</button>
+                <span style="font-size:12.5px;color:var(--ink-500)">Bảo mật thông tin · Phản hồi trong <strong>15 phút</strong></span>
+              </div>
+            </form>
           </div>
 
-          <div class="quote-trust-strip">
-            <div class="q-trust-card">
-              <div class="q-trust-ic">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-              </div>
-              <div>
-                <h4>Chuẩn chứng từ Kế toán</h4>
-                <p>Đầy đủ Báo giá, Hợp đồng đóng dấu &amp; e-Invoice hợp lệ.</p>
+          <aside class="kt-concierge-panel" aria-label="Cam kết bàn giao hồ sơ doanh nghiệp">
+            <div>
+              <span class="kt-concierge-badge">✓ BÀN TIẾP NHẬN DOANH NGHIỆP (1:1)</span>
+              <h3>Chuẩn hóa trọn bộ chứng từ cho Phòng Thu mua &amp; Kế toán</h3>
+
+              <div class="kt-sla-list">
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">15 Phút</span>
+                  <div class="kt-sla-body">
+                    <strong>Gửi báo giá VNĐ &amp; chiết khấu số lượng</strong>
+                    <span>Giá báo đã gồm thuế GTGT (0% phụ phí).</span>
+                  </div>
+                </div>
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">04 Hồ sơ</span>
+                  <div class="kt-sla-body">
+                    <strong>Đủ Báo giá – Hợp đồng – Nghiệm thu – VAT</strong>
+                    <span>Ký đóng dấu pháp nhân &amp; xuất e-Invoice trong ngày.</span>
+                  </div>
+                </div>
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">01 Đầu mối</span>
+                  <div class="kt-sla-body">
+                    <strong>Gộp nhiều phần mềm vào 01 hợp đồng</strong>
+                    <span>ChatGPT, Gemini, CapCut, Adobe, M365, Zoom...</span>
+                  </div>
+                </div>
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">Chính chủ</span>
+                  <div class="kt-sla-body">
+                    <strong>Kích hoạt email riêng &amp; hỗ trợ đổi user</strong>
+                    <span>Bảo hành kỹ thuật 08:00–23:00 suốt kỳ hạn.</span>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="q-trust-card">
-              <div class="q-trust-ic">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div class="kt-concierge-footer">
+              <div class="kt-cf-left">
+                <small>HOTLINE PHÒNG DOANH NGHIỆP (08:00 – 23:00)</small>
+                <a class="cf-phone" href="tel:0353797919">0353 797 919</a>
+                <span>Email: contacts@stktech.ai · TK ACB: 7796368</span>
               </div>
-              <div>
-                <h4>Bảo hành suốt kỳ hạn</h4>
-                <p>Kích hoạt chính chủ, hỗ trợ kỹ thuật 08:00–23:00 mỗi ngày.</p>
-              </div>
+              <button type="button" class="kt-cf-qr lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="QR tra cứu thông tin doanh nghiệp — MST 0319648130" data-note="Quét mã QR để đối chiếu thông tin pháp nhân Công ty TNHH Công Nghệ STK.">
+                <img src="assets/images/qr-masothue-stk.png" alt="Mã QR tra cứu MST 0319648130" loading="lazy">
+              </button>
             </div>
-          </div>
-
-          <div class="q-bank-bar">
-            <div class="q-bank-info">
-              <span>PHÁP NHÂN THỤ HƯỞNG &amp; XUẤT HÓA ĐƠN</span>
-              <strong>CÔNG TY TNHH CÔNG NGHỆ STK · MST: 0319648130</strong>
-              <small>Ngân hàng Á Châu (ACB) — STK: 7796368 (Tích hợp SePay eInvoice)</small>
-            </div>
-            <button type="button" class="q-qr-mini lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="Mã QR tra cứu thông tin doanh nghiệp STK Tech" data-note="Quét mã QR để kiểm tra thông tin ĐKKD MST 0319648130.">
-              <img src="assets/images/qr-masothue-stk.png" alt="QR MST 0319648130">
-            </button>
-          </div>
+          </aside>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 4 (CUỐI CÙNG TRƯỚC FOOTER): CÂU HỎI THƯỜNG GẶP VỀ VAT & HỢP ĐỒNG
+       MỤC 05 (CUỐI CÙNG TRƯỚC FOOTER): CÂU HỎI THƯỜNG GẶP
        ======================================================================== -->
-  <section class="sec" id="faq">
+  <section class="sec alt" id="faq">
     <div class="wrap">
       <div class="sec-head">
-        <h2>Câu hỏi thường gặp về báo giá &amp; hóa đơn VAT</h2>
-        <p>Giải đáp ngắn gọn các quy định xuất hóa đơn GTGT và hợp đồng cho doanh nghiệp.</p>
+        <span class="sec-eyebrow">Giải đáp nhanh B2B</span>
+        <h2>Câu hỏi thường gặp về <span>báo giá &amp; hóa đơn VAT</span></h2>
       </div>
 
-      <div class="faq-container">
-        <details class="faq-box" open>
+      <div class="faq-wrap-narrow">
+        <details class="faq-item" open>
           <summary>1. Giá báo cho doanh nghiệp đã bao gồm thuế GTGT (VAT) chưa?</summary>
-          <p>Toàn bộ giá niêm yết và báo giá tại <strong>stktech.ai</strong> là giá cuối cùng <strong>đã bao gồm thuế GTGT (VAT)</strong> — doanh nghiệp không phải đóng thêm bất kỳ khoản phụ phí nào khi xuất hóa đơn.</p>
+          <p>Đã bao gồm. Mọi báo giá tại <strong>stktech.ai</strong> là giá cuối cùng bằng VNĐ <strong>đã gồm thuế GTGT</strong> — doanh nghiệp nhận Hóa đơn GTGT điện tử (SePay eInvoice) ngay trong ngày mà không mất thêm bất kỳ khoản phụ phí nào.</p>
         </details>
 
-        <details class="faq-box">
-          <summary>2. Công ty tôi mua nhiều phần mềm khác nhau thì có gộp chung vào 01 hợp đồng được không?</summary>
-          <p>Được. STK Tech hỗ trợ gộp tất cả công cụ của các phòng ban (ChatGPT, Gemini/Veo 3, CapCut Pro, Adobe, Microsoft 365, Zoom...) vào <strong>01 Báo giá, 01 Hợp đồng dịch vụ và 01 Hóa đơn GTGT duy nhất</strong> để kế toán dễ dàng duyệt chi.</p>
+        <details class="faq-item">
+          <summary>2. Phòng Thu mua có thể gộp nhiều phần mềm vào chung 01 hợp đồng và nhận chiết khấu không?</summary>
+          <p>Có. Doanh nghiệp có thể gộp ChatGPT, Gemini/Veo 3, CapCut, Adobe, Microsoft 365, Zoom... vào <strong>01 Báo giá, 01 Hợp đồng và 01 Hóa đơn GTGT duy nhất</strong>, đồng thời hưởng <strong>chiết khấu thương mại theo số lượng user</strong> và kỳ hạn 06–12 tháng.</p>
         </details>
 
-        <details class="faq-box">
-          <summary>3. Bao lâu sau khi thanh toán thì nhận được Hóa đơn GTGT điện tử?</summary>
-          <p>Hóa đơn GTGT điện tử được phát hành qua nền tảng <strong>SePay eInvoice</strong> và gửi trực tiếp về Email phòng Kế toán <strong>ngay trong ngày làm việc</strong> sau khi hoàn tất thanh toán và kích hoạt gói.</p>
+        <details class="faq-item">
+          <summary>3. STK Tech kích hoạt tài khoản theo hình thức nào? Khi nhân sự nghỉ việc có đổi user được không?</summary>
+          <p>STK Tech <strong>không bán tài khoản dùng chung (share account)</strong>. Dịch vụ được kích hoạt trực tiếp trên <strong>email công ty hoặc Workspace riêng</strong>, và đội ngũ kỹ thuật hỗ trợ thu hồi / chuyển đổi user khi doanh nghiệp có biến động nhân sự.</p>
         </details>
 
-        <details class="faq-box">
-          <summary>4. Mua 01 tài khoản lẻ cho công ty có được xuất hóa đơn VAT không?</summary>
-          <p>Có. Mọi đơn hàng từ 01 tài khoản trở lên đều được xuất Hóa đơn GTGT điện tử hợp lệ theo đúng thông tin Mã số thuế của doanh nghiệp.</p>
+        <details class="faq-item">
+          <summary>4. Làm sao để kiểm tra đúng kênh giao dịch và chứng từ của Công ty TNHH Công Nghệ STK?</summary>
+          <p>Quý khách đối chiếu đúng pháp nhân <strong>CÔNG TY TNHH CÔNG NGHỆ STK (MST 0319648130)</strong>, tài khoản ngân hàng <strong>ACB – 7796368</strong>, tên miền <strong>stktech.ai</strong> và liên hệ xác minh trực tiếp qua Hotline <strong>0353.7979.19</strong> hoặc <strong>Zalo OA STK Tech</strong> (08:00–23:00).</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- SITE FOOTER -->
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/images/logo-stk-tech.webp" alt="STK Tech Logo" loading="lazy">
-          <p><strong>CÔNG TY TNHH CÔNG NGHỆ STK</strong><br>Cung cấp tài khoản AI &amp; phần mềm bản quyền chuẩn chứng từ thuế GTGT cho doanh nghiệp Việt Nam.</p>
-          <p>MST: <strong>0319648130</strong> · Đại diện PL: Lê Thị Kim Ngân<br>Trụ sở ĐKKD: 490/49/7 Hương Lộ 2, P. Bình Trị Đông, TP.HCM.<br>VP đại diện: 497/24/9G Phan Văn Trị, P. An Nhơn, TP.HCM.</p>
+          <p><strong>Công ty TNHH Công Nghệ STK</strong> — Cung cấp tài khoản AI &amp; phần mềm bản quyền chuẩn chứng từ thuế GTGT cho doanh nghiệp Việt Nam.</p>
+          <p>Giấy CNĐKDN số: <strong>0319648130</strong> do Sở KH&amp;ĐT TP.HCM cấp.<br>Website <strong>stktech.ai</strong> thuộc sở hữu của Công ty TNHH Công Nghệ STK.</p>
         </div>
 
         <div class="footer-col">
-          <h4>Phần mềm doanh nghiệp</h4>
+          <h4>Dịch vụ</h4>
           <ul>
             <li><a href="https://stktech.ai/chatgpt">ChatGPT Plus &amp; Business Workspace</a></li>
             <li><a href="https://stktech.ai/product-gemini">Google AI (Gemini Pro/Ultra &amp; Veo 3)</a></li>
             <li><a href="https://stktech.ai/capcut">CapCut Pro &amp; CapCut Teams</a></li>
             <li><a href="https://stktech.ai/adobe-product">Adobe Creative Cloud Bản Quyền</a></li>
             <li><a href="https://stktech.ai/product-microsoft-365">Microsoft 365 &amp; AI Copilot</a></li>
-            <li><a href="https://stktech.ai/product-elevenlabs">ElevenLabs Creator &amp; Scale</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Hồ sơ &amp; Minh bạch</h4>
-          <ul>
-            <li><a href="../trang-minh-bach-stk-v5/index.html">01. Hồ sơ Pháp nhân &amp; Bảng giá Phần mềm</a></li>
-            <li><a href="index.html">02. Báo giá Doanh nghiệp &amp; Xuất Hóa đơn VAT</a></li>
-            <li><a href="#quy-trinh-chung-tu">Quy trình 6 bước &amp; Chứng từ thực tế</a></li>
-            <li><a href="https://stktech.ai/about-us">Về chúng tôi (Hành trình 2020–2026)</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Chính sách &amp; Pháp lý</h4>
           <ul>
-            <li><a href="index.html">Chính sách thanh toán &amp; Xuất hóa đơn VAT</a></li>
-            <li><a href="https://stktech.ai/chinh-sach-thanh-toan-giao-nhan">Chính sách thanh toán &amp; Giao nhận</a></li>
-            <li><a href="https://stktech.ai/chinh-sach-tra-hang-hoan-tien">Chính sách trả hàng &amp; Hoàn tiền</a></li>
+            <li><a href="../trang-vat-doanh-nghiep-stk/index.html">Chính sách thanh toán &amp; Xuất hóa đơn VAT</a></li>
+            <li><a href="https://stktech.ai/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
+            <li><a href="https://stktech.ai/chinh-sach-tra-hang-hoan-tien">Chính sách bảo hành &amp; hoàn tiền</a></li>
             <li><a href="https://stktech.ai/dieu-khoan-dich-vu">Điều khoản dịch vụ</a></li>
             <li><a href="https://stktech.ai/chinh-sach-bao-mat-du-lieu">Chính sách bảo mật dữ liệu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Thông tin liên hệ</h4>
+          <ul>
+            <li><strong>Trụ sở ĐKKD:</strong> 490/49/7 Hương Lộ 2, P. Bình Trị Đông, TP.HCM</li>
+            <li><strong>Văn phòng:</strong> 497/24/9G Phan Văn Trị, P. An Nhơn, TP.HCM</li>
+            <li><strong>Hotline:</strong> <a href="tel:0353797919">0353.7979.19</a> (08:00–23:00)</li>
+            <li><strong>Email:</strong> <a href="mailto:contacts@stktech.ai">contacts@stktech.ai</a></li>
+            <li><strong>TK Công ty:</strong> ACB – 7796368</li>
           </ul>
         </div>
       </div>
@@ -1445,7 +1506,7 @@
       const c = cards[current];
       lbImg.src = c.dataset.src;
       lbImg.alt = c.dataset.title || '';
-      lbTitle.textContent = (c.dataset.title || '') + (c.dataset.note ? ' — ' + c.dataset.note : '');
+      lbTitle.textContent = (c.dataset.title || '') + (c.dataset.note ? ': ' + c.dataset.note : '');
       zoom = 'fit';
       applyZoom();
       document.getElementById('lb-stage').scrollTo(0, 0);
