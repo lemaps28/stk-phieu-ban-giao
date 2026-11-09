@@ -158,38 +158,37 @@
 
   <style>
     /* ==========================================================================
-       DESIGN TOKENS — IMPECCABLE & AWWWARDS ENTERPRISE B2B ARCHITECTURE
+       DESIGN SYSTEM — WINESHOP + KINGTECHCARE + IMPECCABLE B2B ARCHITECTURE
        ========================================================================== */
     :root {
       --navy-950: #050C24;
       --navy-900: #091736;
       --navy-800: #0F2552;
-      --navy-700: #173775;
+      --navy-700: #163674;
       --blue-600: #2159F5;
       --blue-500: #3B82F6;
       --blue-100: #DBEAFE;
-      --blue-50: #F4F8FF;
+      --blue-50: #F2F7FF;
       --ok-700: #0B6E4F;
       --ok-600: #10B981;
       --ok-100: #DCFCE7;
-      --ok-50: #F0FDF4;
       --danger-700: #B91C1C;
       --danger-100: #FEE2E2;
       --ink-900: #0F172A;
       --ink-700: #334155;
       --ink-500: #64748B;
       --bg-canvas: #FFFFFF;
-      --bg-subtle: #F6F8FC;
+      --bg-subtle: #F5F8FC;
       --line: #E2E8F0;
       --line-blue: #C9DAFA;
-      --radius-2xl: 24px;
-      --radius-xl: 18px;
+      --radius-2xl: 26px;
+      --radius-xl: 20px;
       --radius-lg: 14px;
       --radius-md: 10px;
-      --shadow-xs: 0 2px 8px rgba(15, 23, 42, 0.04);
-      --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.06);
-      --shadow-md: 0 16px 36px rgba(9, 23, 54, 0.10);
-      --shadow-lg: 0 24px 54px rgba(5, 12, 36, 0.18);
+      --shadow-xs: 0 2px 10px rgba(15, 23, 42, 0.04);
+      --shadow-sm: 0 10px 28px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 18px 40px rgba(9, 23, 54, 0.10);
+      --shadow-lg: 0 26px 58px rgba(5, 12, 36, 0.18);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -198,7 +197,7 @@
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       color: var(--ink-900);
       background: var(--bg-canvas);
-      line-height: 1.62;
+      line-height: 1.6;
       font-size: 15px;
       font-variant-numeric: tabular-nums;
       -webkit-font-smoothing: antialiased;
@@ -211,36 +210,39 @@
     img { max-width: 100%; height: auto; display: block; }
 
     .wrap { max-width: 1220px; margin: 0 auto; padding: 0 24px; }
-    .sec { padding: 76px 0; position: relative; }
+    .sec { padding: 72px 0; position: relative; }
     .sec.alt { background: var(--bg-subtle); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 
-    /* Editorial Section Header (Wineshop / Kingtechcare / Impeccable B2B Pattern) */
+    /* Section Header */
     .sec-head {
       max-width: 960px;
-      margin: 0 auto 40px;
+      margin: 0 auto 42px;
       text-align: center;
     }
     .sec-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
       font-family: 'Be Vietnam Pro', sans-serif;
       font-size: 11.5px; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 0.08em; color: var(--blue-600);
-      background: var(--blue-50); border: 1px solid var(--line-blue);
-      padding: 5px 13px; border-radius: 999px;
-      margin-bottom: 12px;
+      letter-spacing: 0.09em; color: var(--blue-600);
+      margin-bottom: 10px;
+    }
+    .sec-eyebrow::before,
+    .sec-eyebrow::after {
+      content: ""; width: 22px; height: 1.5px; background: var(--blue-500); opacity: 0.55;
     }
     .sec-head h2 {
-      font-size: 28px;
-      line-height: 1.3;
+      font-size: 30px;
+      line-height: 1.28;
       color: var(--navy-900);
       margin-bottom: 10px;
       font-weight: 800;
       text-wrap: balance;
     }
+    .sec-head h2 span { color: var(--blue-600); }
     .sec-head p {
       color: var(--ink-500);
       font-size: 15.5px;
-      line-height: 1.66;
+      line-height: 1.65;
       max-width: 760px;
       margin: 0 auto;
     }
@@ -344,20 +346,20 @@
     .live-quote-btn:hover svg { transform: translate(2px, -2px); }
 
     /* ==========================================================================
-       HERO SECTION + COMPACT CORPORATE VERIFICATION STRIP (B2B EXECUTIVE LAYOUT)
+       HERO SECTION + BIG STATS BAR (Học từ Wineshop & Kingtechcare)
        ========================================================================== */
     .hero {
       background:
-        radial-gradient(circle at 82% 22%, rgba(33, 89, 245, 0.22) 0%, rgba(33, 89, 245, 0) 48%),
+        radial-gradient(circle at 82% 24%, rgba(33, 89, 245, 0.24) 0%, rgba(33, 89, 245, 0) 46%),
         linear-gradient(115deg, #050C24 0%, #0A1D48 58%, #0E2760 100%);
       color: #fff;
-      padding: 56px 0 0;
+      padding: 54px 0 58px;
       margin-top: 14px;
       position: relative;
       overflow: hidden;
     }
     .hero-grid {
-      max-width: 1220px; margin: 0 auto; padding: 0 24px 48px;
+      max-width: 1220px; margin: 0 auto; padding: 0 24px;
       display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
       gap: 44px; align-items: center;
     }
@@ -455,180 +457,475 @@
     }
     .stack-badge-card .qr-mini img { width: 100%; height: 100%; object-fit: contain; }
 
-    /* Compact Verified Corporate Identity Bar (Thay thế cho cả Section H2 Pháp nhân cồng kềnh) */
-    .corp-verify-bar {
-      background: rgba(5, 12, 36, 0.82);
-      border-top: 1px solid rgba(148, 163, 184, 0.18);
-      backdrop-filter: blur(8px);
+    /* ==========================================================================
+       DẢI 4 CON SỐ UY TÍN LỚN (Học từ Wineshop & Kingtechcare Big Stats Strip)
+       ========================================================================== */
+    .stats-strip-wrap {
+      margin-top: -28px;
+      position: relative;
+      z-index: 10;
     }
-    .corp-verify-inner {
-      max-width: 1220px; margin: 0 auto; padding: 16px 24px;
+    .stats-strip {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow-md);
+      padding: 26px 32px;
       display: grid;
-      grid-template-columns: 1.15fr 1.05fr 1.08fr 1.12fr auto;
-      gap: 14px; align-items: center;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
     }
-    .corp-item {
-      border-right: 1px solid rgba(148, 163, 184, 0.18);
-      padding-right: 14px;
-      min-width: 0;
+    .stat-box {
+      text-align: center;
+      border-right: 1px solid var(--line);
+      padding-right: 20px;
     }
-    .corp-item:nth-child(4) { border-right: 0; padding-right: 0; }
-    .corp-item .lbl {
-      display: block; font-size: 10.5px; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 0.05em;
-      color: #6EE7B7; margin-bottom: 3px;
+    .stat-box:last-child { border-right: 0; padding-right: 0; }
+    .stat-num {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--blue-600);
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
     }
-    .corp-item .val {
-      font-size: 13px; font-weight: 700; color: #FFFFFF; line-height: 1.38;
-      white-space: nowrap;
+    .stat-label {
+      font-size: 13.5px;
+      color: var(--ink-500);
+      line-height: 1.45;
     }
-    .corp-item .sub {
-      display: block; font-size: 11.5px; color: #94A3B8; font-weight: 400; margin-top: 2px;
-      white-space: nowrap;
-    }
-    .corp-qr-trigger {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(147, 197, 253, 0.35);
-      color: #FFFFFF;
-      border-radius: 10px;
-      padding: 9px 13px;
-      font-size: 12px; font-weight: 700;
-      cursor: zoom-in;
-      display: inline-flex; align-items: center; gap: 6px;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-    .corp-qr-trigger:hover {
-      background: #2159F5; border-color: #2159F5;
+    .stat-label strong {
+      display: block;
+      color: var(--navy-900);
+      font-weight: 700;
+      margin-top: 2px;
     }
 
     /* ==========================================================================
-       PHẦN 01: DOANH NGHIỆP CẦN GÌ & ĐỐI CHIẾU TRỰC DIỆN (#nhu-cau-doanh-nghiep)
+       MỤC 01: DOANH NGHIỆP CẦN GÌ + BẢNG SO SÁNH ĐỐI XỨNG CÓ "Vs" Ở GIỮA (Chuẩn Kingtechcare)
        ========================================================================== */
-    .stk-b2b-intro-card {
-      background: #FFFFFF;
-      border: 1px solid var(--line);
+    /* Khối 1A: Feature Banner 4 trụ cột trên nền Gradient Navy sang trọng (như Kingtechcare) */
+    .king-feature-banner {
+      background:
+        radial-gradient(circle at 90% 15%, rgba(59, 130, 246, 0.28) 0%, rgba(59, 130, 246, 0) 50%),
+        linear-gradient(125deg, #071433 0%, #0E2963 60%, #153B8A 100%);
       border-radius: var(--radius-2xl);
-      padding: 36px 38px;
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 28px;
-    }
-    .stk-b2b-intro-grid {
-      display: grid; grid-template-columns: 1fr 1.05fr;
-      gap: 38px; align-items: center;
-      padding-bottom: 26px;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 24px;
-    }
-    .stk-b2b-intro-grid h3 {
-      font-size: 25px; line-height: 1.32; font-weight: 800;
-      color: var(--navy-900);
-    }
-    .stk-b2b-intro-grid h3 span { color: var(--blue-600); }
-    .stk-b2b-intro-grid p {
-      font-size: 15px; line-height: 1.68; color: var(--ink-700);
-    }
-    .stk-b2b-pillars {
-      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .stk-pillar-item {
-      background: var(--bg-subtle);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 16px 16px;
-      display: flex; align-items: flex-start; gap: 11px;
-      transition: border-color 0.2s ease;
-    }
-    .stk-pillar-item:hover { border-color: var(--line-blue); }
-    .stk-pillar-item i {
-      width: 22px; height: 22px; border-radius: 50%;
-      background: var(--ok-100); color: var(--ok-700);
-      font-style: normal; font-size: 12px; font-weight: 800;
-      display: inline-flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 1px;
-    }
-    .stk-pillar-item div strong {
-      display: block; font-size: 14px; font-weight: 700; color: var(--navy-900); line-height: 1.38; margin-bottom: 4px;
-    }
-    .stk-pillar-item div span {
-      display: block; font-size: 12.8px; color: var(--ink-500); line-height: 1.5;
-    }
-
-    /* Bảng Đối Chiếu Trực Diện 2 Cột — RÚT GỌN CHỈ GIỮ TIÊU ĐỀ (Theo Ảnh 1 anh gửi) */
-    .stk-compare-wrap {
-      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px; align-items: stretch;
-    }
-    .stk-compare-card {
-      border-radius: var(--radius-2xl);
-      padding: 30px 32px;
-      display: flex; flex-direction: column; justify-content: space-between;
-    }
-    .stk-compare-card.personal {
-      background: #F8FAFC;
-      border: 1px solid #CBD5E1;
-      color: var(--ink-900);
-    }
-    .stk-compare-card.enterprise {
-      background: linear-gradient(145deg, #060E29 0%, #0D2359 100%);
-      border: 1.5px solid #2D5BFF;
+      padding: 40px 40px 36px;
       color: #FFFFFF;
       box-shadow: var(--shadow-lg);
+      margin-bottom: 38px;
+      position: relative;
+      overflow: hidden;
     }
-    .stk-compare-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      font-size: 11.5px; font-weight: 700;
-      padding: 5px 12px; border-radius: 999px;
-      margin-bottom: 12px; width: fit-content;
-      letter-spacing: 0.03em;
+    .king-banner-top {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 28px;
     }
-    .stk-compare-card.personal .stk-compare-badge {
-      background: var(--danger-100); color: var(--danger-700);
-    }
-    .stk-compare-card.enterprise .stk-compare-badge {
-      background: rgba(89, 209, 168, 0.18); color: #59D1A8;
-      border: 1px solid rgba(89, 209, 168, 0.35);
-    }
-    .stk-compare-card h3 {
-      font-size: 21px; font-weight: 800; line-height: 1.32; margin-bottom: 18px;
-    }
-    .stk-compare-card.personal h3 { color: var(--ink-900); }
-    .stk-compare-card.enterprise h3 { color: #FFFFFF; }
-    .stk-compare-list {
-      list-style: none; display: grid; gap: 11px;
-    }
-    .stk-compare-list li {
-      display: flex; align-items: center; gap: 12px;
-      font-size: 15px; font-weight: 700; line-height: 1.42;
-      padding: 13px 16px;
-      border-radius: 12px;
-    }
-    .stk-compare-card.personal .stk-compare-list li {
-      background: #FFFFFF;
-      border: 1px solid #E2E8F0;
-      color: var(--ink-900);
-    }
-    .stk-compare-card.enterprise .stk-compare-list li {
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.14);
+    .king-banner-top h3 {
+      font-size: 26px;
+      line-height: 1.3;
+      font-weight: 800;
       color: #FFFFFF;
     }
-    .stk-compare-list .mark-no {
-      width: 22px; height: 22px; border-radius: 50%;
-      background: var(--danger-100); color: #DC2626;
-      display: inline-flex; align-items: center; justify-content: center;
-      font-size: 11.5px; font-weight: 800; flex-shrink: 0;
+    .king-banner-top h3 span {
+      color: #7FB0FF;
     }
-    .stk-compare-list .mark-yes {
-      width: 22px; height: 22px; border-radius: 50%;
-      background: rgba(89, 209, 168, 0.22); color: #59D1A8;
+    .king-banner-top p {
+      font-size: 14.8px;
+      line-height: 1.66;
+      color: #DBEAFE;
+    }
+    .king-banner-top p strong { color: #FFFFFF; }
+    .king-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .king-pillar-glass {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .king-pillar-glass:hover {
+      transform: translateY(-2px);
+      border-color: rgba(127, 176, 255, 0.55);
+    }
+    .king-pillar-icon {
+      width: 32px; height: 32px;
+      border-radius: 9px;
+      background: rgba(89, 209, 168, 0.2);
+      border: 1px solid rgba(89, 209, 168, 0.4);
+      color: #59D1A8;
+      font-weight: 800; font-size: 14px;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .king-pillar-glass strong {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.35;
+    }
+    .king-pillar-glass span {
+      font-size: 12.8px;
+      color: #CBD5E1;
+      line-height: 1.5;
+    }
+
+    /* Khối 1B: Bảng So Sánh Đối Xứng Có Nút "Vs" Ở Giữa (Chuẩn Kingtechcare + Chỉ giữ tiêu đề theo Ảnh 1) */
+    .vs-matrix-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .vs-matrix-shell {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--line);
+      background: #FFFFFF;
+    }
+    .vs-col {
+      padding: 34px 38px;
+    }
+    .vs-col.left-personal {
+      background: #F8FAFC;
+      color: var(--ink-900);
+    }
+    .vs-col.right-stk {
+      background: linear-gradient(155deg, #071433 0%, #0F2963 100%);
+      color: #FFFFFF;
+    }
+    .vs-col-head {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    }
+    .vs-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11.5px; font-weight: 700;
+      padding: 5px 14px; border-radius: 999px;
+      margin-bottom: 10px;
+      letter-spacing: 0.03em;
+    }
+    .vs-col.left-personal .vs-badge {
+      background: var(--danger-100); color: var(--danger-700);
+    }
+    .vs-col.right-stk .vs-badge {
+      background: rgba(89, 209, 168, 0.2); color: #59D1A8;
+      border: 1px solid rgba(89, 209, 168, 0.38);
+    }
+    .vs-col-head h3 {
+      font-size: 21px; font-weight: 800; line-height: 1.3;
+    }
+    .vs-col.left-personal .vs-col-head h3 { color: var(--ink-900); }
+    .vs-col.right-stk .vs-col-head h3 { color: #FFFFFF; }
+
+    /* Các hàng đối xứng nhau có nút "Vs" ở chính giữa */
+    .vs-rows-wrap {
+      position: relative;
+    }
+    .vs-row-pair {
+      display: grid;
+      grid-template-columns: 1fr 56px 1fr;
+      align-items: center;
+      background: linear-gradient(90deg, #F8FAFC 0%, #F8FAFC 50%, #0B1E4B 50%, #0E275E 100%);
+      border-top: 1px solid rgba(148, 163, 184, 0.18);
+    }
+    .vs-row-pair:first-child { border-top: 0; }
+    .vs-cell-left {
+      padding: 18px 26px 18px 34px;
+      display: flex; align-items: center; gap: 12px;
+      font-size: 15px; font-weight: 700; color: var(--ink-900);
+    }
+    .vs-cell-right {
+      padding: 18px 34px 18px 26px;
+      display: flex; align-items: center; gap: 12px;
+      font-size: 15px; font-weight: 700; color: #FFFFFF;
+    }
+    .vs-center-pill {
+      width: 38px; height: 38px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: #2159F5;
+      color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 12px; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 0 4px #FFFFFF, 0 4px 12px rgba(33, 89, 245, 0.35);
+      position: relative;
+      z-index: 3;
+    }
+    .mark-no {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--danger-100); color: #DC2626;
       display: inline-flex; align-items: center; justify-content: center;
       font-size: 12px; font-weight: 800; flex-shrink: 0;
     }
+    .mark-yes {
+      width: 24px; height: 24px; border-radius: 50%;
+      background: rgba(89, 209, 168, 0.22); color: #59D1A8;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 12.5px; font-weight: 800; flex-shrink: 0;
+    }
+
+    /* Header của bảng Vs */
+    .vs-Unified-Box {
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid #CBD5E1;
+    }
+    .vs-Header-Row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: linear-gradient(90deg, #F1F5F9 0%, #F1F5F9 50%, #071433 50%, #0C2151 100%);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    }
+    .vs-Header-Cell {
+      padding: 24px 34px 20px;
+    }
+    .vs-Header-Cell.left { color: var(--ink-900); }
+    .vs-Header-Cell.right { color: #FFFFFF; }
+    .vs-Header-Cell h3 { font-size: 21px; font-weight: 800; line-height: 1.3; }
 
     /* ==========================================================================
-       PHẦN 02: HỖ TRỢ CHUYÊN BIỆT CHO KẾ TOÁN, THU MUA & QUẢN TRỊ IT (#nghiep-vu-b2b)
+       MỤC 02: KHỐI SPLIT 2 CỘT — ẢNH VĂN PHÒNG THẬT + ĐÁNH SỐ 01-02-03 (Chuẩn Wineshop)
+       ========================================================================== */
+    .ws-experience-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-2xl);
+      padding: 42px;
+      box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: 0.96fr 1.04fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .ws-photo-col {
+      position: relative;
+    }
+    .ws-photo-frame {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-md);
+      cursor: zoom-in;
+      background: #091736;
+      padding: 0;
+    }
+    .ws-photo-frame img {
+      width: 100%;
+      height: 470px;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+    .ws-photo-frame:hover img {
+      transform: scale(1.02);
+    }
+    /* Thẻ Pháp Nhân & QR Nổi Trên Góc Ảnh (Giống thẻ "10+ Năm kinh nghiệm" của Wineshop) */
+    .ws-floating-badge {
+      position: absolute;
+      bottom: -18px;
+      left: 24px;
+      right: 24px;
+      background: #FFFFFF;
+      border: 1.5px solid var(--line-blue);
+      border-radius: 16px;
+      padding: 14px 18px;
+      box-shadow: 0 16px 36px rgba(9, 23, 54, 0.16);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .ws-badge-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .ws-badge-num {
+      background: var(--blue-50);
+      border: 1px solid var(--line-blue);
+      color: var(--blue-600);
+      border-radius: 12px;
+      padding: 8px 12px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .ws-badge-num strong {
+      display: block;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .ws-badge-num span {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .ws-badge-info h4 {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--navy-900);
+      margin-bottom: 2px;
+    }
+    .ws-badge-info p {
+      font-size: 12px;
+      color: var(--ink-500);
+      line-height: 1.4;
+    }
+    .ws-badge-qr {
+      width: 52px;
+      height: 52px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 3px;
+      background: #fff;
+      cursor: zoom-in;
+      flex-shrink: 0;
+    }
+    .ws-badge-qr img { width: 100%; height: 100%; object-fit: contain; }
+
+    /* Cột Phải: Eyebrow + H2 + 3 thẻ 01-02-03 + 3 Pill + CTA Bar (Chuẩn Wineshop) */
+    .ws-content-col .ws-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue-600);
+      margin-bottom: 8px;
+    }
+    .ws-content-col .ws-kicker::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      background: var(--blue-600);
+    }
+    .ws-content-col h2 {
+      font-size: 27px;
+      line-height: 1.28;
+      font-weight: 800;
+      color: var(--navy-900);
+      margin-bottom: 10px;
+    }
+    .ws-content-col > p {
+      font-size: 14.5px;
+      color: var(--ink-700);
+      line-height: 1.62;
+      margin-bottom: 18px;
+    }
+    .ws-numbered-list {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .ws-num-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+    .ws-num-card:hover {
+      background: #FFFFFF;
+      border-color: var(--blue-500);
+    }
+    .ws-num-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 1.5px solid var(--line-blue);
+      color: var(--blue-600);
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 12.5px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .ws-num-card h3 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--navy-900);
+      margin-bottom: 3px;
+      line-height: 1.35;
+    }
+    .ws-num-card p {
+      font-size: 13.2px;
+      color: var(--ink-500);
+      line-height: 1.52;
+    }
+    .ws-trust-pills {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+    .ws-trust-pills span {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-700);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+    .ws-trust-pills span i {
+      color: var(--ok-700);
+      font-style: normal;
+      font-weight: 800;
+    }
+    .ws-bottom-bar {
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .ws-bottom-bar strong {
+      display: block;
+      font-size: 14px;
+      color: var(--navy-900);
+    }
+    .ws-bottom-bar span {
+      font-size: 12.5px;
+      color: var(--ink-500);
+    }
+
+    /* ==========================================================================
+       MỤC 03: HỖ TRỢ CHUYÊN BIỆT CHO KẾ TOÁN, THU MUA & QUẢN TRỊ IT (#nghiep-vu-b2b)
        ========================================================================== */
     .discount-grid {
       display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -675,150 +972,108 @@
     .discount-points li i {
       color: var(--ok-700); font-style: normal; font-weight: 800; flex-shrink: 0;
     }
-    .discount-banner-bar {
-      background: linear-gradient(135deg, #060E29 0%, #0E255C 100%);
-      color: #FFFFFF;
-      border-radius: var(--radius-xl);
-      padding: 26px 32px;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 24px; flex-wrap: wrap;
-      box-shadow: var(--shadow-md);
-    }
-    .discount-banner-text { flex: 1; min-width: 280px; }
-    .discount-banner-text h4 {
-      font-size: 17.5px; font-weight: 800; color: #FFFFFF; margin-bottom: 5px; line-height: 1.38;
-    }
-    .discount-banner-text p {
-      font-size: 14px; color: #CBD5E1; line-height: 1.6;
-    }
-    .discount-banner-actions {
-      display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-    }
 
     /* ==========================================================================
-       PHẦN 03 (GỘP CHUNG): QUY TRÌNH 6 BƯỚC TRIỂN KHAI & BỘ CHỨNG TỪ GIAO DỊCH THỰC TẾ (#quy-trinh-chung-tu)
+       MỤC 04 (GỘP CHUNG): QUY TRÌNH 1 HÀNG NGANG SỐ LỚN (01->06) + LƯỚI 6 CHỨNG TỪ THẬT
+       (Học từ Quy Trình Làm Việc của Kingtechcare & Hình Ảnh Đơn Hàng Thực Tế của Wineshop)
        ========================================================================== */
-    .workflow-stage-label {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 16px; flex-wrap: wrap;
-      margin-bottom: 18px;
+    .process-row-6 {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 44px;
     }
-    .workflow-stage-label h3 {
-      font-size: 20px; font-weight: 800; color: var(--navy-900);
-      display: flex; align-items: center; gap: 10px;
-    }
-    .workflow-stage-label h3 span {
-      background: var(--navy-900); color: #fff;
-      font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;
-      letter-spacing: 0.04em; text-transform: uppercase;
-    }
-    .workflow-stage-label p {
-      font-size: 13.8px; color: var(--ink-500);
-    }
-
-    .after-purchase {
-      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px; margin-bottom: 42px;
-    }
-    .after-step {
-      background: #fff; border: 1px solid var(--line); border-radius: 18px;
-      padding: 16px; display: flex; flex-direction: column; justify-content: space-between;
-      box-shadow: var(--shadow-xs);
-      transition: all 0.2s ease;
-    }
-    .after-step:hover {
-      border-color: var(--blue-500);
-      box-shadow: var(--shadow-sm);
-      transform: translateY(-2px);
-    }
-    .process-shot {
-      display: block; width: 100%; aspect-ratio: 16/9; padding: 0; border: 1px solid var(--line);
-      border-radius: 12px; overflow: hidden; background: #EEF4FF; cursor: zoom-in; transition: 0.2s;
-    }
-    .process-shot img { width: 100%; height: 100%; object-fit: contain; }
-    .step-head { display: flex; align-items: center; gap: 10px; margin-top: 14px; margin-bottom: 7px; }
-    .step-num {
-      background: #2159F5; color: #fff; font-weight: 700; font-size: 13px;
-      width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-    }
-    .process-title { font-size: 16.5px; font-weight: 800; color: var(--navy-900); line-height: 1.35; }
-    .process-desc { font-size: 13.5px; color: var(--ink-500); line-height: 1.58; margin-bottom: 12px; }
-    .step-deliverable {
-      margin-top: auto;
-      padding-top: 10px;
-      border-top: 1px dashed var(--line);
-      font-size: 12px; font-weight: 700; color: var(--ok-700);
-      display: flex; align-items: center; gap: 6px;
-    }
-
-    /* Khối Bộ Chứng Từ Thực Tế tích hợp ngay trong Quy Trình */
-    .unified-dossier-wrap {
-      background: var(--bg-subtle);
+    .proc-col-card {
+      background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
       border: 1px solid var(--line-blue);
+      border-radius: 18px;
+      padding: 22px 16px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: all 0.22s ease;
+    }
+    .proc-col-card:hover {
+      border-color: var(--blue-600);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+    .proc-big-num {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(180deg, rgba(33, 89, 245, 0.28) 0%, rgba(33, 89, 245, 0.06) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+    .proc-col-card h3 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--blue-600);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .proc-col-card p {
+      font-size: 12.8px;
+      color: var(--ink-700);
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+    .proc-out-tag {
+      padding-top: 10px;
+      border-top: 1px dashed var(--line-blue);
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ok-700);
+      white-space: nowrap;
+    }
+
+    /* Khối Hình ảnh Hóa đơn & Chứng từ thực tế (Đặt ngay dưới hàng quy trình 01->06 như Wineshop) */
+    .real-docs-showcase {
+      background: var(--bg-subtle);
+      border: 1px solid var(--line);
       border-radius: var(--radius-2xl);
-      padding: 34px 32px;
+      padding: 36px 34px;
       margin-bottom: 26px;
     }
-    .stk-panel-head {
-      display: flex; align-items: flex-end; justify-content: space-between;
-      gap: 18px; flex-wrap: wrap;
-      margin-bottom: 22px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid var(--line);
+    .real-docs-header {
+      text-align: center;
+      max-width: 980px;
+      margin: 0 auto 26px;
     }
-    .stk-panel-head h3 {
-      font-size: 20px; font-weight: 800; color: var(--navy-900);
-      line-height: 1.35; margin-bottom: 6px;
-      display: flex; align-items: center; gap: 10px;
+    .real-docs-header h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy-900);
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin-bottom: 6px;
     }
-    .stk-panel-head h3 span {
-      background: var(--blue-600); color: #fff;
-      font-size: 11.5px; font-weight: 700; padding: 4px 10px; border-radius: 6px;
-      letter-spacing: 0.04em; text-transform: uppercase;
+    .real-docs-header p {
+      font-size: 14.5px;
+      color: var(--ink-500);
+      margin-bottom: 14px;
     }
-    .stk-panel-head p {
-      font-size: 14px; color: var(--ink-700); line-height: 1.55;
+    .doc4-pill-strip {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
     }
-    .stk-dossier-kpis {
-      display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap;
-      background: #FFFFFF; border: 1px solid var(--line-blue);
-      padding: 9px 16px; border-radius: 999px;
-      font-size: 13px; color: var(--ink-700); font-weight: 600;
-    }
-    .stk-dossier-kpis b { color: var(--blue-600); font-weight: 800; }
-
-    /* Thanh 4 loại chứng từ kế toán gọn gàng */
-    .stk-doc4-list {
-      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      margin-bottom: 24px;
-    }
-    .stk-doc4-card {
+    .doc4-pill-strip span {
       background: #FFFFFF;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px 16px;
-      display: flex; flex-direction: column; gap: 4px;
+      border: 1px solid var(--line-blue);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--navy-900);
     }
-    .stk-doc4-top {
-      display: flex; align-items: center; justify-content: space-between; gap: 8px;
-    }
-    .stk-doc4-num {
-      color: var(--blue-600);
-      font-size: 11px; font-weight: 800;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-    }
-    .stk-doc4-status {
-      font-size: 11.5px; font-weight: 700; color: var(--ok-700);
-      white-space: nowrap;
-    }
-    .stk-doc4-card strong {
-      font-size: 14.5px; font-weight: 800; color: var(--navy-900);
-    }
-    .stk-doc4-card > span {
-      font-size: 12.5px; color: var(--ink-500); line-height: 1.45;
-    }
+    .doc4-pill-strip span b { color: var(--blue-600); }
 
     /* Lưới 6 ảnh chứng từ thực tế */
     .doc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
@@ -852,23 +1107,25 @@
     .doc-name { font-weight: 800; font-size: 15px; color: var(--navy-900); margin-top: 12px; line-height: 1.4; }
     .doc-meta { font-size: 13px; color: var(--ink-500); margin-top: 4px; line-height: 1.55; }
 
-    /* Thanh Checklist chuẩn bị thông tin nhận báo giá nhanh (Wineshop / Kingtechcare B2B pattern) */
+    /* Thanh Checklist chuẩn bị thông tin nhận báo giá nhanh */
     .b2b-quote-prep {
-      background: #FFFFFF; border: 1px solid var(--line); border-radius: 18px;
-      padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
-      box-shadow: var(--shadow-xs);
+      background: linear-gradient(135deg, #060E29 0%, #0E255C 100%);
+      color: #FFFFFF;
+      border-radius: 18px;
+      padding: 24px 30px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+      box-shadow: var(--shadow-md);
     }
     .b2b-prep-left { flex: 1; min-width: 280px; }
-    .b2b-prep-left h4 { font-size: 15.5px; font-weight: 800; color: var(--navy-900); margin-bottom: 12px; line-height: 1.4; }
+    .b2b-prep-left h4 { font-size: 16px; font-weight: 800; color: #FFFFFF; margin-bottom: 12px; line-height: 1.4; }
     .b2b-prep-chips { display: flex; flex-wrap: wrap; gap: 8px; }
     .b2b-prep-chips span {
-      background: var(--bg-subtle); border: 1px solid var(--line); color: var(--ink-900);
+      background: rgba(255, 255, 255, 0.09); border: 1px solid rgba(255, 255, 255, 0.18); color: #FFFFFF;
       font-size: 12.8px; font-weight: 600; padding: 6px 12px; border-radius: 8px; white-space: nowrap;
     }
-    .b2b-prep-chips span b { color: var(--blue-600); }
+    .b2b-prep-chips span b { color: #7FB0FF; }
 
     /* ==========================================================================
-       PHẦN 04: NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP (#nguyen-tac)
+       MỤC 05: NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP (#nguyen-tac)
        ========================================================================== */
     .prin-faq-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 24px; align-items: stretch; }
     .prin-card, .faq-col {
@@ -938,19 +1195,22 @@
     .hint { color: #93C5FD; font-size: 12.5px; padding: 0 18px 12px; text-align: center; }
 
     /* Responsive Breakpoints */
-    @media (max-width: 1060px) {
-      .hero-grid, .stk-b2b-intro-grid, .stk-compare-wrap, .discount-grid, .prin-faq-grid { grid-template-columns: 1fr; }
-      .corp-verify-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .corp-item { border-right: 0; padding-right: 0; }
-      .stk-b2b-pillars, .stk-doc4-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 1080px) {
+      .hero-grid, .king-banner-top, .ws-experience-card, .discount-grid, .prin-faq-grid { grid-template-columns: 1fr; }
+      .stats-strip, .king-pillars-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .process-row-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .vs-Header-Row, .vs-row-pair { grid-template-columns: 1fr; background: #fff; }
+      .vs-Header-Cell.right, .vs-cell-right { background: #0B1E4B; }
+      .vs-center-pill { display: none; }
       .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .live-menu { display: none; }
     }
     @media (max-width: 760px) {
       .sec { padding: 52px 0; }
-      .stk-b2b-intro-card, .stk-compare-card, .unified-dossier-wrap { padding: 24px 20px; }
-      .corp-verify-inner, .stk-b2b-pillars, .stk-doc4-list, .doc-grid, .after-purchase, .footer-grid { grid-template-columns: 1fr; }
-      .hero-visual { min-height: 320px; }
+      .stats-strip, .king-pillars-grid, .process-row-6, .doc-grid, .footer-grid { grid-template-columns: 1fr; }
+      .stat-box { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 16px; padding-right: 0; }
+      .stat-box:last-child { border-bottom: 0; padding-bottom: 0; }
+      .ws-floating-badge { position: static; margin-top: 12px; }
     }
   </style>
 </head>
@@ -993,7 +1253,7 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION + DẢI XÁC MINH PHÁP NHÂN THU GỌN (Thay thế cho cả Section H2 Pháp nhân rời rạc) -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-grid">
       <div>
@@ -1035,156 +1295,236 @@
         </div>
       </div>
     </div>
-
-    <!-- Dải Xác Minh Pháp Nhân & Ngân Hàng B2B Thu Gọn (Giúp Kế toán đối chiếu 3 giây mà không cần 1 Section H2 dài dòng) -->
-    <div class="corp-verify-bar" aria-label="Thông tin xác minh pháp nhân nhanh">
-      <div class="corp-verify-inner">
-        <div class="corp-item">
-          <span class="lbl">Pháp nhân cung cấp</span>
-          <div class="val">CÔNG TY TNHH CÔNG NGHỆ STK</div>
-          <span class="sub">MST / GPKD: 0319648130 (TP.HCM)</span>
-        </div>
-        <div class="corp-item">
-          <span class="lbl">Tài khoản thanh toán B2B</span>
-          <div class="val">Ngân hàng ACB · STK: 7796368</div>
-          <span class="sub">Chủ TK: CONG TY TNHH CONG NGHE STK</span>
-        </div>
-        <div class="corp-item">
-          <span class="lbl">Hóa đơn &amp; Pháp lý</span>
-          <div class="val">Hóa đơn GTGT (SePay eInvoice)</div>
-          <span class="sub">Báo giá VNĐ · Hợp đồng đóng dấu</span>
-        </div>
-        <div class="corp-item">
-          <span class="lbl">Văn phòng &amp; Liên hệ (08:00–23:00)</span>
-          <div class="val">0353.7979.19 · contacts@stktech.ai</div>
-          <span class="sub">VPĐD: 497/24/9G Phan Văn Trị, TP.HCM</span>
-        </div>
-        <div>
-          <button type="button" class="corp-qr-trigger lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="Mã QR tra cứu thông tin doanh nghiệp — MST 0319648130" data-note="Quét mã QR để đối chiếu trực tiếp thông tin pháp nhân Công ty TNHH Công Nghệ STK.">
-            <span>Xem QR ĐKKD ↗</span>
-          </button>
-        </div>
-      </div>
-    </div>
   </section>
 
+  <!-- DẢI 4 CON SỐ UY TÍN LỚN (Chuẩn cấu trúc Wineshop & Kingtechcare) -->
+  <div class="wrap stats-strip-wrap">
+    <div class="stats-strip" aria-label="Năng lực phục vụ khách hàng doanh nghiệp">
+      <div class="stat-box">
+        <div class="stat-num">7+ Năm</div>
+        <div class="stat-label">Kinh nghiệm triển khai<strong>tài khoản AI &amp; phần mềm</strong></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1.000+</div>
+        <div class="stat-label">Khách hàng doanh nghiệp<strong>đã tin chọn đồng hành</strong></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Đơn hàng phát hành<strong>Hóa đơn GTGT (SePay eInvoice)</strong></div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">08:00–23:00</div>
+        <div class="stat-label">Tiếp nhận hỗ trợ kỹ thuật<strong>&amp; gửi báo giá trong ngày</strong></div>
+      </div>
+    </div>
+  </div>
+
   <!-- ========================================================================
-       MỤC 01: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
+       MỤC 01: DOANH NGHIỆP CẦN GÌ & BẢNG ĐỐI CHIẾU "Vs" (Chuẩn Layout Kingtechcare)
        ======================================================================== -->
   <section class="sec" id="nhu-cau-doanh-nghiep">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">01 · Tiêu chuẩn mua sắm B2B</span>
-        <h2>Doanh nghiệp cần gì khi mua tài khoản AI &amp; phần mềm?</h2>
+        <span class="sec-eyebrow">Tiêu chuẩn mua sắm B2B</span>
+        <h2>Doanh nghiệp cần gì khi mua <span>tài khoản AI &amp; phần mềm?</span></h2>
         <p>Phần lớn nhu cầu của doanh nghiệp không chỉ là có tài khoản để đăng nhập. Bộ phận Thu mua, Kế toán và IT cần pháp nhân cung cấp rõ ràng, user bàn giao được, chứng từ đầy đủ để hạch toán và lịch gia hạn không bị thất lạc.</p>
       </div>
 
-      <!-- Khối 1A: Giữ nguyên toàn bộ content 4 trọng tâm bàn giao -->
-      <div class="stk-b2b-intro-card">
-        <div class="stk-b2b-intro-grid">
+      <!-- Khối 1A: Feature Banner 4 trụ cột trên nền Navy sang trọng (như Kingtechcare) -->
+      <div class="king-feature-banner">
+        <div class="king-banner-top">
           <h3>Cùng một phần mềm — khác nhau ở <span>bộ chứng từ hạch toán</span></h3>
           <p>
             Doanh nghiệp vẫn trả tiền thật khi nhân sự tự mua lẻ ChatGPT, Google AI/Gemini, CapCut, Adobe hay Microsoft 365 bằng thẻ cá nhân, nhưng khoản chi đó rất khó đưa vào chi phí hợp lệ. Làm việc qua đầu mối pháp nhân tại <strong>STK Tech</strong> giúp phòng Thu mua và Kế toán xử lý khoản mua tài khoản AI như một giao dịch doanh nghiệp tiêu chuẩn:
           </p>
         </div>
 
-        <div class="stk-b2b-pillars">
-          <div class="stk-pillar-item">
-            <i>✓</i>
-            <div>
-              <strong>Báo giá VNĐ để trình duyệt</strong>
-              <span>Thể hiện rõ tên gói, số lượng user, thời hạn và tổng chi phí VNĐ đã bao gồm thuế GTGT.</span>
-            </div>
+        <div class="king-pillars-grid">
+          <div class="king-pillar-glass">
+            <span class="king-pillar-icon">01</span>
+            <strong>Báo giá VNĐ để trình duyệt</strong>
+            <span>Thể hiện rõ tên gói, số lượng user, thời hạn và tổng chi phí VNĐ đã bao gồm thuế GTGT.</span>
           </div>
-          <div class="stk-pillar-item">
-            <i>✓</i>
-            <div>
-              <strong>Hợp đồng, nghiệm thu &amp; hóa đơn điện tử</strong>
-              <span>Ký đóng dấu pháp nhân Công ty TNHH Công Nghệ STK (MST 0319648130) và xuất hóa đơn GTGT.</span>
-            </div>
+          <div class="king-pillar-glass">
+            <span class="king-pillar-icon">02</span>
+            <strong>Hợp đồng, nghiệm thu &amp; hóa đơn điện tử</strong>
+            <span>Ký đóng dấu pháp nhân Công ty TNHH Công Nghệ STK (MST 0319648130) và xuất hóa đơn GTGT.</span>
           </div>
-          <div class="stk-pillar-item">
-            <i>✓</i>
-            <div>
-              <strong>Kích hoạt theo email/user cụ thể</strong>
-              <span>Không bán tài khoản dùng chung hoặc không rõ nguồn; đảm bảo an toàn dữ liệu nội bộ.</span>
-            </div>
+          <div class="king-pillar-glass">
+            <span class="king-pillar-icon">03</span>
+            <strong>Kích hoạt theo email/user cụ thể</strong>
+            <span>Không bán tài khoản dùng chung hoặc không rõ nguồn; đảm bảo an toàn dữ liệu nội bộ.</span>
           </div>
-          <div class="stk-pillar-item">
-            <i>✓</i>
-            <div>
-              <strong>Có đầu mối hỗ trợ thêm, bớt hoặc đổi user</strong>
-              <span>Hỗ trợ điều chỉnh khi nhân sự thay đổi và chủ động nhắc lịch gia hạn tập trung.</span>
-            </div>
+          <div class="king-pillar-glass">
+            <span class="king-pillar-icon">04</span>
+            <strong>Có đầu mối hỗ trợ thêm, bớt hoặc đổi user</strong>
+            <span>Hỗ trợ điều chỉnh khi nhân sự thay đổi và chủ động nhắc lịch gia hạn tập trung.</span>
           </div>
         </div>
       </div>
 
-      <!-- Khối 1B: Bảng Đối Chiếu 2 Cột — RÚT GỌN CHỈ GIỮ CÁC TIÊU ĐỀ NGẮN GỌN (Theo đúng feedback Ảnh 1) -->
-      <div class="stk-compare-wrap">
-        <!-- Cột trái: Tự mua lẻ bằng thẻ cá nhân -->
-        <article class="stk-compare-card personal">
-          <div>
-            <span class="stk-compare-badge">✕ VƯỚNG MẮC KHI MUA TỰ TÚC</span>
-            <h3>Tự mua bằng thẻ cá nhân</h3>
-            <ul class="stk-compare-list">
-              <li>
+      <!-- Khối 1B: Bảng Đối Chiếu Đối Xứng Có Nút "Vs" Ở Giữa (Chuẩn Kingtechcare — Chỉ giữ tiêu đề in đậm theo Ảnh 1) -->
+      <div class="vs-matrix-container">
+        <div class="vs-Unified-Box">
+          <div class="vs-Header-Row">
+            <div class="vs-Header-Cell left">
+              <span class="vs-badge" style="background:#FEE2E2;color:#B91C1C">✕ VƯỚNG MẮC KHI MUA TỰ TÚC</span>
+              <h3>Tự mua bằng thẻ cá nhân</h3>
+            </div>
+            <div class="vs-Header-Cell right">
+              <span class="vs-badge" style="background:rgba(89,209,168,0.2);color:#59D1A8;border:1px solid rgba(89,209,168,0.38)">✓ CHUẨN HỒ SƠ DOANH NGHIỆP</span>
+              <h3>Mua qua pháp nhân STK Tech</h3>
+            </div>
+          </div>
+
+          <div class="vs-rows-wrap">
+            <!-- Cặp đối xứng 1 -->
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
                 <span class="mark-no">✕</span>
                 <span>Không có hóa đơn GTGT — không hạch toán được</span>
-              </li>
-              <li>
-                <span class="mark-no">✕</span>
-                <span>Cần thẻ quốc tế, tự xử lý khi lỗi thanh toán</span>
-              </li>
-              <li>
-                <span class="mark-no">✕</span>
-                <span>Không hợp đồng, không ai chịu trách nhiệm</span>
-              </li>
-              <li>
-                <span class="mark-no">✕</span>
-                <span>Tự mò cách dùng, tự canh ngày gia hạn</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Cột phải: Mua qua pháp nhân STK Tech -->
-        <article class="stk-compare-card enterprise">
-          <div>
-            <span class="stk-compare-badge">✓ CHUẨN HỒ SƠ DOANH NGHIỆP</span>
-            <h3>Mua qua pháp nhân STK Tech</h3>
-            <ul class="stk-compare-list">
-              <li>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
                 <span class="mark-yes">✓</span>
                 <span>Hóa đơn GTGT điện tử hợp lệ cho mọi đơn</span>
-              </li>
-              <li>
+              </div>
+            </div>
+
+            <!-- Cặp đối xứng 2 -->
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Cần thẻ quốc tế, tự xử lý khi lỗi thanh toán</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
                 <span class="mark-yes">✓</span>
                 <span>Thanh toán chuyển khoản VNĐ, không cần thẻ quốc tế</span>
-              </li>
-              <li>
+              </div>
+            </div>
+
+            <!-- Cặp đối xứng 3 -->
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Không hợp đồng, không ai chịu trách nhiệm</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
                 <span class="mark-yes">✓</span>
                 <span>Báo giá – Hợp đồng dịch vụ – Nghiệm thu ký đóng dấu</span>
-              </li>
-              <li>
+              </div>
+            </div>
+
+            <!-- Cặp đối xứng 4 -->
+            <div class="vs-row-pair">
+              <div class="vs-cell-left">
+                <span class="mark-no">✕</span>
+                <span>Tự mò cách dùng, tự canh ngày gia hạn</span>
+              </div>
+              <div class="vs-center-pill">Vs</div>
+              <div class="vs-cell-right">
                 <span class="mark-yes">✓</span>
                 <span>Hướng dẫn sử dụng, nhắc gia hạn, hỗ trợ 08:00–23:00</span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 02: HỖ TRỢ CHUYÊN BIỆT CHO KẾ TOÁN, THU MUA & QUẢN TRỊ IT (#nghiep-vu-b2b)
+       MỤC 02: KHỐI SPLIT 2 CỘT — ẢNH VĂN PHÒNG ĐỘI NGŨ + 3 CAM KẾT VAI TRÒ CUNG ỨNG
+       (Chuẩn Layout "Vì sao doanh nghiệp chọn chúng tôi" của Wineshop — Đã bỏ bảng 10 ô chữ rườm rà)
        ======================================================================== -->
-  <section class="sec alt" id="nghiep-vu-b2b">
+  <section class="sec alt" id="xac-minh">
+    <div class="wrap">
+      <div class="ws-experience-card">
+        <!-- Cột Trái: Ảnh văn phòng thực tế + Thẻ Pháp Nhân Nổi -->
+        <div class="ws-photo-col">
+          <button type="button" class="ws-photo-frame lb-trigger" data-src="assets/images/intro-office.webp" data-title="Không gian làm việc &amp; Đội ngũ nhân sự thực tế tại STK Tech" data-note="Đội ngũ kỹ thuật viên, lập trình viên và tư vấn viên làm việc trực tiếp tại văn phòng STK Tech TP.HCM.">
+            <img src="assets/images/intro-office.webp" alt="Văn phòng làm việc và đội ngũ nhân sự thực tế tại STK Tech" loading="lazy">
+          </button>
+
+          <div class="ws-floating-badge">
+            <div class="ws-badge-left">
+              <div class="ws-badge-num">
+                <strong>7+ Năm</strong>
+                <span>Kinh nghiệm</span>
+              </div>
+              <div class="ws-badge-info">
+                <h4>CÔNG TY TNHH CÔNG NGHỆ STK</h4>
+                <p>MST: <strong>0319648130</strong> · TK ACB: <strong>7796368</strong> · VP: 497/24/9G Phan Văn Trị, TP.HCM</p>
+              </div>
+            </div>
+            <button type="button" class="ws-badge-qr lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="QR tra cứu thông tin doanh nghiệp — MST 0319648130" data-note="Bản gốc mã QR tra cứu thông tin pháp nhân Công ty TNHH Công Nghệ STK.">
+              <img src="assets/images/qr-masothue-stk.png" alt="Mã QR tra cứu MST 0319648130" loading="lazy">
+            </button>
+          </div>
+        </div>
+
+        <!-- Cột Phải: Nội dung + 3 thẻ 01-02-03 + 3 Pill cam kết + Nút CTA -->
+        <div class="ws-content-col">
+          <span class="ws-kicker">Vì sao doanh nghiệp chọn STK Tech</span>
+          <h2>Minh bạch vai trò dịch vụ &amp; nguyên tắc kích hoạt an toàn</h2>
+          <p>
+            Không chỉ cung cấp tài khoản phần mềm, <strong>Công ty TNHH Công Nghệ STK (MST 0319648130)</strong> đóng vai trò là <strong>đầu mối pháp nhân tại Việt Nam</strong> đồng hành cùng doanh nghiệp từ khâu báo giá VNĐ, ký hợp đồng đến khi bàn giao hóa đơn GTGT và bảo hành suốt kỳ hạn:
+          </p>
+
+          <div class="ws-numbered-list">
+            <div class="ws-num-card">
+              <span class="ws-num-circle">01</span>
+              <div>
+                <h3>Không bán tài khoản dùng chung (share account)</h3>
+                <p>Không cung cấp tài khoản dùng chung cho nhiều người, key trôi nổi hoặc tài khoản không rõ nguồn gốc dễ gây rủi ro lộ lịch sử chat và dữ liệu nội bộ.</p>
+              </div>
+            </div>
+
+            <div class="ws-num-card">
+              <span class="ws-num-circle">02</span>
+              <div>
+                <h3>Kích hoạt an toàn theo email/user cụ thể</h3>
+                <p>Tách bạch rõ khâu mua sắm và quyền kiểm soát tài khoản; kích hoạt trên email công ty hoặc workspace riêng để doanh nghiệp chủ động quản trị.</p>
+              </div>
+            </div>
+
+            <div class="ws-num-card">
+              <span class="ws-num-circle">03</span>
+              <div>
+                <h3>Gom nhiều công cụ vào một đầu mối hợp đồng</h3>
+                <p>Hỗ trợ phòng Thu mua gộp ChatGPT, Google AI/Gemini, CapCut, Adobe, Microsoft 365, ElevenLabs, Kaspersky... vào chung một báo giá và một bộ chứng từ thanh toán.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ws-trust-pills">
+            <span><i>✓</i> Pháp nhân MST 0319648130</span>
+            <span><i>✓</i> Hóa đơn VAT đầy đủ</span>
+            <span><i>✓</i> Tư vấn &amp; hỗ trợ trực tiếp 1–1</span>
+          </div>
+
+          <div class="ws-bottom-bar">
+            <div>
+              <strong>Đồng hành xuyên suốt từng đơn hàng</strong>
+              <span>Một đầu mối phụ trách từ tư vấn, hợp đồng đến xuất VAT &amp; gia hạn.</span>
+            </div>
+            <a class="btn" href="https://stktech.ai/bao-gia-doanh-nghiep">Nhận tư vấn &amp; báo giá →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MỤC 03: HỖ TRỢ CHUYÊN BIỆT CHO KẾ TOÁN, THU MUA & QUẢN TRỊ IT (#nghiep-vu-b2b)
+       ======================================================================== -->
+  <section class="sec" id="nghiep-vu-b2b">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">02 · Giải pháp theo từng phòng ban</span>
-        <h2>Hỗ trợ chuyên biệt cho Kế toán, Thu mua &amp; Quản trị IT</h2>
+        <span class="sec-eyebrow">Giải pháp theo từng phòng ban</span>
+        <h2>Hỗ trợ chuyên biệt cho <span>Kế toán, Thu mua &amp; Quản trị IT</span></h2>
         <p>Giải quyết đồng bộ yêu cầu chứng từ hạch toán, tối ưu ngân sách mua sắm số lượng và quản trị tài khoản an toàn cho từng bộ phận trong doanh nghiệp.</p>
       </div>
 
@@ -1199,7 +1539,7 @@
           <ul class="discount-points">
             <li><i>✓</i><span><strong>Hóa đơn GTGT điện tử</strong> xuất đúng MST công ty qua SePay eInvoice</span></li>
             <li><i>✓</i><span>Đầy đủ <strong>Báo giá VNĐ, Hợp đồng đóng dấu</strong> và Biên bản nghiệm thu</span></li>
-            <li><i>✓</i><span>Thanh toán chuyển khoản VNĐ, không tốn phí chuyển đổi ngoại tệ</span></li>
+            <li><i>✓</i><span>Thanh toán chuyển khoản VNĐ (TK Pháp nhân ACB 7796368)</span></li>
           </ul>
         </article>
 
@@ -1231,160 +1571,91 @@
           </ul>
         </article>
       </div>
-
-      <div class="discount-banner-bar">
-        <div class="discount-banner-text">
-          <h4>Cần báo giá theo số lượng user hoặc gộp nhiều phần mềm vào một hợp đồng?</h4>
-          <p>Liên hệ bộ phận hỗ trợ doanh nghiệp của STK Tech để nhận báo giá VNĐ kèm chính sách chiết khấu thương mại theo quy mô phòng ban và kỳ hạn 06–12 tháng.</p>
-        </div>
-        <div class="discount-banner-actions">
-          <a class="btn white" href="https://stktech.ai/bao-gia-doanh-nghiep">Yêu cầu báo giá doanh nghiệp →</a>
-          <a class="btn ghost-light" href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener">Nhắn Zalo OA STK Tech</a>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 03 (GỘP CHUNG): QUY TRÌNH 6 BƯỚC TRIỂN KHAI & CHỨNG TỪ GIAO DỊCH THỰC TẾ (#quy-trinh-chung-tu)
+       MỤC 04 (GỘP CHUNG): QUY TRÌNH 1 HÀNG NGANG SỐ LỚN (01->06) + LƯỚI 6 CHỨNG TỪ THỰC TẾ
+       (Bỏ hoàn toàn 6 ảnh vẽ máy cũ; kết hợp Quy Trình số lớn của Kingtechcare & Chứng Từ Thực Tế của Wineshop)
        ======================================================================== -->
-  <section class="sec" id="quy-trinh-chung-tu">
+  <section class="sec alt" id="quy-trinh-chung-tu">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">03 · Quy trình &amp; Hồ sơ thực tế</span>
-        <h2>Quy trình 6 bước triển khai &amp; bàn giao chứng từ thực tế</h2>
-        <p>Từ bước tiếp nhận nhu cầu, gửi báo giá trình duyệt đến khi kích hoạt tài khoản và bàn giao đủ bộ 04 chứng từ kế toán của Công ty TNHH Công Nghệ STK (MST 0319648130).</p>
+        <span class="sec-eyebrow">Quy trình &amp; Hồ sơ thực tế</span>
+        <h2>Quy trình 6 bước triển khai &amp; <span>bàn giao chứng từ thực tế</span></h2>
+        <p>Quy trình làm việc rõ ràng trên một luồng duy nhất — từ bước tư vấn, gửi báo giá VNĐ, ký hợp đồng đóng dấu đến khi bàn giao Hóa đơn GTGT điện tử cho phòng Kế toán.</p>
       </div>
 
-      <!-- PHẦN 3A: 6 BƯỚC TRIỂN KHAI GẮN LIỀN ĐẦU RA HỒ SƠ -->
-      <div class="workflow-stage-label">
-        <h3><span>Chặng A</span> 6 bước triển khai đơn hàng doanh nghiệp</h3>
-        <p>Mỗi bước đều có đầu ra hồ sơ hoặc xác nhận bàn giao rõ ràng cho Thu mua, Kế toán và IT</p>
-      </div>
-
-      <div class="after-purchase" aria-label="6 bước khách hàng nhận được khi mua hàng tại STK Tech">
-        <article class="after-step">
+      <!-- Hàng Ngang 6 Bước Đánh Số Lớn 01 -> 06 (Chuẩn Kingtechcare & Wineshop, không dùng ảnh vẽ máy) -->
+      <div class="process-row-6" aria-label="Quy trình 6 bước triển khai cho doanh nghiệp">
+        <article class="proc-col-card">
           <div>
-            <button type="button" class="process-shot lb-trigger" data-src="assets/images/buoc-1-tu-van-kiem-tra-nhu-cau.webp" data-title="Bước 1: Tư vấn, kiểm tra nhu cầu" data-note="Xác định nhu cầu và đề xuất gói phù hợp.">
-              <img src="assets/images/buoc-1-tu-van-kiem-tra-nhu-cau.webp" alt="Bước 1: Tư vấn, kiểm tra nhu cầu tại STK Tech" loading="lazy">
-            </button>
-            <div class="step-head"><span class="step-num">01</span><h3 class="process-title">Tư vấn, kiểm tra nhu cầu</h3></div>
-            <p class="process-desc">Xác định phần mềm, số người dùng (user) và kỳ hạn phù hợp với từng phòng ban.</p>
+            <div class="proc-big-num">01</div>
+            <h3>Bước 1: Tư vấn &amp; kiểm tra nhu cầu</h3>
+            <p>Xác định phần mềm, số lượng người dùng (user) và kỳ hạn phù hợp với ngân sách từng phòng ban.</p>
           </div>
-          <div class="step-deliverable">✓ Đầu ra: Phương án gói &amp; cơ cấu user</div>
+          <div class="proc-out-tag">✓ Phương án gói &amp; user</div>
         </article>
 
-        <article class="after-step">
+        <article class="proc-col-card">
           <div>
-            <button type="button" class="process-shot lb-trigger" data-src="assets/images/buoc-2-bao-gia-ro-rang.webp" data-title="Bước 2: Báo giá rõ ràng" data-note="Thông tin dịch vụ và chi phí được trình bày trong báo giá.">
-              <img src="assets/images/buoc-2-bao-gia-ro-rang.webp" alt="Bước 2: Báo giá dịch vụ rõ ràng của STK Tech" loading="lazy">
-            </button>
-            <div class="step-head"><span class="step-num">02</span><h3 class="process-title">Báo giá rõ ràng (VNĐ)</h3></div>
-            <p class="process-desc">Gửi báo giá chính thức bằng VNĐ (đã gồm thuế GTGT) để bộ phận Thu mua trình duyệt.</p>
+            <div class="proc-big-num">02</div>
+            <h3>Bước 2: Báo giá rõ ràng (VNĐ)</h3>
+            <p>Gửi báo giá chính thức bằng VNĐ (đã gồm thuế GTGT) để bộ phận Thu mua trình duyệt.</p>
           </div>
-          <div class="step-deliverable">✓ Chứng từ 01: Bản Báo giá dịch vụ VNĐ</div>
+          <div class="proc-out-tag">✓ Chứng từ 01: Báo giá</div>
         </article>
 
-        <article class="after-step">
+        <article class="proc-col-card">
           <div>
-            <button type="button" class="process-shot lb-trigger" data-src="assets/images/buoc-3-xac-nhan-dich-vu.webp" data-title="Bước 3: Xác nhận dịch vụ &amp; Hợp đồng" data-note="Các bên xác nhận nội dung và điều kiện dịch vụ.">
-              <img src="assets/images/buoc-3-xac-nhan-dich-vu.webp" alt="Bước 3: Xác nhận dịch vụ với hợp đồng STK Tech" loading="lazy">
-            </button>
-            <div class="step-head"><span class="step-num">03</span><h3 class="process-title">Xác nhận &amp; Ký hợp đồng</h3></div>
-            <p class="process-desc">Ký hợp đồng dịch vụ đóng dấu pháp nhân STK Tech và thanh toán chuyển khoản VNĐ.</p>
+            <div class="proc-big-num">03</div>
+            <h3>Bước 3: Xác nhận &amp; Ký hợp đồng</h3>
+            <p>Ký hợp đồng dịch vụ đóng dấu pháp nhân STK Tech và chuyển khoản VNĐ theo báo giá.</p>
           </div>
-          <div class="step-deliverable">✓ Chứng từ 02: Hợp đồng dịch vụ đóng dấu</div>
+          <div class="proc-out-tag">✓ Chứng từ 02: Hợp đồng</div>
         </article>
 
-        <article class="after-step">
+        <article class="proc-col-card">
           <div>
-            <button type="button" class="process-shot lb-trigger" data-src="assets/images/buoc-4-kich-hoat-dich-vu.webp" data-title="Bước 4: Kích hoạt dịch vụ" data-note="Dịch vụ được kích hoạt và kiểm tra theo nội dung đã xác nhận.">
-              <img src="assets/images/buoc-4-kich-hoat-dich-vu.webp" alt="Bước 4: Kích hoạt dịch vụ tại STK Tech" loading="lazy">
-            </button>
-            <div class="step-head"><span class="step-num">04</span><h3 class="process-title">Kích hoạt dịch vụ</h3></div>
-            <p class="process-desc">Kích hoạt chính chủ theo danh sách email công ty hoặc workspace riêng đã xác nhận.</p>
+            <div class="proc-big-num">04</div>
+            <h3>Bước 4: Kích hoạt dịch vụ</h3>
+            <p>Kích hoạt chính chủ theo danh sách email công ty hoặc workspace riêng đã xác nhận.</p>
           </div>
-          <div class="step-deliverable">✓ Đầu ra: Tài khoản hoạt động đúng gói</div>
+          <div class="proc-out-tag">✓ Bàn giao đúng gói</div>
         </article>
 
-        <article class="after-step">
+        <article class="proc-col-card">
           <div>
-            <button type="button" class="process-shot lb-trigger" data-src="assets/images/buoc-5-huong-dan-su-dung.webp" data-title="Bước 5: Hướng dẫn sử dụng &amp; Bàn giao chứng từ" data-note="Khách nhận bộ tài liệu cần thiết và hóa đơn GTGT sau bàn giao.">
-              <img src="assets/images/buoc-5-huong-dan-su-dung.webp" alt="Bước 5: Hướng dẫn sử dụng và bàn giao chứng từ tại STK Tech" loading="lazy">
-            </button>
-            <div class="step-head"><span class="step-num">05</span><h3 class="process-title">Bàn giao &amp; Xuất Hóa đơn GTGT</h3></div>
-            <p class="process-desc">Phát hành Hóa đơn GTGT điện tử qua SePay eInvoice, Biên bản nghiệm thu &amp; Phiếu xác nhận kích hoạt.</p>
+            <div class="proc-big-num">05</div>
+            <h3>Bước 5: Xuất VAT &amp; Nghiệm thu</h3>
+            <p>Phát hành Hóa đơn GTGT điện tử qua SePay eInvoice, Biên bản nghiệm thu &amp; Phiếu xác nhận.</p>
           </div>
-          <div class="step-deliverable">✓ Chứng từ 03 &amp; 04: Hóa đơn GTGT + Nghiệm thu</div>
+          <div class="proc-out-tag">✓ Chứng từ 03 &amp; 04: VAT</div>
         </article>
 
-        <article class="after-step">
+        <article class="proc-col-card">
           <div>
-            <button type="button" class="process-shot lb-trigger" data-src="assets/images/buoc-6-dong-hanh-su-dung.webp" data-title="Bước 6: Đồng hành sử dụng" data-note="STK Tech tiếp nhận hỗ trợ trong quá trình sử dụng.">
-              <img src="assets/images/buoc-6-dong-hanh-su-dung.webp" alt="Bước 6: Đồng hành sử dụng và hỗ trợ kỹ thuật tại STK Tech" loading="lazy">
-            </button>
-            <div class="step-head"><span class="step-num" style="background:#0B6E4F">06</span><h3 class="process-title">Đồng hành &amp; Nhắc gia hạn</h3></div>
-            <p class="process-desc">Hỗ trợ kỹ thuật 08:00–23:00, hỗ trợ đổi user khi thay đổi nhân sự và nhắc lịch trước hạn.</p>
+            <div class="proc-big-num">06</div>
+            <h3>Bước 6: Hậu mãi &amp; Nhắc gia hạn</h3>
+            <p>Hỗ trợ kỹ thuật 08:00–23:00, hỗ trợ đổi user khi thay đổi nhân sự và nhắc lịch trước hạn.</p>
           </div>
-          <div class="step-deliverable">✓ Bảo hành suốt kỳ hạn đăng ký</div>
+          <div class="proc-out-tag">✓ Bảo hành suốt kỳ hạn</div>
         </article>
       </div>
 
-      <!-- PHẦN 3B: HỒ SƠ & HÌNH ẢNH CHỨNG TỪ GIAO DỊCH THỰC TẾ (Đặt liền mạch ngay trong Quy Trình) -->
-      <div class="unified-dossier-wrap" id="chung-tu">
-        <div class="stk-panel-head">
-          <div>
-            <h3><span>Chặng B</span> Bộ 04 chứng từ kế toán &amp; Hình ảnh giao dịch thực tế</h3>
-            <p>Bấm vào từng tài liệu bên dưới để phóng to kiểm tra chữ ký số, con dấu pháp nhân Công ty TNHH Công Nghệ STK (MST 0319648130):</p>
-          </div>
-          <div class="stk-dossier-kpis">
-            <span><b>100%</b> đơn hàng có Hóa đơn GTGT</span>
-            <span>·</span>
-            <span><b>04 loại</b> chứng từ mỗi đơn</span>
-            <span>·</span>
-            <span>Xuất qua <b>SePay eInvoice</b></span>
+      <!-- Lưới 6 Ảnh Chứng Từ Giao Dịch Thực Tế (Đặt ngay dưới Quy trình như "HÌNH ẢNH ĐƠN HÀNG THỰC TẾ" của Wineshop) -->
+      <div class="real-docs-showcase" id="chung-tu" style="background:#FFFFFF">
+        <div class="real-docs-header">
+          <h3>Hình ảnh hóa đơn GTGT &amp; chứng từ giao dịch thực tế</h3>
+          <p>Mỗi đơn hàng doanh nghiệp đều nhận đủ 04 chứng từ kế toán dưới đây (Bấm vào từng tài liệu để phóng to kiểm tra chữ ký số &amp; con dấu đỏ của Công ty TNHH Công Nghệ STK – MST 0319648130):</p>
+          <div class="doc4-pill-strip">
+            <span><b>01.</b> Báo giá dịch vụ (VNĐ)</span>
+            <span><b>02.</b> Hợp đồng dịch vụ đóng dấu</span>
+            <span><b>03.</b> Hóa đơn GTGT điện tử (SePay eInvoice)</span>
+            <span><b>04.</b> Biên bản bàn giao / nghiệm thu</span>
           </div>
         </div>
 
-        <div class="stk-doc4-list">
-          <div class="stk-doc4-card">
-            <div class="stk-doc4-top">
-              <span class="stk-doc4-num">CHỨNG TỪ 01</span>
-              <span class="stk-doc4-status">✓ Bước 2 · Báo giá VNĐ</span>
-            </div>
-            <strong>Báo giá dịch vụ</strong>
-            <span>Thể hiện rõ tên gói, số lượng user, thời hạn và thuế GTGT để trình duyệt.</span>
-          </div>
-
-          <div class="stk-doc4-card">
-            <div class="stk-doc4-top">
-              <span class="stk-doc4-num">CHỨNG TỪ 02</span>
-              <span class="stk-doc4-status">✓ Bước 3 · Ký đóng dấu</span>
-            </div>
-            <strong>Hợp đồng dịch vụ</strong>
-            <span>Ký tên và đóng dấu pháp nhân Công ty TNHH Công Nghệ STK theo yêu cầu.</span>
-          </div>
-
-          <div class="stk-doc4-card">
-            <div class="stk-doc4-top">
-              <span class="stk-doc4-num">CHỨNG TỪ 03</span>
-              <span class="stk-doc4-status">✓ Bước 5 · Xuất VAT</span>
-            </div>
-            <strong>Hóa đơn GTGT điện tử</strong>
-            <span>Phát hành qua SePay eInvoice theo Nghị định 123/2020/NĐ-CP &amp; TT 78/2021/TT-BTC.</span>
-          </div>
-
-          <div class="stk-doc4-card">
-            <div class="stk-doc4-top">
-              <span class="stk-doc4-num">CHỨNG TỪ 04</span>
-              <span class="stk-doc4-status">✓ Bước 5 · Nghiệm thu</span>
-            </div>
-            <strong>Biên bản nghiệm thu</strong>
-            <span>Xác nhận hoàn tất kích hoạt danh sách tài khoản và bàn giao quyền sử dụng.</span>
-          </div>
-        </div>
-
-        <!-- Lưới 6 ảnh chụp chứng từ thực tế -->
         <div class="doc-grid">
           <article class="doc-card-wrap">
             <button type="button" class="doc-card lb-trigger" data-src="assets/images/hoa-don-gtgt-capcut-pro.webp" data-title="Hóa đơn GTGT điện tử, trang 1 — Dịch vụ CapCut Pro" data-note="Hóa đơn GTGT điện tử ký số hợp lệ bởi Công ty TNHH Công Nghệ STK (MST 0319648130) cho dịch vụ tư vấn sử dụng CapCut Pro.">
@@ -1474,20 +1745,20 @@
           </div>
         </div>
         <div>
-          <a class="hero-btn-primary" href="https://stktech.ai/bao-gia-doanh-nghiep">Gửi yêu cầu báo giá →</a>
+          <a class="btn white" href="https://stktech.ai/bao-gia-doanh-nghiep">Gửi yêu cầu báo giá →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 04: NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP (#nguyen-tac)
+       MỤC 05: NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP (#nguyen-tac)
        ======================================================================== -->
-  <section class="sec alt" id="nguyen-tac">
+  <section class="sec" id="nguyen-tac">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">04 · Cam kết minh bạch &amp; Giải đáp B2B</span>
-        <h2>Nguyên tắc công khai &amp; Câu hỏi thường gặp</h2>
+        <span class="sec-eyebrow">Cam kết minh bạch &amp; Giải đáp B2B</span>
+        <h2>Nguyên tắc công khai &amp; <span>Câu hỏi thường gặp</span></h2>
         <p>Minh bạch với bộ phận kiểm chứng và tôn trọng quyền riêng tư, bảo mật dữ liệu của khách hàng doanh nghiệp trong mọi giao dịch.</p>
       </div>
 
@@ -1541,7 +1812,7 @@
   </section>
 
   <!-- BOTTOM CTA BANNER -->
-  <section class="sec">
+  <section class="sec" style="padding-top:0">
     <div class="wrap">
       <div class="bottom-cta">
         <h2>Cần nhận báo giá doanh nghiệp hoặc kiểm tra chứng từ mang tên STK Tech?</h2>
@@ -1630,7 +1901,7 @@
   </div>
 
   <script>
-    // Lightbox cho toàn bộ chứng từ, QR và quy trình 6 bước
+    // Lightbox cho toàn bộ chứng từ, QR và ảnh văn phòng
     const cards = Array.from(document.querySelectorAll('.lb-trigger'));
     const lb = document.getElementById('lb');
     const lbImg = document.getElementById('lb-img');
