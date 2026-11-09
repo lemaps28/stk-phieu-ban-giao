@@ -318,10 +318,11 @@
 
   .a4-sheet {
     width: 210mm;
+    height: 297mm;
     min-height: 297mm;
     background: #FFFFFF;
     border: 1px solid #CBD5E1;
-    padding: 16mm 18mm 14mm;
+    padding: 17mm 18mm 15mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -329,8 +330,7 @@
   }
 
   .sheet-top-content {
-    display: flex;
-    flex-direction: column;
+    display: contents;
   }
 
   /* ===== 1. HEADER VĂN BẢN PHẲNG (KHÔNG ĐÓNG BẢNG) ===== */
@@ -338,9 +338,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     border-bottom: 1.5px solid var(--doc-border-strong);
-    margin-bottom: 22px;
+    margin-bottom: 0;
   }
   .doc-header-left {
     display: flex;
@@ -348,7 +348,7 @@
     gap: 14px;
   }
   .stk-official-logo {
-    height: 38px;
+    height: 40px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -367,14 +367,14 @@
   .doc-company-sub {
     font-size: var(--fs-small);
     color: var(--doc-sub);
-    margin-top: 2px;
+    margin-top: 3px;
     line-height: 1.4;
   }
   .doc-header-right {
     text-align: right;
     font-size: var(--fs-small);
     color: var(--doc-sub);
-    line-height: 1.55;
+    line-height: 1.6;
   }
   .doc-header-right div strong {
     color: var(--doc-ink);
@@ -384,7 +384,7 @@
   /* ===== 2. TIÊU ĐỀ CHÍNH CỦA PHIẾU ===== */
   .doc-main-heading {
     text-align: center;
-    margin-bottom: 22px;
+    margin-bottom: 0;
   }
   .doc-main-heading h1 {
     font-size: var(--fs-h1);
@@ -397,15 +397,12 @@
   .doc-main-heading p {
     font-size: var(--fs-body);
     color: var(--doc-sub);
-    margin-top: 4px;
+    margin-top: 5px;
     line-height: 1.45;
   }
 
   /* ===== 3. MỤC LA MÃ (I, II) & BẢNG CHUẨN TÀI LIỆU GIẤY ===== */
   .doc-section {
-    margin-bottom: 20px;
-  }
-  .doc-section:last-child {
     margin-bottom: 0;
   }
   .sec-heading {
@@ -414,7 +411,7 @@
     color: var(--doc-primary);
     text-transform: uppercase;
     letter-spacing: 0.2px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
     line-height: 1.4;
   }
 
@@ -433,25 +430,25 @@
   .paper-table th {
     width: 32%;
     text-align: left;
-    padding: 9px 12px;
+    padding: 10.5px 14px;
     font-size: var(--fs-body);
     font-weight: 600;
     color: var(--doc-ink);
     background: var(--doc-th-bg);
     border-right: 1px solid var(--doc-border-table);
     vertical-align: middle;
-    line-height: 1.45;
+    line-height: 1.48;
   }
   .paper-table td {
     width: 68%;
     text-align: left;
-    padding: 9px 12px;
+    padding: 10.5px 14px;
     font-size: var(--fs-body);
     font-weight: 400;
     color: var(--doc-ink);
     background: #FFFFFF;
     vertical-align: middle;
-    line-height: 1.45;
+    line-height: 1.48;
     word-break: break-word;
   }
   .paper-table td.val-strong {
@@ -654,11 +651,12 @@
     }
     .a4-sheet {
       width: 210mm !important;
+      height: 297mm !important;
       min-height: 297mm !important;
       border: 0 !important;
       box-shadow: none !important;
       margin: 0 auto !important;
-      padding: 16mm 18mm 14mm !important;
+      padding: 17mm 18mm 15mm !important;
       page-break-after: auto;
       break-after: auto;
       break-inside: avoid;
