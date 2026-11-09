@@ -1169,7 +1169,7 @@
       border: 1px solid var(--line);
       border-radius: var(--radius-2xl);
       padding: 36px 34px;
-      margin-bottom: 26px;
+      margin-bottom: 0;
     }
     .real-docs-header {
       text-align: center;
@@ -1286,32 +1286,78 @@
     details.faq-item p { margin-top: 10px; font-size: 14px; color: var(--ink-700); line-height: 1.66; }
 
     /* ==========================================================================
-       MỤC 06: ĐĂNG KÝ NHẬN BÁO GIÁ 2 CỘT (Chuẩn Layout Kingtechcare)
-       (Trái: Thẻ Form trắng bo góc bóng đổ mềm · Phải: Tổ hợp Visual Chứng từ & Tư vấn 1:1)
+       MỤC 05: ĐĂNG KÝ NHẬN BÁO GIÁ DOANH NGHIỆP (Thiết kế tinh tế, cân đối 2 cột đồng chiều cao)
        ========================================================================== */
     .quote-sec {
-      padding: 20px 0 76px;
+      padding: 72px 0;
       position: relative;
+      background: var(--bg-canvas);
+    }
+    .ws-quote-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid #C9DAFA;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(33, 89, 245, 0.05), transparent 36%),
+        radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.07), transparent 40%),
+        linear-gradient(145deg, #FFFFFF 0%, #F4F8FF 100%);
+      box-shadow: 0 22px 52px rgba(9, 23, 54, 0.08);
+      padding: 44px;
+    }
+    .ws-quote-shell::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #091736 0%, #2159F5 52%, #60A5FA 100%);
+      z-index: 2;
     }
     .kt-quote-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-      gap: 44px;
-      align-items: center;
+      grid-template-columns: minmax(0, 1.14fr) minmax(0, 0.86fr);
+      gap: 36px;
+      align-items: stretch;
+      position: relative;
+      z-index: 1;
     }
+    /* Cột Trái: Form trắng tinh tế */
     .kt-quote-card {
       background: #FFFFFF;
-      border-radius: 24px;
-      padding: 38px 36px;
-      border: 1px solid #E2E8F0;
-      box-shadow: 0 22px 54px rgba(15, 23, 42, 0.08);
+      border-radius: 20px;
+      padding: 34px 34px;
+      border: 1px solid #DCE6F7;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    .kt-quote-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue-600);
+      margin-bottom: 8px;
+    }
+    .kt-quote-eyebrow::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--blue-600);
     }
     .kt-quote-card h2 {
-      font-size: 31px;
+      font-size: 29px;
       line-height: 1.24;
       font-weight: 800;
       color: var(--navy-900);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .kt-quote-card h2 span {
       color: var(--blue-600);
@@ -1319,12 +1365,12 @@
     .kt-quote-sub {
       font-size: 14px;
       color: var(--ink-500);
-      line-height: 1.58;
+      line-height: 1.56;
       margin-bottom: 22px;
     }
     .kt-form {
       display: grid;
-      gap: 16px;
+      gap: 15px;
     }
     .kt-row-2 {
       display: grid;
@@ -1344,106 +1390,106 @@
     }
     .kt-input {
       width: 100%;
-      height: 46px;
-      padding: 0 15px;
+      height: 45px;
+      padding: 0 14px;
       border-radius: 10px;
       border: 1px solid #CBD5E1;
-      background: #FFFFFF;
+      background: #F8FAFC;
       font: inherit;
       font-size: 13.8px;
       color: var(--ink-900);
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      transition: all 0.2s ease;
     }
     .kt-input::placeholder {
       color: #94A3B8;
     }
     .kt-input:focus {
       outline: none;
+      background: #FFFFFF;
       border-color: var(--blue-600);
-      box-shadow: 0 0 0 3px rgba(33, 89, 245, 0.14);
+      box-shadow: 0 0 0 3px rgba(33, 89, 245, 0.12);
     }
     .kt-radio-group-label {
       display: block;
-      font-size: 13.5px;
-      font-weight: 800;
+      font-size: 13px;
+      font-weight: 700;
       color: var(--navy-900);
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
+    /* Radio dạng thẻ chọn hiện đại (như Wineshop) */
     .kt-radios {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
     }
     .kt-radio-item {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 13.8px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #CBD5E1;
+      background: #F8FAFC;
+      font-size: 13.2px;
       font-weight: 600;
       color: var(--ink-900);
       cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .kt-radio-item:hover {
+      border-color: #93C5FD;
+      background: #FFFFFF;
+    }
+    .kt-radio-item:has(input:checked) {
+      border-color: var(--blue-600);
+      background: #EFF6FF;
+      color: var(--blue-600);
+      box-shadow: 0 2px 8px rgba(33, 89, 245, 0.08);
     }
     .kt-radio-item input[type="radio"] {
-      appearance: none;
-      -webkit-appearance: none;
-      width: 18px;
-      height: 18px;
-      border: 2px solid #94A3B8;
-      border-radius: 50%;
-      display: inline-grid;
-      place-content: center;
+      accent-color: var(--blue-600);
+      width: 15px;
+      height: 15px;
+      margin: 0;
       cursor: pointer;
-      transition: border-color 0.15s ease;
-    }
-    .kt-radio-item input[type="radio"]::before {
-      content: "";
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      transform: scale(0);
-      transition: transform 0.15s ease;
-      background: var(--blue-600);
-    }
-    .kt-radio-item input[type="radio"]:checked {
-      border-color: var(--blue-600);
-    }
-    .kt-radio-item input[type="radio"]:checked::before {
-      transform: scale(1);
+      flex-shrink: 0;
     }
     .kt-submit-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 16px;
       flex-wrap: wrap;
-      margin-top: 4px;
+      margin-top: 6px;
+      padding-top: 16px;
+      border-top: 1px solid #E2E8F0;
     }
     .kt-submit-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 8px;
       height: 46px;
-      padding: 0 28px;
-      border-radius: 999px;
+      padding: 0 26px;
+      border-radius: 11px;
       border: 0;
-      background: linear-gradient(90deg, #2159F5 0%, #1D4ED8 100%);
+      background: linear-gradient(90deg, #2159F5 0%, #1947CC 100%);
       color: #FFFFFF;
       font-family: 'Be Vietnam Pro', sans-serif;
       font-size: 14.5px;
       font-weight: 700;
       cursor: pointer;
-      box-shadow: 0 10px 24px rgba(33, 89, 245, 0.28);
+      box-shadow: 0 8px 20px rgba(33, 89, 245, 0.25);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .kt-submit-btn:hover {
       transform: translateY(-1px);
-      box-shadow: 0 14px 30px rgba(33, 89, 245, 0.36);
+      box-shadow: 0 12px 26px rgba(33, 89, 245, 0.34);
     }
     .kt-submit-note {
-      font-size: 12.2px;
+      font-size: 12.5px;
       color: var(--ink-500);
+      line-height: 1.45;
     }
     .kt-submit-note strong {
       color: var(--navy-900);
@@ -1461,202 +1507,140 @@
       line-height: 1.5;
     }
 
-    /* Cột Phải của Mục Đăng Ký Nhận Báo Giá (Visual Bàn Tư Vấn + Hồ Sơ VAT + Lịch 15 Phút) */
-    .kt-visual-stage {
-      position: relative;
-      min-height: 510px;
+    /* Cột Phải: Thẻ Bàn Tiếp Nhận Doanh Nghiệp (Đồng chiều cao, sang trọng, không thô) */
+    .kt-concierge-panel {
+      background:
+        radial-gradient(circle at 100% 0%, rgba(96, 165, 250, 0.24), transparent 44%),
+        linear-gradient(155deg, #06122E 0%, #0D2559 60%, #153885 100%);
+      border-radius: 20px;
+      padding: 34px 30px;
+      color: #FFFFFF;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 10px;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 18px 42px rgba(6, 18, 46, 0.18);
+      position: relative;
+      overflow: hidden;
     }
-    /* Hình khối thương hiệu mờ phía sau giống Kingtechcare */
-    .kt-bg-emblem {
-      position: absolute;
-      width: 420px;
-      height: 420px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(33, 89, 245, 0.11) 0%, rgba(33, 89, 245, 0.03) 58%, transparent 74%);
-      right: 10px;
-      top: 30px;
-      z-index: 0;
-      pointer-events: none;
-    }
-    .kt-bg-emblem::before {
+    .kt-concierge-panel::after {
       content: "";
       position: absolute;
-      inset: 34px;
+      width: 170px;
+      height: 170px;
+      right: -60px;
+      top: -60px;
       border-radius: 50%;
-      border: 2px dashed rgba(33, 89, 245, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      pointer-events: none;
     }
-    .kt-main-visual-card {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      max-width: 480px;
-      background: linear-gradient(155deg, #06122E 0%, #0F2963 65%, #19449E 100%);
-      border-radius: 24px;
-      padding: 24px;
-      color: #FFFFFF;
-      box-shadow: 0 24px 54px rgba(6, 18, 46, 0.22);
-      border: 1px solid rgba(147, 197, 253, 0.28);
-    }
-    .kt-visual-top {
-      display: flex;
+    .kt-concierge-badge {
+      display: inline-flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 16px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
-    }
-    .kt-consultant-head {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .kt-consultant-avatar {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      background: #FFFFFF;
-      padding: 4px;
-      flex-shrink: 0;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    }
-    .kt-consultant-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .kt-consultant-info span {
-      display: inline-block;
+      gap: 7px;
+      width: fit-content;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(89, 209, 168, 0.16);
+      border: 1px solid rgba(89, 209, 168, 0.36);
+      color: #59D1A8;
       font-size: 11px;
       font-weight: 700;
-      text-transform: uppercase;
       letter-spacing: 0.06em;
-      color: #59D1A8;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .kt-concierge-panel h3 {
+      font-size: 22px;
+      line-height: 1.3;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .kt-concierge-lead {
+      font-size: 13.6px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 18px;
+    }
+    .kt-sla-list {
+      display: grid;
+      gap: 11px;
+      margin-bottom: 20px;
+    }
+    .kt-sla-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 13px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+    }
+    .kt-sla-tag {
+      flex-shrink: 0;
+      min-width: 82px;
+      white-space: nowrap;
+      text-align: center;
+      padding: 5px 9px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #93C5FD;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-top: 1px;
+    }
+    .kt-sla-body strong {
+      display: block;
+      font-size: 13.6px;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.35;
       margin-bottom: 2px;
     }
-    .kt-consultant-info h4 {
-      font-size: 16px;
-      font-weight: 800;
-      color: #FFFFFF;
-      line-height: 1.3;
-    }
-    .kt-consultant-info p {
-      font-size: 12.2px;
-      color: #CBD5E1;
-    }
-    /* Hai chứng từ thực tế xếp chồng trực quan ngay trong bàn tư vấn */
-    .kt-doc-preview-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    .kt-mini-doc {
-      background: #FFFFFF;
-      border-radius: 14px;
-      padding: 8px;
-      color: var(--navy-900);
-      border: 0;
-      text-align: left;
-      cursor: zoom-in;
-      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.22);
-      transition: transform 0.22s ease;
-    }
-    .kt-mini-doc:hover {
-      transform: translateY(-4px);
-    }
-    .kt-mini-doc-img {
-      width: 100%;
-      height: 158px;
-      border-radius: 9px;
-      overflow: hidden;
-      border: 1px solid #E2E8F0;
-      margin-bottom: 7px;
-    }
-    .kt-mini-doc-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
-    .kt-mini-doc strong {
+    .kt-sla-body span {
       display: block;
-      font-size: 12.2px;
-      font-weight: 800;
-      color: var(--navy-900);
-      line-height: 1.3;
+      font-size: 12.3px;
+      color: #CBD5E1;
+      line-height: 1.48;
     }
-    .kt-mini-doc span {
-      font-size: 11px;
-      color: var(--blue-600);
-      font-weight: 700;
-    }
-    /* Khối Lịch Lật Cam Kết 15 Phút + Thẻ QR Pháp Nhân ở tiền cảnh (Giống hộp sản phẩm & lịch lật của Kingtechcare) */
-    .kt-bottom-proof-bar {
+    .kt-concierge-footer {
       background: #FFFFFF;
       color: var(--navy-900);
-      border-radius: 16px;
+      border-radius: 14px;
       padding: 14px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
-      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+      gap: 12px;
     }
-    .kt-flip-calendar {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      background: #0F172A;
-      padding: 8px 10px;
-      border-radius: 12px;
-      color: #FFFFFF;
-      flex-shrink: 0;
-    }
-    .kt-flip-digit {
-      background: #FFFFFF;
-      color: #0F172A;
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 21px;
-      font-weight: 800;
-      line-height: 1;
-      padding: 6px 7px;
-      border-radius: 6px;
-    }
-    .kt-flip-unit {
-      font-size: 10px;
-      font-weight: 800;
-      text-transform: uppercase;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      letter-spacing: 0.08em;
-      color: #93C5FD;
-      padding-left: 2px;
-    }
-    .kt-proof-text {
-      flex: 1;
-    }
-    .kt-proof-text strong {
+    .kt-cf-left small {
       display: block;
-      font-size: 13.5px;
+      font-size: 10.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue-600);
+      margin-bottom: 2px;
+    }
+    .kt-cf-left a.cf-phone {
+      display: block;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 20px;
       font-weight: 800;
       color: var(--navy-900);
-      line-height: 1.32;
+      line-height: 1.15;
     }
-    .kt-proof-text span {
-      font-size: 12px;
-      color: var(--ink-500);
-      line-height: 1.4;
+    .kt-cf-left span {
       display: block;
+      font-size: 11.8px;
+      color: var(--ink-500);
       margin-top: 2px;
     }
-    .kt-proof-qr {
-      width: 52px;
-      height: 52px;
+    .kt-cf-qr {
+      width: 54px;
+      height: 54px;
       border: 1px solid #CBD5E1;
       border-radius: 8px;
       padding: 3px;
@@ -1664,7 +1648,7 @@
       cursor: zoom-in;
       flex-shrink: 0;
     }
-    .kt-proof-qr img {
+    .kt-cf-qr img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -2241,31 +2225,154 @@
           </article>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Thanh Checklist chuẩn bị thông tin nhận báo giá nhanh trong ngày -->
-      <div class="b2b-quote-prep">
-        <div class="b2b-prep-left">
-          <h4>06 thông tin nên chuẩn bị trước để nhận Báo giá VNĐ &amp; Hợp đồng nhanh trong ngày làm việc:</h4>
-          <div class="b2b-prep-chips">
-            <span><b>01.</b> Công cụ / gói cần đăng ký</span>
-            <span><b>02.</b> Số lượng người dùng (user)</span>
-            <span><b>03.</b> Thời hạn (1, 3, 6 hoặc 12 tháng)</span>
-            <span><b>04.</b> Tên công ty &amp; MST xuất hóa đơn</span>
-            <span><b>05.</b> Yêu cầu hợp đồng, nghiệm thu</span>
-            <span><b>06.</b> Email nhận hồ sơ &amp; bàn giao</span>
+  <!-- ========================================================================
+       MỤC 05: ĐĂNG KÝ NHẬN BÁO GIÁ DOANH NGHIỆP (#dang-ky-bao-gia)
+       (Khung 2 cột cân đối đồng chiều cao: Trái = Biểu mẫu báo giá tinh tế · Phải = Cam kết SLA & Hồ sơ B2B)
+       ======================================================================== -->
+  <section class="quote-sec" id="dang-ky-bao-gia">
+    <div class="wrap">
+      <div class="ws-quote-shell">
+        <div class="kt-quote-grid">
+          <!-- Cột Trái: Biểu mẫu Đăng Ký Nhận Báo Giá -->
+          <div class="kt-quote-card">
+            <div>
+              <span class="kt-quote-eyebrow">TƯ VẤN &amp; BÁO GIÁ DOANH NGHIỆP (B2B)</span>
+              <h2>Đăng Ký <span>Nhận Báo Giá</span></h2>
+              <p class="kt-quote-sub">Nhận Báo Giá Chiết Khấu &amp; Tư Vấn 1:1 – cam kết phản hồi trong 15 phút</p>
+            </div>
+
+            <form class="kt-form" id="b2b-quote-form">
+              <div class="kt-row-2">
+                <div class="kt-field">
+                  <label for="q-name">Họ và tên <span class="req">*</span></label>
+                  <input class="kt-input" type="text" id="q-name" name="name" placeholder="Nhập họ tên người liên hệ" required>
+                </div>
+                <div class="kt-field">
+                  <label for="q-phone">Số điện thoại / Zalo <span class="req">*</span></label>
+                  <input class="kt-input" type="tel" id="q-phone" name="phone" placeholder="0353 xxx xxx" required>
+                </div>
+              </div>
+
+              <div class="kt-field">
+                <span class="kt-radio-group-label">Hình thức nhận báo giá ưu tiên</span>
+                <div class="kt-radios">
+                  <label class="kt-radio-item">
+                    <input type="radio" name="contact_method" value="Chat qua Zalo" checked>
+                    <span>Chat qua Zalo</span>
+                  </label>
+                  <label class="kt-radio-item">
+                    <input type="radio" name="contact_method" value="Gọi điện trực tiếp">
+                    <span>Gọi điện trực tiếp</span>
+                  </label>
+                  <label class="kt-radio-item">
+                    <input type="radio" name="contact_method" value="Nhận qua Email">
+                    <span>Nhận qua Email</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="kt-field">
+                <label for="q-company">Đơn vị tổ chức / Mã số thuế</label>
+                <input class="kt-input" type="text" id="q-company" name="company" placeholder="Nhập tên công ty hoặc Mã số thuế xuất hóa đơn GTGT">
+              </div>
+
+              <div class="kt-row-2">
+                <div class="kt-field">
+                  <label for="q-qty">Số lượng user dự kiến</label>
+                  <input class="kt-input" type="text" id="q-qty" name="quantity" placeholder="VD: 05 user, 10 user, 50 user...">
+                </div>
+                <div class="kt-field">
+                  <label for="q-budget">Phần mềm / Kỳ hạn đăng ký</label>
+                  <input class="kt-input" type="text" id="q-budget" name="software" placeholder="VD: ChatGPT, Gemini, CapCut...">
+                </div>
+              </div>
+
+              <div class="kt-field">
+                <label for="q-note">Ghi chú về hợp đồng &amp; chứng từ</label>
+                <input class="kt-input" type="text" id="q-note" name="note" placeholder="Lưu ý về dự thảo hợp đồng, nghiệm thu hoặc thời hạn thanh toán">
+              </div>
+
+              <div class="kt-submit-row">
+                <button type="submit" class="kt-submit-btn">Gửi yêu cầu báo giá →</button>
+                <div class="kt-submit-note">
+                  <strong>Cam kết bảo mật thông tin doanh nghiệp.</strong><br>
+                  Hoặc liên hệ nhanh qua <a href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener"><strong>Zalo OA STK Tech</strong></a>
+                </div>
+              </div>
+
+              <div class="kt-form-toast" id="kt-form-toast" role="status" aria-live="polite">
+                ✓ Đã ghi nhận thông tin yêu cầu báo giá! Chuyên viên Doanh nghiệp STK Tech sẽ phản hồi báo giá VNĐ &amp; dự thảo hợp đồng trong 15 phút. Đang mở cổng tiếp nhận chính thức...
+              </div>
+            </form>
           </div>
-        </div>
-        <div>
-          <a class="btn white" href="#dang-ky-bao-gia">Gửi yêu cầu báo giá →</a>
+
+          <!-- Cột Phải: Thẻ Bàn Tiếp Nhận Doanh Nghiệp (Đồng chiều cao, tinh tế, sang trọng) -->
+          <aside class="kt-concierge-panel" aria-label="Cam kết bàn giao hồ sơ báo giá doanh nghiệp">
+            <div>
+              <span class="kt-concierge-badge">✓ BÀN TIẾP NHẬN DOANH NGHIỆP (1:1)</span>
+              <h3>Chuẩn hóa trọn bộ chứng từ cho Phòng Thu mua &amp; Kế toán</h3>
+              <p class="kt-concierge-lead">
+                Mọi yêu cầu báo giá đều được chuyên viên B2B tại <strong>Công ty TNHH Công Nghệ STK (MST 0319648130)</strong> xử lý trực tiếp và gửi đầy đủ hồ sơ hợp lệ:
+              </p>
+
+              <div class="kt-sla-list">
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">15 Phút</span>
+                  <div class="kt-sla-body">
+                    <strong>Phản hồi Báo giá VNĐ theo bậc số lượng</strong>
+                    <span>Báo giá chi tiết từng phần mềm, số lượng user và mức chiết khấu thương mại 06–12 tháng.</span>
+                  </div>
+                </div>
+
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">04 Hồ sơ</span>
+                  <div class="kt-sla-body">
+                    <strong>Đủ Báo giá – Hợp đồng – Hóa đơn VAT</strong>
+                    <span>Ký đóng dấu pháp nhân STK Tech và phát hành Hóa đơn GTGT điện tử qua SePay eInvoice.</span>
+                  </div>
+                </div>
+
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">01 Đầu mối</span>
+                  <div class="kt-sla-body">
+                    <strong>Gộp nhiều phần mềm vào 01 hợp đồng</strong>
+                    <span>Hỗ trợ gom ChatGPT, Google AI/Gemini, CapCut, Adobe, Microsoft 365... vào một bộ chứng từ.</span>
+                  </div>
+                </div>
+
+                <div class="kt-sla-item">
+                  <span class="kt-sla-tag">100% An toàn</span>
+                  <div class="kt-sla-body">
+                    <strong>Kích hoạt chính chủ theo email riêng</strong>
+                    <span>Không bán tài khoản dùng chung; bảo hành trọn kỳ hạn và hỗ trợ đổi user 08:00–23:00.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="kt-concierge-footer">
+              <div class="kt-cf-left">
+                <small>HOTLINE PHÒNG DOANH NGHIỆP (08:00 – 23:00)</small>
+                <a class="cf-phone" href="tel:0353797919">0353 797 919</a>
+                <span>Email: <strong>contacts@stktech.ai</strong> · TK ACB: <strong>7796368</strong></span>
+              </div>
+              <button type="button" class="kt-cf-qr lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="Mã QR tra cứu thông tin doanh nghiệp STK Tech" data-note="Quét mã QR để đối chiếu thông tin pháp nhân Công ty TNHH Công Nghệ STK (MST 0319648130).">
+                <img src="assets/images/qr-masothue-stk.png" alt="Mã QR tra cứu MST 0319648130" loading="lazy">
+              </button>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 05: NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP (#nguyen-tac)
+       MỤC 06 (CUỐI CÙNG TRƯỚC FOOTER): NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP (#nguyen-tac)
        ======================================================================== -->
-  <section class="sec" id="nguyen-tac">
+  <section class="sec alt" id="nguyen-tac">
     <div class="wrap">
       <div class="sec-head">
         <span class="sec-eyebrow">Cam kết minh bạch &amp; Giải đáp B2B</span>
@@ -2317,138 +2424,6 @@
             <summary>5. Tôi nên làm gì khi cần kiểm tra một chứng từ hoặc thông tin mang tên STK Tech?</summary>
             <p>Quý khách và bộ phận Kế toán, Thu mua có thể gửi hóa đơn, báo giá, hợp đồng hoặc thông tin cần kiểm tra qua Hotline <strong>0353.7979.19</strong>, Email <strong>contacts@stktech.ai</strong> hoặc <strong>Zalo OA chính thức của STK Tech</strong> để được đối chiếu nhanh với dữ liệu gốc.</p>
           </details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       MỤC 06: ĐĂNG KÝ NHẬN BÁO GIÁ 2 CỘT (Chuẩn Layout Kingtechcare)
-       (Trái: Thẻ Form trắng bo góc bóng đổ · Phải: Tổ hợp Visual Chứng từ & Tư vấn 1:1)
-       ======================================================================== -->
-  <section class="quote-sec" id="dang-ky-bao-gia">
-    <div class="wrap">
-      <div class="kt-quote-grid">
-        <!-- Cột Trái: Form Đăng Ký Nhận Báo Giá (Chuẩn cấu trúc Kingtechcare) -->
-        <div class="kt-quote-card">
-          <h2>Đăng Ký <span>Nhận Báo Giá</span></h2>
-          <p class="kt-quote-sub">Nhận Báo Giá Chiết Khấu &amp; Tư Vấn 1:1 – cam kết phản hồi trong vòng 15 phút</p>
-
-          <form class="kt-form" id="b2b-quote-form">
-            <div class="kt-row-2">
-              <div class="kt-field">
-                <label for="q-name">Họ và tên <span class="req">*</span></label>
-                <input class="kt-input" type="text" id="q-name" name="name" placeholder="Nhập tên của bạn" required>
-              </div>
-              <div class="kt-field">
-                <label for="q-phone">Số điện thoại <span class="req">*</span></label>
-                <input class="kt-input" type="tel" id="q-phone" name="phone" placeholder="0353 xxx xxx" required>
-              </div>
-            </div>
-
-            <div class="kt-field">
-              <span class="kt-radio-group-label">Hình thức liên hệ</span>
-              <div class="kt-radios">
-                <label class="kt-radio-item">
-                  <input type="radio" name="contact_method" value="Chat qua Zalo" checked>
-                  <span>Chat qua Zalo</span>
-                </label>
-                <label class="kt-radio-item">
-                  <input type="radio" name="contact_method" value="Gọi điện trực tiếp">
-                  <span>Gọi điện trực tiếp</span>
-                </label>
-                <label class="kt-radio-item">
-                  <input type="radio" name="contact_method" value="Nhận qua Email">
-                  <span>Nhận qua Email</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="kt-field">
-              <label for="q-company">Đơn vị tổ chức / Mã số thuế</label>
-              <input class="kt-input" type="text" id="q-company" name="company" placeholder="Nhập tên công ty hoặc Mã số thuế xuất hóa đơn">
-            </div>
-
-            <div class="kt-row-2">
-              <div class="kt-field">
-                <label for="q-qty">Số lượng dự kiến</label>
-                <input class="kt-input" type="text" id="q-qty" name="quantity" placeholder="Nhập số lượng user">
-              </div>
-              <div class="kt-field">
-                <label for="q-budget">Phần mềm / Ngân sách dự kiến</label>
-                <input class="kt-input" type="text" id="q-budget" name="software" placeholder="VD: ChatGPT, Gemini, CapCut...">
-              </div>
-            </div>
-
-            <div class="kt-field">
-              <label for="q-note">Ghi chú cho chúng tôi</label>
-              <input class="kt-input" type="text" id="q-note" name="note" placeholder="Lưu ý về hợp đồng, xuất hóa đơn GTGT hoặc kỳ hạn 06–12 tháng">
-            </div>
-
-            <div class="kt-submit-row">
-              <button type="submit" class="kt-submit-btn">Gửi thông tin →</button>
-              <span class="kt-submit-note">Hoặc gọi trực tiếp: <strong>0353.7979.19</strong> · <a href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener"><strong>Zalo OA STK Tech</strong></a></span>
-            </div>
-
-            <div class="kt-form-toast" id="kt-form-toast" role="status" aria-live="polite">
-              ✓ Đã ghi nhận thông tin yêu cầu báo giá! Chuyên viên Doanh nghiệp STK Tech sẽ phản hồi báo giá VNĐ &amp; dự thảo hợp đồng trong 15 phút. Đang mở cổng tiếp nhận chính thức...
-            </div>
-          </form>
-        </div>
-
-        <!-- Cột Phải: Tổ hợp Visual Hồ Sơ Chứng Từ & Bàn Tư Vấn 1:1 + Lịch Lật 15 Phút (Chuẩn bố cục Kingtechcare) -->
-        <div class="kt-visual-stage">
-          <div class="kt-bg-emblem" aria-hidden="true"></div>
-
-          <div class="kt-main-visual-card">
-            <div class="kt-visual-top">
-              <div class="kt-consultant-head">
-                <div class="kt-consultant-avatar">
-                  <img src="assets/images/meow-ai-mascot.webp" alt="Chuyên viên tư vấn doanh nghiệp STK Tech" loading="lazy">
-                </div>
-                <div class="kt-consultant-info">
-                  <span>● CHUYÊN VIÊN PHỤ TRÁCH DOANH NGHIỆP (1:1)</span>
-                  <h4>Bàn giao trọn bộ Báo giá – Hợp đồng – VAT</h4>
-                  <p>Công ty TNHH Công Nghệ STK · MST 0319648130</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- 2 Chứng từ thực tế bấm phóng to được ngay cạnh Form báo giá -->
-            <div class="kt-doc-preview-row">
-              <button type="button" class="kt-mini-doc lb-trigger" data-src="assets/images/hoa-don-gtgt-capcut-pro.webp" data-title="Hóa đơn GTGT điện tử — Dịch vụ CapCut Pro" data-note="Phát hành bởi Công ty TNHH Công Nghệ STK (MST 0319648130) qua SePay eInvoice, ký số hợp lệ.">
-                <div class="kt-mini-doc-img">
-                  <img src="assets/images/thumbnail-hoa-don-gtgt-capcut-pro.webp" alt="Mẫu Hóa đơn GTGT điện tử thực tế của STK Tech" loading="lazy">
-                </div>
-                <strong>Hóa đơn GTGT điện tử</strong>
-                <span>🔍 Bấm xem bản thực tế</span>
-              </button>
-
-              <button type="button" class="kt-mini-doc lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" data-title="Hợp đồng dịch vụ ChatGPT — Trang ký xác nhận &amp; đóng dấu" data-note="Đại diện pháp luật Lê Thị Kim Ngân ký tên và đóng dấu đỏ Công ty TNHH Công Nghệ STK.">
-                <div class="kt-mini-doc-img">
-                  <img src="assets/images/thumbnail-hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" alt="Mẫu Hợp đồng dịch vụ đóng dấu đỏ của STK Tech" loading="lazy">
-                </div>
-                <strong>Hợp đồng ký đóng dấu</strong>
-                <span>🔍 Bấm xem dấu đỏ pháp nhân</span>
-              </button>
-            </div>
-
-            <!-- Khối Lịch Lật Cam Kết 15 Phút + Mã QR Pháp Nhân ở tiền cảnh (Giống lịch lật để bàn của Kingtechcare) -->
-            <div class="kt-bottom-proof-bar">
-              <div class="kt-flip-calendar" aria-label="Cam kết phản hồi báo giá trong 15 phút">
-                <span class="kt-flip-digit">1</span>
-                <span class="kt-flip-digit">5</span>
-                <span class="kt-flip-unit">PHÚT</span>
-              </div>
-              <div class="kt-proof-text">
-                <strong>Gửi báo giá VNĐ &amp; dự thảo hợp đồng</strong>
-                <span>Xuất hóa đơn GTGT ngay trong ngày</span>
-              </div>
-              <button type="button" class="kt-proof-qr lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="Mã QR tra cứu thông tin doanh nghiệp STK Tech" data-note="Quét mã QR để đối chiếu thông tin pháp nhân Công ty TNHH Công Nghệ STK (MST 0319648130).">
-                <img src="assets/images/qr-masothue-stk.png" alt="Mã QR tra cứu MST 0319648130" loading="lazy">
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
