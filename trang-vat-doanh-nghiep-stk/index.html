@@ -368,21 +368,185 @@
 
     /* ==========================================================================
        MỤC 01: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
-       - Khối 1A: 3 Bộ phận (Kế toán · Thu mua · Quản trị IT) & Chiết khấu số lượng (Gọn, sắc bén)
+       - Khối 1A: 4 Trụ cột chuẩn hồ sơ hạch toán B2B
        - Khối 1B: Bảng Đối Chiếu "Vs" (Chỉ giữ tiêu đề 1 dòng theo Ảnh 1)
        ========================================================================== */
+    .stk-b2b-intro-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line-blue);
+      border-radius: var(--radius-2xl);
+      padding: 28px 30px;
+      margin-bottom: 26px;
+      box-shadow: var(--shadow-xs);
+    }
+    .stk-b2b-intro-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    .stk-b2b-intro-grid h3 {
+      font-size: 22px; font-weight: 800; color: var(--navy-900); line-height: 1.32;
+    }
+    .stk-b2b-intro-grid h3 span { color: var(--blue-600); }
+    .stk-b2b-intro-grid p {
+      font-size: 14.5px; color: var(--ink-700); line-height: 1.62;
+    }
+    .stk-b2b-pillars {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .stk-pillar-item {
+      background: var(--bg-subtle);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 15px 16px;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .stk-pillar-item i {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--blue-600); color: #FFFFFF;
+      font-style: normal; font-size: 11.5px; font-weight: 800;
+      display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .stk-pillar-item strong {
+      display: block; font-size: 14px; font-weight: 800; color: var(--navy-900); margin-bottom: 4px;
+    }
+    .stk-pillar-item span {
+      display: block; font-size: 13px; color: var(--ink-500); line-height: 1.48;
+    }
+
+    /* ==========================================================================
+       MỤC 02: DANH MỤC PHẦN MỀM & GIẢI PHÁP AI XUẤT HÓA ĐƠN VAT (CHẠY ADS B2B)
+       ========================================================================== */
+    .catalog-grid-8 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .cat-card {
+      background: #FFFFFF;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-xs);
+      transition: all 0.2s ease;
+    }
+    .cat-card:hover {
+      border-color: var(--blue-600);
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-3px);
+    }
+    .cat-top {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+    }
+    .cat-logo {
+      width: 46px; height: 46px; border-radius: 12px;
+      border: 1px solid var(--line); background: #F8FAFC;
+      padding: 6px; object-fit: contain; flex-shrink: 0;
+    }
+    .cat-title-wrap h3 {
+      font-size: 16px; font-weight: 800; color: var(--navy-900); line-height: 1.28;
+    }
+    .cat-vat-badge {
+      display: inline-block; margin-top: 3px;
+      background: var(--ok-100); color: var(--ok-700);
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+    }
+    .cat-desc {
+      font-size: 13.2px; color: var(--ink-700); line-height: 1.52; margin-bottom: 12px;
+    }
+    .cat-meta-list {
+      list-style: none; display: grid; gap: 5px;
+      padding-top: 10px; margin-bottom: 14px; border-top: 1px dashed var(--line);
+      font-size: 12.5px; color: var(--ink-500);
+    }
+    .cat-meta-list li strong { color: var(--navy-900); }
+    .cat-cta {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 100%; height: 36px; border-radius: 9px;
+      background: var(--blue-50); color: var(--blue-600);
+      border: 1px solid var(--line-blue);
+      font-size: 13px; font-weight: 700; transition: all 0.18s ease;
+    }
+    .cat-card:hover .cat-cta {
+      background: var(--blue-600); color: #FFFFFF; border-color: var(--blue-600);
+    }
+
+    /* ==========================================================================
+       MỤC 03: BỘ 04 CHỨNG TỪ KẾ TOÁN & 03 BỘ PHẬN DOANH NGHIỆP
+       ========================================================================== */
+    .stk-dossier-panel {
+      background: linear-gradient(145deg, #071433 0%, #0E255C 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-2xl);
+      padding: 28px 30px;
+      margin-bottom: 26px;
+      box-shadow: var(--shadow-md);
+    }
+    .stk-panel-head {
+      display: flex; align-items: flex-end; justify-content: space-between;
+      gap: 18px; flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .stk-panel-head h3 {
+      font-size: 21px; font-weight: 800; color: #FFFFFF; margin-bottom: 4px;
+    }
+    .stk-panel-head p {
+      font-size: 13.8px; color: #CBD5E1;
+    }
+    .stk-dossier-kpis {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 7px 14px; border-radius: 999px; font-size: 12.5px; color: #E2E8F0;
+    }
+    .stk-dossier-kpis b { color: #59D1A8; }
+    .stk-doc4-list {
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;
+    }
+    .stk-doc4-card {
+      background: #FFFFFF; color: var(--ink-900);
+      border-radius: 14px; padding: 16px;
+      display: flex; flex-direction: column; gap: 7px;
+    }
+    .stk-doc4-top {
+      display: flex; align-items: center; justify-content: space-between; gap: 6px;
+    }
+    .stk-doc4-num {
+      background: var(--blue-50); color: var(--blue-600);
+      border: 1px solid var(--line-blue);
+      font-size: 10.5px; font-weight: 800; padding: 3px 8px; border-radius: 6px;
+    }
+    .stk-doc4-status {
+      font-size: 11px; font-weight: 700; color: var(--ok-700);
+    }
+    .stk-doc4-card strong {
+      font-size: 15px; font-weight: 800; color: var(--navy-900);
+    }
+    .stk-doc4-card > span {
+      font-size: 12.8px; color: var(--ink-700); line-height: 1.48;
+    }
+
     .role-3-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 20px;
-      margin-bottom: 26px;
+      margin-bottom: 0;
     }
     .role-card {
       background: #FFFFFF;
       border: 1px solid var(--line);
       border-radius: 18px;
-      padding: 22px 22px;
+      padding: 24px 22px;
       box-shadow: var(--shadow-xs);
+      display: flex; flex-direction: column; justify-content: space-between;
       transition: all 0.2s ease;
     }
     .role-card:hover {
@@ -399,14 +563,17 @@
     }
     .role-card h3 {
       font-size: 17.5px; font-weight: 800; color: var(--navy-900);
-      line-height: 1.32; margin-bottom: 12px;
+      line-height: 1.32; margin-bottom: 8px;
+    }
+    .role-card p.role-lead {
+      font-size: 13.5px; color: var(--ink-500); line-height: 1.58; margin-bottom: 14px;
     }
     .role-points {
-      list-style: none; display: grid; gap: 8px;
-      padding-top: 12px; border-top: 1px dashed var(--line);
+      list-style: none; display: grid; gap: 9px;
+      padding-top: 13px; border-top: 1px dashed var(--line);
     }
     .role-points li {
-      font-size: 13.8px; color: var(--ink-700); line-height: 1.45;
+      font-size: 13.6px; color: var(--ink-700); line-height: 1.48;
       display: flex; align-items: flex-start; gap: 8px;
     }
     .role-points li i {
@@ -748,68 +915,159 @@
     }
     .kt-submit-btn:hover { background: #1947CC; }
 
-    /* Cột Phải Form: Bàn Tiếp Nhận B2B Gọn Sắc Nét */
+    .b2b-quote-prep {
+      max-width: 1120px;
+      margin: 24px auto 0;
+      background: #FFFFFF;
+      border: 1px solid #C9DAFA;
+      border-radius: 18px;
+      padding: 20px 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: var(--shadow-xs);
+    }
+    .b2b-prep-left { flex: 1; min-width: 280px; }
+    .b2b-prep-left h4 {
+      font-size: 14.8px; font-weight: 800; color: var(--navy-900); margin-bottom: 10px;
+    }
+    .b2b-prep-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .b2b-prep-chips span {
+      background: var(--blue-50); border: 1px solid var(--line-blue); color: var(--navy-900);
+      font-size: 12.5px; font-weight: 600; padding: 5px 11px; border-radius: 8px;
+    }
+    .b2b-prep-chips span b { color: var(--blue-600); }
+    .b2b-prep-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 42px; padding: 0 20px; border-radius: 10px;
+      background: var(--blue-600); color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif; font-size: 13.5px; font-weight: 700;
+      white-space: nowrap; box-shadow: 0 6px 14px rgba(33, 89, 245, 0.22);
+    }
+    .b2b-prep-btn:hover { background: #1947CC; }
+
+    /* Cột Phải Form: Chính Sách Chiết Khấu Theo Số Lượng & Kênh Zalo OA STK Tech */
     .kt-concierge-panel {
       background: linear-gradient(155deg, #06122E 0%, #0D2559 60%, #153885 100%);
-      border-radius: 18px; padding: 28px 26px; color: #FFFFFF;
-      display: flex; flex-direction: column; justify-content: space-between;
+      border-radius: 18px; padding: 26px 26px; color: #FFFFFF;
+      display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
     }
     .kt-concierge-badge {
       display: inline-flex; width: fit-content; padding: 4px 11px; border-radius: 999px;
       background: rgba(89, 209, 168, 0.16); border: 1px solid rgba(89, 209, 168, 0.36);
       color: #59D1A8; font-size: 10.5px; font-weight: 700; text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .kt-concierge-panel h3 {
-      font-size: 20px; font-weight: 800; color: #FFFFFF; margin-bottom: 14px; line-height: 1.3;
+      font-size: 19.5px; font-weight: 800; color: #FFFFFF; margin-bottom: 12px; line-height: 1.3;
     }
-    .kt-sla-list { display: grid; gap: 10px; margin-bottom: 16px; }
-    .kt-sla-item {
-      display: flex; align-items: center; gap: 11px;
-      padding: 11px 13px; border-radius: 11px;
-      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.13);
+    .kt-discount-tiers { display: grid; gap: 9px; }
+    .kt-tier-item {
+      display: grid; grid-template-columns: 108px 1fr; align-items: center; gap: 12px;
+      padding: 10px 13px; border-radius: 11px;
+      background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14);
     }
-    .kt-sla-tag {
-      flex-shrink: 0; min-width: 78px; text-align: center;
-      padding: 5px 8px; border-radius: 7px;
-      background: rgba(255, 255, 255, 0.14); color: #93C5FD;
-      font-family: 'Be Vietnam Pro', sans-serif; font-size: 11px; font-weight: 800;
+    .kt-tier-badge {
+      text-align: center; padding: 6px 8px; border-radius: 8px;
+      background: rgba(33, 89, 245, 0.38); border: 1px solid rgba(147, 197, 253, 0.38);
+      font-family: 'Be Vietnam Pro', sans-serif;
     }
-    .kt-sla-body strong {
-      display: block; font-size: 13.5px; font-weight: 700; color: #FFFFFF;
+    .kt-tier-badge b {
+      display: block; font-size: 13px; font-weight: 800; color: #59D1A8; line-height: 1.2;
     }
-    .kt-sla-body span {
-      display: block; font-size: 12px; color: #CBD5E1;
+    .kt-tier-badge small {
+      display: block; font-size: 10.5px; font-weight: 700; color: #E2E8F0; margin-top: 1px;
     }
-    .kt-concierge-footer {
+    .kt-tier-info strong {
+      display: block; font-size: 13.5px; font-weight: 700; color: #FFFFFF; margin-bottom: 2px;
+    }
+    .kt-tier-info span {
+      display: block; font-size: 12px; color: #CBD5E1; line-height: 1.4;
+    }
+
+    /* Khung Kết Nối Nhanh Zalo OA STK Tech + Mã QR Zalo OA */
+    .kt-zalo-oa-card {
       background: #FFFFFF; color: var(--navy-900);
-      border-radius: 12px; padding: 12px 15px;
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      border-radius: 14px; padding: 15px 16px;
+      display: grid; grid-template-columns: 1fr 112px; gap: 14px; align-items: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
     }
-    .kt-cf-left small {
-      display: block; font-size: 10px; font-weight: 800; color: var(--blue-600); text-transform: uppercase;
+    .kt-zalo-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #EFF6FF; color: #0068FF; border: 1px solid #BFDBFE;
+      font-size: 10.5px; font-weight: 800; padding: 3px 9px; border-radius: 999px;
+      margin-bottom: 6px;
     }
-    .kt-cf-left a.cf-phone {
-      font-family: 'Be Vietnam Pro', sans-serif; font-size: 19px; font-weight: 800; color: var(--navy-900);
+    .kt-zalo-left h4 {
+      font-size: 15.5px; font-weight: 800; color: var(--navy-900); line-height: 1.3; margin-bottom: 4px;
     }
-    .kt-cf-left span { display: block; font-size: 11.5px; color: var(--ink-500); }
-    .kt-cf-qr {
-      width: 50px; height: 50px; border: 1px solid #CBD5E1;
-      border-radius: 8px; padding: 3px; background: #FFFFFF; cursor: zoom-in;
+    .kt-zalo-left p {
+      font-size: 12px; color: var(--ink-500); line-height: 1.45; margin-bottom: 9px;
+    }
+    .kt-zalo-actions {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .kt-zalo-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      height: 33px; padding: 0 13px; border-radius: 8px;
+      background: #0068FF; color: #FFFFFF;
+      font-size: 12px; font-weight: 700;
+    }
+    .kt-zalo-btn:hover { background: #0052CC; }
+    .kt-zalo-hotline {
+      font-size: 12px; font-weight: 700; color: var(--navy-900);
+    }
+    .kt-zalo-qr-wrap {
+      text-align: center; background: #F8FAFC; border: 1px solid #DBEAFE;
+      border-radius: 11px; padding: 7px 6px;
+    }
+    .kt-zalo-qr-btn {
+      width: 88px; height: 88px; margin: 0 auto 4px;
+      padding: 3px; background: #FFFFFF; border: 1px solid #E2E8F0;
+      border-radius: 8px; cursor: zoom-in; display: block;
+    }
+    .kt-zalo-qr-btn img { width: 100%; height: 100%; object-fit: contain; }
+    .kt-zalo-qr-wrap small {
+      display: block; font-size: 10px; font-weight: 700; color: #0068FF; line-height: 1.25;
     }
 
     /* ==========================================================================
-       MỤC 05 (CUỐI CÙNG TRƯỚC FOOTER): CÂU HỎI THƯỜNG GẶP (NGẮN GỌN, TRỰC DIỆN)
+       MỤC 07 (CUỐI CÙNG TRƯỚC FOOTER): NGUYÊN TẮC CÔNG KHAI & CÂU HỎI THƯỜNG GẶP
        ========================================================================== */
-    .faq-wrap-narrow { max-width: 880px; margin: 0 auto; display: grid; gap: 10px; }
-    details.faq-item {
-      background: #FFFFFF; border: 1px solid var(--line); border-radius: 14px;
-      padding: 16px 20px;
+    .prin-faq-grid {
+      display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 24px; align-items: stretch;
     }
-    details.faq-item[open] { border-color: var(--blue-500); box-shadow: var(--shadow-xs); }
+    .prin-card, .faq-col {
+      background: #FFFFFF; border: 1px solid var(--line); border-radius: 18px;
+      padding: 26px; box-shadow: var(--shadow-xs);
+    }
+    .prin-card h3, .faq-col h3 {
+      font-size: 19px; font-weight: 800; color: var(--navy-900); margin-bottom: 6px;
+    }
+    .prin-card > p, .faq-col > p {
+      font-size: 13.5px; color: var(--ink-500); margin-bottom: 16px; line-height: 1.55;
+    }
+    .prin-list { list-style: none; display: grid; gap: 12px; }
+    .prin-list li {
+      position: relative; padding-left: 28px; font-size: 13.6px; color: var(--ink-700); line-height: 1.58;
+    }
+    .prin-list li::before {
+      content: "✓"; position: absolute; left: 0; top: 2px;
+      width: 20px; height: 20px; border-radius: 50%;
+      background: var(--ok-100); color: var(--ok-700);
+      font-weight: 800; font-size: 11.5px; display: flex; align-items: center; justify-content: center;
+    }
+    details.faq-item {
+      background: var(--bg-subtle); border: 1px solid var(--line); border-radius: 13px;
+      padding: 14px 18px; margin-bottom: 10px;
+    }
+    details.faq-item:last-child { margin-bottom: 0; }
+    details.faq-item[open] { background: #FFFFFF; border-color: var(--blue-500); box-shadow: var(--shadow-xs); }
     details.faq-item summary {
       font-family: 'Be Vietnam Pro', sans-serif;
-      font-weight: 700; font-size: 15px; color: var(--navy-900);
+      font-weight: 700; font-size: 14.5px; color: var(--navy-900);
       cursor: pointer; list-style: none;
       display: flex; justify-content: space-between; align-items: center; gap: 12px;
     }
@@ -817,8 +1075,8 @@
     details.faq-item summary::after { content: "+"; font-size: 20px; color: var(--blue-600); font-weight: 700; }
     details.faq-item[open] summary::after { content: "−"; }
     details.faq-item p {
-      margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line);
-      font-size: 14px; color: var(--ink-700); line-height: 1.6;
+      margin-top: 9px; padding-top: 9px; border-top: 1px solid var(--line);
+      font-size: 13.6px; color: var(--ink-700); line-height: 1.6;
     }
 
     /* Footer */
@@ -848,9 +1106,9 @@
     .lb-stage img { display: block; margin: 0 auto; background: #fff; border-radius: 8px; max-width: none; }
 
     @media (max-width: 1080px) {
-      .ws-business-gift__inner, .role-3-grid, .ws-experience-card, .kt-quote-grid { grid-template-columns: 1fr; }
+      .ws-business-gift__inner, .stk-b2b-intro-grid, .role-3-grid, .ws-experience-card, .kt-quote-grid, .prin-faq-grid { grid-template-columns: 1fr; }
       .ws-business-gift__highlights { grid-template-columns: 1fr; }
-      .stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats-strip, .stk-b2b-pillars, .catalog-grid-8, .stk-doc4-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .kt-step-card { grid-template-columns: 1fr; gap: 20px; padding: 18px; }
       .vs-Header-Row, .vs-row-pair { grid-template-columns: 1fr; background: #fff; }
       .vs-Header-Cell.right, .vs-cell-right { background: #0B1E4B; }
@@ -861,7 +1119,7 @@
     @media (max-width: 760px) {
       .sec { padding: 48px 0; }
       .ws-business-gift, .ws-quote-shell { padding: 24px 18px; }
-      .kt-row-2, .kt-radios, .stats-strip, .legal-compact-box, .legal-cells-grid, .footer-grid { grid-template-columns: 1fr; }
+      .kt-row-2, .kt-radios, .stats-strip, .stk-b2b-pillars, .catalog-grid-8, .stk-doc4-list, .legal-compact-box, .legal-cells-grid, .kt-zalo-oa-card, .footer-grid { grid-template-columns: 1fr; }
       .lc-item.span-2 { grid-column: span 1; }
       .stat-box { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
       .stat-box:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -948,7 +1206,7 @@
               </div>
               <div class="ws-business-gift__item">
                 <span class="ws-business-gift__icon">✓</span>
-                <span>Bảo hành 08:00 – 23:00</span>
+                <span>Hỗ trợ: 08:00 - 23:00</span>
               </div>
             </div>
           </div>
@@ -957,7 +1215,7 @@
             <p class="ws-business-gift__consult-label">BỘ PHẬN KHÁCH HÀNG DOANH NGHIỆP</p>
             <h2 class="ws-business-gift__consult-title">Nhận báo giá &amp; hợp đồng mẫu trong 15 phút</h2>
             <p class="ws-business-gift__consult-desc">Chiết khấu theo số lượng user &amp; kỳ hạn 06–12 tháng. Gửi ngay báo giá VNĐ đóng dấu.</p>
-            <div class="ws-business-gift__hotline-label">HOTLINE TƯ VẤN (08:00 – 23:00)</div>
+            <div class="ws-business-gift__hotline-label">HỖ TRỢ: 08:00 - 23:00 (HOTLINE &amp; ZALO)</div>
             <a class="ws-business-gift__phone" href="tel:0353797919">0353 797 919</a>
             <a class="ws-business-gift__btn" href="#dang-ky-bao-gia">Nhận báo giá doanh nghiệp</a>
             <a class="ws-business-gift__btn ws-business-gift__btn--secondary" href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener">Chat Zalo OA STK Tech</a>
@@ -990,51 +1248,62 @@
   </div>
 
   <!-- ========================================================================
-       MỤC 01: DOANH NGHIỆP CẦN GÌ KHI MUA TÀI KHOẢN AI & PHẦN MỀM?
-       (Kết hợp 3 Bộ phận Kế toán - Thu mua - IT + Bảng Đối Chiếu "Vs" ngắn gọn)
+       MỤC 01: VÌ SAO DOANH NGHIỆP MUA QUA PHÁP NHÂN STK TECH?
+       (Khối 1A: 4 Trụ cột Hạch toán Thuế B2B + Khối 1B: Bảng Đối Chiếu "Vs")
        ======================================================================== -->
   <section class="sec" id="nhu-cau-doanh-nghiep">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">Giải quyết bài toán mua sắm B2B</span>
-        <h2>Doanh nghiệp cần gì khi mua <span>tài khoản AI &amp; phần mềm?</span></h2>
-        <p>Đáp ứng trọn vẹn yêu cầu của Phòng Kế toán, Bộ phận Thu mua và Quản trị IT.</p>
+        <span class="sec-eyebrow">Giải pháp chứng từ &amp; thuế GTGT cho doanh nghiệp</span>
+        <h2>Vì sao doanh nghiệp mua phần mềm <span>qua pháp nhân STK Tech?</span></h2>
+        <p>Tháo gỡ vướng mắc hạch toán chi phí khi mua các nền tảng AI &amp; phần mềm nước ngoài không có pháp nhân tại Việt Nam.</p>
       </div>
 
-      <!-- Khối 1A: 3 Bộ Phận Trọng Tâm (Ngắn gọn, chỉ giữ bullet quyền lợi cốt lõi) -->
-      <div class="role-3-grid">
-        <article class="role-card">
-          <span class="role-pill">01 · PHÒNG KẾ TOÁN</span>
-          <h3>Đủ chứng từ hạch toán chi phí hợp lệ</h3>
-          <ul class="role-points">
-            <li><i>✓</i><span><strong>Hóa đơn GTGT điện tử</strong> xuất đúng MST công ty</span></li>
-            <li><i>✓</i><span>Đầy đủ <strong>Báo giá, Hợp đồng đóng dấu &amp; Nghiệm thu</strong></span></li>
-            <li><i>✓</i><span>Chuyển khoản VNĐ vào <strong>TK Pháp nhân ACB 7796368</strong></span></li>
-          </ul>
-        </article>
+      <!-- Khối 1A: Cùng một phần mềm — khác nhau ở bộ chứng từ hạch toán -->
+      <div class="stk-b2b-intro-card">
+        <div class="stk-b2b-intro-grid">
+          <div>
+            <span class="role-pill" style="margin-bottom:8px">✓ CHUẨN HẠCH TOÁN CHI PHÍ DOANH NGHIỆP</span>
+            <h3>Cùng một phần mềm — <span>khác nhau ở bộ chứng từ hạch toán</span></h3>
+          </div>
+          <p>
+            Khi nhân sự tự thanh toán ChatGPT, Gemini, CapCut hay Adobe bằng thẻ cá nhân, khoản chi thường <strong>chỉ có biên lai nước ngoài (Invoice/Receipt không có mã số thuế Việt Nam)</strong> nên Phòng Kế toán không thể đưa vào chi phí hợp lệ. Mua qua <strong>Công ty TNHH Công Nghệ STK (MST 0319648130)</strong> giúp chuẩn hóa toàn bộ quy trình mua sắm nội bộ:
+          </p>
+        </div>
 
-        <article class="role-card">
-          <span class="role-pill">02 · BỘ PHẬN THU MUA</span>
-          <h3>Gom 01 đầu mối &amp; chiết khấu số lượng</h3>
-          <ul class="role-points">
-            <li><i>✓</i><span><strong>Gộp nhiều phần mềm</strong> vào 01 hợp đồng duy nhất</span></li>
-            <li><i>✓</i><span><strong>Chiết khấu thương mại</strong> theo số user &amp; gói 06–12 tháng</span></li>
-            <li><i>✓</i><span>Giá VNĐ cố định <strong>đã gồm VAT</strong>, duyệt chi nhanh</span></li>
-          </ul>
-        </article>
-
-        <article class="role-card">
-          <span class="role-pill">03 · BỘ PHẬN IT &amp; QUẢN LÝ</span>
-          <h3>Cấp theo email công ty &amp; đổi user linh hoạt</h3>
-          <ul class="role-points">
-            <li><i>✓</i><span>Cấp quyền trên <strong>email công ty / Workspace riêng</strong></span></li>
-            <li><i>✓</i><span><strong>Không dùng tài khoản share</strong>, bảo mật dữ liệu nội bộ</span></li>
-            <li><i>✓</i><span>Hỗ trợ <strong>thu hồi / đổi user</strong> khi nhân sự nghỉ việc</span></li>
-          </ul>
-        </article>
+        <div class="stk-b2b-pillars">
+          <div class="stk-pillar-item">
+            <i>01</i>
+            <div>
+              <strong>Hạch toán chi phí hợp lệ 100%</strong>
+              <span>Phát hành Hóa đơn GTGT điện tử (SePay eInvoice) có mã cơ quan thuế, đúng tên &amp; MST công ty.</span>
+            </div>
+          </div>
+          <div class="stk-pillar-item">
+            <i>02</i>
+            <div>
+              <strong>Loại bỏ rủi ro thẻ tín dụng</strong>
+              <span>Chuyển khoản VNĐ vào TK Pháp nhân ACB 7796368; không lo lộ thẻ hay phí ngoại tệ 3–4%.</span>
+            </div>
+          </div>
+          <div class="stk-pillar-item">
+            <i>03</i>
+            <div>
+              <strong>Đủ hồ sơ trình ký &amp; kiểm toán</strong>
+              <span>Trọn bộ Báo giá đóng dấu, Hợp đồng dịch vụ B2B, Biên bản bàn giao &amp; nghiệm thu.</span>
+            </div>
+          </div>
+          <div class="stk-pillar-item">
+            <i>04</i>
+            <div>
+              <strong>Cấp theo email công ty &amp; Hỗ trợ: 08:00 - 23:00</strong>
+              <span>Tài khoản riêng biệt, bảo mật dữ liệu nội bộ, hỗ trợ thu hồi/đổi user khi nhân sự nghỉ việc.</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Khối 1B: Bảng Đối Chiếu "Vs" (Chỉ giữ tiêu đề 1 dòng theo đúng Ảnh 1) -->
+      <!-- Khối 1B: Bảng Đối Chiếu "Vs" (Ngắn gọn 1 dòng trực quan) -->
       <div class="vs-matrix-container">
         <div class="vs-Unified-Box">
           <div class="vs-Header-Row">
@@ -1093,7 +1362,7 @@
               <div class="vs-center-pill">Vs</div>
               <div class="vs-cell-right">
                 <span class="mark-yes">✓</span>
-                <span>Hướng dẫn sử dụng, nhắc gia hạn, hỗ trợ 08:00–23:00</span>
+                <span>Hướng dẫn sử dụng, nhắc gia hạn, Hỗ trợ: 08:00 - 23:00</span>
               </div>
             </div>
           </div>
@@ -1103,7 +1372,279 @@
   </section>
 
   <!-- ========================================================================
-       MỤC 02 (GỘP CHUNG): QUY TRÌNH 4 BƯỚC & CHỨNG TỪ THỰC TẾ (LAYOUT NGANG KINGTECH)
+       MỤC 02: DANH MỤC TÀI KHOẢN AI & PHẦN MỀM XUẤT HÓA ĐƠN VAT TẠI STK TECH
+       ======================================================================== -->
+  <section class="sec alt" id="danh-muc-phan-mem">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-eyebrow">Danh mục cung ứng B2B &amp; Xuất VAT</span>
+        <h2>Các phần mềm &amp; tài khoản AI <span>xuất hóa đơn GTGT tại STK Tech</span></h2>
+        <p>Doanh nghiệp có thể đăng ký lẻ từng công cụ hoặc gộp nhiều phần mềm vào chung 01 hợp đồng để nhận mức chiết khấu tốt nhất.</p>
+      </div>
+
+      <div class="catalog-grid-8">
+        <!-- 1. ChatGPT -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-chatgpt.webp" alt="ChatGPT Plus &amp; Business" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>ChatGPT Plus &amp; Team Workspace</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Trợ lý AI viết nội dung, phân tích dữ liệu, lập trình và tự động hóa quy trình làm việc cho các phòng ban.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Hình thức:</strong> Cấp trên email công ty / Workspace</li>
+              <li>✓ <strong>Bảo mật:</strong> Không dùng dữ liệu huấn luyện AI</li>
+              <li>✓ <strong>Kỳ hạn:</strong> 01 tháng · 06 tháng · 12 tháng</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="ChatGPT Plus / Team Workspace">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 2. Google AI / Gemini & Veo 3 -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/google-ai-logo.webp" alt="Google AI Pro, Ultra &amp; Veo 3" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>Google AI (Gemini &amp; Veo 3)</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Hệ sinh thái Gemini Advanced, tạo video AI Veo 3, NotebookLM Plus tích hợp sâu với Docs, Sheets, Drive.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Hình thức:</strong> Kích hoạt trên email Google công ty</li>
+              <li>✓ <strong>Lưu trữ:</strong> Kèm Google Drive 2TB – 30TB</li>
+              <li>✓ <strong>Gói B2B:</strong> AI Pro &amp; AI Ultra theo kỳ hạn</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="Google AI (Gemini &amp; Veo 3)">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 3. CapCut Pro & Teams -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-capcut.webp" alt="CapCut Pro &amp; Teams" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>CapCut Pro &amp; CapCut Teams</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Bộ công cụ dựng video thương mại, phụ đề tự động AI, xóa nền và kho tài nguyên bản quyền cho phòng Marketing.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Thiết bị:</strong> Đa nền tảng (PC, Mac, Mobile, Web)</li>
+              <li>✓ <strong>Lưu trữ:</strong> 100GB–1TB Cloud dùng chung nhóm</li>
+              <li>✓ <strong>Chứng từ:</strong> Hóa đơn GTGT chi phí sản xuất media</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="CapCut Pro / CapCut Teams">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 4. Adobe Creative Cloud -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-adobe.webp" alt="Adobe Creative Cloud" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>Adobe Creative Cloud All Apps</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Trọn bộ 20+ phần mềm thiết kế chuẩn công nghiệp: Photoshop, Illustrator, Premiere Pro, After Effects, Acrobat Pro.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Hình thức:</strong> Cấp bản quyền theo email thiết kế</li>
+              <li>✓ <strong>Tính năng:</strong> Kèm Adobe Firefly AI thương mại</li>
+              <li>✓ <strong>Bảo hành:</strong> Hỗ trợ: 08:00 - 23:00 suốt kỳ hạn</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="Adobe Creative Cloud All Apps">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 5. Microsoft 365 & Copilot -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-m365.webp" alt="Microsoft 365 &amp; Copilot" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>Microsoft 365 &amp; AI Copilot</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Bộ ứng dụng văn phòng Word, Excel, PowerPoint, Outlook, Teams kèm 1TB OneDrive và trợ lý AI Copilot bản quyền.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Hình thức:</strong> Cấp theo email (5 thiết bị/user)</li>
+              <li>✓ <strong>Lưu trữ:</strong> 1TB OneDrive đám mây bảo mật</li>
+              <li>✓ <strong>Chứng từ:</strong> Hợp đồng &amp; VAT chuẩn văn phòng</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="Microsoft 365 &amp; Copilot">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 6. ElevenLabs AI Voice -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-elevenlabs.webp" alt="ElevenLabs AI" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>ElevenLabs AI Voice &amp; Dubbing</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Nền tảng chuyển văn bản thành giọng nói (Text-to-Speech) và lồng tiếng đa ngôn ngữ tự nhiên hàng đầu thế giới.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Bản quyền:</strong> Commercial License thương mại</li>
+              <li>✓ <strong>Các gói:</strong> Creator, Pro, Scale theo sản lượng</li>
+              <li>✓ <strong>Hình thức:</strong> Nâng cấp trên email công ty</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="ElevenLabs AI Voice">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 7. Kaspersky Security -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-kaspersky.webp" alt="Kaspersky Security" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>Bảo mật Kaspersky Bản Quyền</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Đủ Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Giải pháp chống mã độc, chống tống tiền (Ransomware) và bảo vệ an toàn thông tin cho hệ thống máy tính công ty.</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Hình thức:</strong> Cấp mã kích hoạt theo số máy</li>
+              <li>✓ <strong>Phiên bản:</strong> Standard, Plus, Premium, Small Office</li>
+              <li>✓ <strong>Hồ sơ:</strong> Phiếu bàn giao license &amp; hóa đơn VAT</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="Kaspersky Bản Quyền">Nhận báo giá VAT →</a>
+        </article>
+
+        <!-- 8. Zoom Pro / Canva / Vietmap & Phần mềm theo yêu cầu -->
+        <article class="cat-card">
+          <div>
+            <div class="cat-top">
+              <img class="cat-logo" src="assets/images/logo-vietmap.webp" alt="Zoom Pro, Canva, Vietmap &amp; Phần mềm B2B" loading="lazy">
+              <div class="cat-title-wrap">
+                <h3>Zoom, Canva, Vietmap &amp; Khác</h3>
+                <span class="cat-vat-badge">✓ Xuất VAT · Gom 01 Hợp đồng</span>
+              </div>
+            </div>
+            <p class="cat-desc">Cung cấp Zoom Pro (100–500 người), Canva Teams, Vietmap Live Pro (cho đội xe công ty), Claude, Midjourney...</p>
+            <ul class="cat-meta-list">
+              <li>✓ <strong>Tiện ích:</strong> Gộp nhiều phần mềm vào 01 hợp đồng</li>
+              <li>✓ <strong>Ưu đãi:</strong> Chiết khấu thương mại theo số lượng</li>
+              <li>✓ <strong>Tư vấn:</strong> Báo giá theo danh sách của Thu mua</li>
+            </ul>
+          </div>
+          <a href="#dang-ky-bao-gia" class="cat-cta" data-pick="Gộp nhiều phần mềm (Zoom, Canva, AI...)">Nhận báo giá VAT →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MỤC 03: BỘ 04 CHỨNG TỪ BÀN GIAO CHO PHÒNG KẾ TOÁN & 3 PHÒNG BAN
+       ======================================================================== -->
+  <section class="sec" id="ho-so-chung-tu">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-eyebrow">Tiêu chuẩn hồ sơ kế toán &amp; kiểm toán</span>
+        <h2>Một đơn hàng doanh nghiệp gồm <span>04 chứng từ bàn giao chuẩn chỉnh</span></h2>
+        <p>Đảm bảo mọi khoản chi mua phần mềm của doanh nghiệp đều có đầy đủ căn cứ pháp lý để khấu trừ thuế GTGT và hạch toán chi phí hợp lệ.</p>
+      </div>
+
+      <!-- Khối 3A: Bộ 04 chứng từ chuẩn chỉnh -->
+      <div class="stk-dossier-panel">
+        <div class="stk-panel-head">
+          <div>
+            <h3>Trọn bộ hồ sơ thanh toán &amp; quyết toán thuế B2B</h3>
+            <p>Phát hành đồng bộ dưới pháp nhân Công ty TNHH Công Nghệ STK — Mã số thuế: 0319648130</p>
+          </div>
+          <div class="stk-dossier-kpis">
+            <b>✓ 100% HỢP LỆ KẾ TOÁN THUẾ</b> · SePay eInvoice · TK ACB: 7796368
+          </div>
+        </div>
+
+        <div class="stk-doc4-list">
+          <div class="stk-doc4-card">
+            <div class="stk-doc4-top">
+              <span class="stk-doc4-num">CHỨNG TỪ 01</span>
+              <span class="stk-doc4-status">✓ Đóng dấu đỏ</span>
+            </div>
+            <strong>Bảng Báo Giá Dịch Vụ</strong>
+            <span>Thể hiện rõ tên phần mềm, số lượng user, kỳ hạn, mức chiết khấu và tổng giá thanh toán VNĐ đã gồm VAT.</span>
+          </div>
+
+          <div class="stk-doc4-card">
+            <div class="stk-doc4-top">
+              <span class="stk-doc4-num">CHỨNG TỪ 02</span>
+              <span class="stk-doc4-status">✓ Pháp nhân B2B</span>
+            </div>
+            <strong>Hợp Đồng Dịch Vụ B2B</strong>
+            <span>Quy định rõ trách nhiệm pháp lý, bảo mật dữ liệu, thời hạn dịch vụ (Hỗ trợ: 08:00 - 23:00) và điều khoản thanh toán.</span>
+          </div>
+
+          <div class="stk-doc4-card">
+            <div class="stk-doc4-top">
+              <span class="stk-doc4-num">CHỨNG TỪ 03</span>
+              <span class="stk-doc4-status">✓ Xác nhận bàn giao</span>
+            </div>
+            <strong>Phiếu Bàn Giao &amp; Nghiệm Thu</strong>
+            <span>Xác nhận danh sách email nhân sự đã được kích hoạt thành công, kèm tài liệu hướng dẫn và biên bản nghiệm thu.</span>
+          </div>
+
+          <div class="stk-doc4-card">
+            <div class="stk-doc4-top">
+              <span class="stk-doc4-num">CHỨNG TỪ 04</span>
+              <span class="stk-doc4-status">✓ Có mã Cơ quan Thuế</span>
+            </div>
+            <strong>Hóa Đơn GTGT Điện Tử</strong>
+            <span>Phát hành qua SePay eInvoice (file PDF + XML gốc), đối ứng chuẩn với Ủy nhiệm chi ngân hàng ACB 7796368.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Khối 3B: 3 Bộ Phận Trọng Tâm (Kế toán - Thu mua - IT) -->
+      <div class="role-3-grid">
+        <article class="role-card">
+          <span class="role-pill">01 · PHÒNG KẾ TOÁN</span>
+          <h3>Đủ chứng từ hạch toán chi phí hợp lệ</h3>
+          <ul class="role-points">
+            <li><i>✓</i><span><strong>Hóa đơn GTGT điện tử (XML + PDF)</strong> xuất đúng MST công ty</span></li>
+            <li><i>✓</i><span>Đầy đủ <strong>Báo giá, Hợp đồng đóng dấu &amp; Biên bản nghiệm thu</strong></span></li>
+            <li><i>✓</i><span>Chuyển khoản VNĐ vào <strong>TK Pháp nhân ACB 7796368</strong></span></li>
+          </ul>
+        </article>
+
+        <article class="role-card">
+          <span class="role-pill">02 · BỘ PHẬN THU MUA</span>
+          <h3>Gom 01 đầu mối &amp; chiết khấu số lượng</h3>
+          <ul class="role-points">
+            <li><i>✓</i><span><strong>Gộp nhiều phần mềm</strong> vào 01 hợp đồng thanh toán duy nhất</span></li>
+            <li><i>✓</i><span><strong>Chiết khấu thương mại</strong> theo số user &amp; gói 06–12 tháng</span></li>
+            <li><i>✓</i><span>Giá VNĐ cố định <strong>đã gồm VAT</strong>, phản hồi báo giá trong 15 phút</span></li>
+          </ul>
+        </article>
+
+        <article class="role-card">
+          <span class="role-pill">03 · BỘ PHẬN IT &amp; QUẢN LÝ</span>
+          <h3>Cấp theo email công ty &amp; đổi user linh hoạt</h3>
+          <ul class="role-points">
+            <li><i>✓</i><span>Cấp quyền trên <strong>email công ty / Workspace riêng biệt</strong></span></li>
+            <li><i>✓</i><span><strong>Không dùng tài khoản share</strong>, bảo mật dữ liệu nội bộ</span></li>
+            <li><i>✓</i><span>Hỗ trợ <strong>thu hồi / đổi user</strong> miễn phí khi nhân sự nghỉ việc</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MỤC 04: QUY TRÌNH 4 BƯỚC & CHỨNG TỪ THỰC TẾ (LAYOUT NGANG KINGTECH)
        ======================================================================== -->
   <section class="sec alt" id="quy-trinh-chung-tu">
     <div class="wrap">
@@ -1127,7 +1668,7 @@
               <li><i>✓</i><span>Tiếp nhận danh sách phần mềm, số lượng user và kỳ hạn (06–12 tháng)</span></li>
               <li><i>✓</i><span>Tư vấn gói phù hợp theo mục đích công việc và ngân sách công ty</span></li>
               <li><i>✓</i><span>Kiểm tra phương thức cấp quyền riêng trên email doanh nghiệp</span></li>
-              <li><i>✓</i><span>Có chuyên viên B2B phụ trách riêng hỗ trợ xuyên suốt 08:00 – 23:00</span></li>
+              <li><i>✓</i><span>Chuyên viên B2B phụ trách riêng — Hỗ trợ: 08:00 - 23:00</span></li>
             </ul>
           </div>
         </article>
@@ -1171,7 +1712,7 @@
             </ul>
             <div class="kt-step-doc-pills">
               <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-ky-xac-nhan.webp" data-title="Hợp đồng dịch vụ — Trang ký &amp; đóng dấu đỏ" data-note="Chữ ký Giám đốc Lê Thị Kim Ngân và dấu đỏ Công ty TNHH Công Nghệ STK.">🔍 Xem Trang ký &amp; đóng dấu đỏ</button>
-              <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-2.webp" data-title="Hợp đồng dịch vụ — Điều khoản bảo hành &amp; thanh toán" data-note="Cam kết bảo hành kỹ thuật và xuất hóa đơn GTGT.">🔍 Xem Điều khoản bảo hành</button>
+              <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/hop-dong-dich-vu-chatgpt-trang-2.webp" data-title="Hợp đồng dịch vụ — Điều khoản bảo hành &amp; thanh toán" data-note="Cam kết hỗ trợ kỹ thuật và xuất hóa đơn GTGT.">🔍 Xem Điều khoản hợp đồng</button>
             </div>
           </div>
         </article>
@@ -1187,23 +1728,39 @@
             <h3>Bước 4: Gửi phiếu bàn giao &amp; hóa đơn điện tử</h3>
             <ul class="kt-step-list">
               <li><i>✓</i><span>Phát hành Hóa đơn GTGT điện tử (SePay eInvoice) đúng MST doanh nghiệp</span></li>
-              <li><i>✓</i><span>Gửi Phiếu bàn giao, tài liệu hướng dẫn và xác nhận thời hạn bảo hành</span></li>
-              <li><i>✓</i><span>Hỗ trợ kỹ thuật 08:00–23:00, đổi user miễn phí khi nhân sự nghỉ việc</span></li>
+              <li><i>✓</i><span>Gửi Phiếu bàn giao, tài liệu hướng dẫn và xác nhận thời hạn dịch vụ</span></li>
+              <li><i>✓</i><span>Hỗ trợ: 08:00 - 23:00 xuyên suốt kỳ hạn, đổi user miễn phí khi nhân sự nghỉ</span></li>
               <li><i>✓</i><span>Chủ động theo dõi và thông báo trước khi đến kỳ gia hạn tiếp theo</span></li>
             </ul>
             <div class="kt-step-doc-pills">
               <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/hoa-don-gtgt-google-ai.webp" data-title="Hóa đơn GTGT điện tử — Dịch vụ Google AI" data-note="Ký số hợp lệ bởi Công ty TNHH Công Nghệ STK (MST 0319648130).">🔍 Xem Hóa đơn GTGT (Google AI)</button>
               <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/hoa-don-gtgt-capcut-pro.webp" data-title="Hóa đơn GTGT điện tử — Dịch vụ CapCut Pro" data-note="Ký số hợp lệ bởi Công ty TNHH Công Nghệ STK (MST 0319648130).">🔍 Xem Hóa đơn GTGT (CapCut Pro)</button>
-              <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/buoc-5-huong-dan-su-dung.webp" data-title="Bộ tài liệu bàn giao &amp; hướng dẫn sử dụng" data-note="Tài liệu hướng dẫn sử dụng, lưu ý bảo mật và thông tin bảo hành.">🔍 Xem Bộ tài liệu bàn giao</button>
+              <button type="button" class="kt-doc-pill lb-trigger" data-src="assets/images/buoc-5-huong-dan-su-dung.webp" data-title="Bộ tài liệu bàn giao &amp; hướng dẫn sử dụng" data-note="Tài liệu hướng dẫn sử dụng, lưu ý bảo mật và thông tin hỗ trợ kỹ thuật.">🔍 Xem Bộ tài liệu bàn giao</button>
             </div>
           </div>
         </article>
+      </div>
+
+      <!-- Thanh 6 thông tin chuẩn bị nhận báo giá nhanh -->
+      <div class="b2b-quote-prep">
+        <div class="b2b-prep-left">
+          <h4>6 thông tin gửi nhanh để nhận Báo giá &amp; Dự thảo Hợp đồng trong 15 phút:</h4>
+          <div class="b2b-prep-chips">
+            <span><b>01.</b> Tên phần mềm cần mua</span>
+            <span><b>02.</b> Số lượng user / tài khoản</span>
+            <span><b>03.</b> Kỳ hạn (01, 06 hoặc 12 tháng)</span>
+            <span><b>04.</b> Mã số thuế xuất hóa đơn</span>
+            <span><b>05.</b> Email nhận hóa đơn điện tử</span>
+            <span><b>06.</b> Yêu cầu hợp đồng / nghiệm thu</span>
+          </div>
+        </div>
+        <a href="#dang-ky-bao-gia" class="b2b-prep-btn">Gửi thông tin nhận báo giá →</a>
       </div>
     </div>
   </section>
 
   <!-- ========================================================================
-       MỤC 03: VĂN PHÒNG THỰC TẾ & ĐỊNH DANH PHÁP NHÂN + MÃ QR TRA CỨU
+       MỤC 05: VĂN PHÒNG THỰC TẾ & ĐỊNH DANH PHÁP NHÂN + MÃ QR TRA CỨU
        ======================================================================== -->
   <section class="sec" id="xac-minh">
     <div class="wrap">
@@ -1238,7 +1795,7 @@
                 <strong>ĐKKD: 490/49/7 Hương Lộ 2, P. Bình Trị Đông · VP: 497/24/9G Phan Văn Trị, P. An Nhơn</strong>
               </div>
               <div class="lc-item span-2">
-                <span>Kênh chính thức (08:00–23:00)</span>
+                <span>Hỗ trợ: 08:00 - 23:00 (Kênh chính thức)</span>
                 <strong><a href="tel:0353797919">0353.7979.19</a> · <a href="mailto:contacts@stktech.ai">contacts@stktech.ai</a> · <a href="https://stktech.ai/">stktech.ai</a></strong>
               </div>
             </div>
@@ -1256,7 +1813,8 @@
   </section>
 
   <!-- ========================================================================
-       MỤC 04: ĐĂNG KÝ NHẬN BÁO GIÁ DOANH NGHIỆP (CÂN ĐỐI 2 CỘT)
+       MỤC 06: ĐĂNG KÝ NHẬN BÁO GIÁ DOANH NGHIỆP
+       (Cột trái: Form báo giá · Cột phải: Bậc Chiết Khấu & Kết nối Zalo OA STK Tech)
        ======================================================================== -->
   <section class="quote-sec" id="dang-ky-bao-gia">
     <div class="wrap">
@@ -1315,52 +1873,66 @@
             </form>
           </div>
 
-          <aside class="kt-concierge-panel" aria-label="Cam kết bàn giao hồ sơ doanh nghiệp">
+          <aside class="kt-concierge-panel" aria-label="Chính sách chiết khấu doanh nghiệp và kết nối Zalo OA">
             <div>
-              <span class="kt-concierge-badge">✓ BÀN TIẾP NHẬN DOANH NGHIỆP (1:1)</span>
-              <h3>Chuẩn hóa trọn bộ chứng từ cho Phòng Thu mua &amp; Kế toán</h3>
+              <span class="kt-concierge-badge">✓ CHÍNH SÁCH CHIẾT KHẤU &amp; KẾT NỐI ZALO B2B</span>
+              <h3>Ưu đãi chiết khấu theo số lượng user &amp; hợp đồng kỳ hạn</h3>
 
-              <div class="kt-sla-list">
-                <div class="kt-sla-item">
-                  <span class="kt-sla-tag">15 Phút</span>
-                  <div class="kt-sla-body">
-                    <strong>Gửi báo giá VNĐ &amp; chiết khấu số lượng</strong>
-                    <span>Giá báo đã gồm thuế GTGT (0% phụ phí).</span>
+              <div class="kt-discount-tiers">
+                <div class="kt-tier-item">
+                  <div class="kt-tier-badge">
+                    <b>03 – 09 User</b>
+                    <small>Gói Nhóm</small>
+                  </div>
+                  <div class="kt-tier-info">
+                    <strong>Chiết khấu nhóm &amp; Gộp 01 hóa đơn VAT</strong>
+                    <span>Ưu đãi theo gói 06–12 tháng, giảm chi phí so với mua lẻ từng tài khoản.</span>
                   </div>
                 </div>
-                <div class="kt-sla-item">
-                  <span class="kt-sla-tag">04 Hồ sơ</span>
-                  <div class="kt-sla-body">
-                    <strong>Đủ Báo giá – Hợp đồng – Nghiệm thu – VAT</strong>
-                    <span>Ký đóng dấu pháp nhân &amp; xuất e-Invoice trong ngày.</span>
+
+                <div class="kt-tier-item">
+                  <div class="kt-tier-badge">
+                    <b>10 – 29 User</b>
+                    <small>Phòng Ban</small>
+                  </div>
+                  <div class="kt-tier-info">
+                    <strong>Chiết khấu Phòng ban &amp; Hợp đồng dịch vụ</strong>
+                    <span>Áp dụng bảng giá sỉ B2B, hỗ trợ gộp nhiều phần mềm vào 01 bộ hồ sơ.</span>
                   </div>
                 </div>
-                <div class="kt-sla-item">
-                  <span class="kt-sla-tag">01 Đầu mối</span>
-                  <div class="kt-sla-body">
-                    <strong>Gộp nhiều phần mềm vào 01 hợp đồng</strong>
-                    <span>ChatGPT, Gemini, CapCut, Adobe, M365, Zoom...</span>
+
+                <div class="kt-tier-item">
+                  <div class="kt-tier-badge">
+                    <b>30+ User</b>
+                    <small>Hợp đồng năm</small>
                   </div>
-                </div>
-                <div class="kt-sla-item">
-                  <span class="kt-sla-tag">Bảo hành</span>
-                  <div class="kt-sla-body">
-                    <strong>Cấp theo email công ty &amp; hỗ trợ đổi user</strong>
-                    <span>Bảo hành kỹ thuật 08:00–23:00 suốt kỳ hạn.</span>
+                  <div class="kt-tier-info">
+                    <strong>Báo giá Dự án &amp; Chiết khấu Doanh nghiệp cao nhất</strong>
+                    <span>Chính sách giá đặc biệt cho toàn công ty, chuyên viên kỹ thuật phụ trách 1:1.</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="kt-concierge-footer">
-              <div class="kt-cf-left">
-                <small>HOTLINE PHÒNG DOANH NGHIỆP (08:00 – 23:00)</small>
-                <a class="cf-phone" href="tel:0353797919">0353 797 919</a>
-                <span>Email: contacts@stktech.ai · TK ACB: 7796368</span>
+            <!-- Khung Zalo OA & Mã QR Zalo nhận báo giá nhanh -->
+            <div class="kt-zalo-oa-card">
+              <div class="kt-zalo-left">
+                <span class="kt-zalo-tag">● ZALO OA CHÍNH THỨC STK TECH</span>
+                <h4>Chat Zalo nhận Báo giá &amp; Hợp đồng mẫu ngay</h4>
+                <p>Hỗ trợ: 08:00 - 23:00 · Phản hồi báo giá đóng dấu trong 15 phút</p>
+                <div class="kt-zalo-actions">
+                  <a class="kt-zalo-btn" href="https://zalo.me/2440805816125654143" target="_blank" rel="noopener">
+                    Nhắn Zalo OA ngay →
+                  </a>
+                  <span class="kt-zalo-hotline">Hotline: 0353 797 919</span>
+                </div>
               </div>
-              <button type="button" class="kt-cf-qr lb-trigger" data-src="assets/images/qr-tra-cuu-doanh-nghiep-full.jpg" data-title="QR tra cứu thông tin doanh nghiệp — MST 0319648130" data-note="Quét mã QR để đối chiếu thông tin pháp nhân Công ty TNHH Công Nghệ STK.">
-                <img src="assets/images/qr-masothue-stk.png" alt="Mã QR tra cứu MST 0319648130" loading="lazy">
-              </button>
+              <div class="kt-zalo-qr-wrap">
+                <button type="button" class="kt-zalo-qr-btn lb-trigger" data-src="assets/images/qr-zalo-oa-stk.png" data-title="Mã QR Zalo Official Account — STK Tech" data-note="Quét mã QR trên ứng dụng Zalo để kết nối trực tiếp bộ phận Báo giá Doanh nghiệp &amp; Xuất hóa đơn VAT.">
+                  <img src="assets/images/qr-zalo-oa-stk.png" alt="Mã QR Zalo OA STK Tech" loading="lazy">
+                </button>
+                <small>Quét QR Zalo OA</small>
+              </div>
             </div>
           </aside>
         </div>
@@ -1369,35 +1941,73 @@
   </section>
 
   <!-- ========================================================================
-       MỤC 05 (CUỐI CÙNG TRƯỚC FOOTER): CÂU HỎI THƯỜNG GẶP
+       MỤC 07 (CUỐI CÙNG TRƯỚC FOOTER): NGUYÊN TẮC MINH BẠCH & CÂU HỎI THƯỜNG GẶP
        ======================================================================== -->
   <section class="sec alt" id="faq">
     <div class="wrap">
       <div class="sec-head">
-        <span class="sec-eyebrow">Giải đáp nhanh B2B</span>
-        <h2>Câu hỏi thường gặp về <span>báo giá &amp; hóa đơn VAT</span></h2>
+        <span class="sec-eyebrow">Cam kết pháp lý &amp; Giải đáp nghiệp vụ thuế</span>
+        <h2>Nguyên tắc minh bạch chứng từ &amp; <span>Câu hỏi thường gặp</span></h2>
+        <p>Giải đáp chi tiết các vướng mắc của Phòng Kế toán và Thu mua khi hạch toán chi phí phần mềm &amp; tài khoản AI.</p>
       </div>
 
-      <div class="faq-wrap-narrow">
-        <details class="faq-item" open>
-          <summary>1. Giá báo cho doanh nghiệp đã bao gồm thuế GTGT (VAT) chưa?</summary>
-          <p>Đã bao gồm. Mọi báo giá tại <strong>stktech.ai</strong> là giá cuối cùng bằng VNĐ <strong>đã gồm thuế GTGT</strong> — doanh nghiệp nhận Hóa đơn GTGT điện tử (SePay eInvoice) ngay trong ngày mà không mất thêm bất kỳ khoản phụ phí nào.</p>
-        </details>
+      <div class="prin-faq-grid">
+        <!-- Cột trái: 5 Nguyên tắc công khai chứng từ -->
+        <div class="prin-card">
+          <h3>5 Nguyên tắc cam kết với Doanh nghiệp</h3>
+          <p>Tiêu chuẩn vận hành bắt buộc tại Công ty TNHH Công Nghệ STK (MST 0319648130):</p>
 
-        <details class="faq-item">
-          <summary>2. Phòng Thu mua có thể gộp nhiều phần mềm vào chung 01 hợp đồng và nhận chiết khấu không?</summary>
-          <p>Có. Doanh nghiệp có thể gộp ChatGPT, Gemini/Veo 3, CapCut, Adobe, Microsoft 365, Zoom... vào <strong>01 Báo giá, 01 Hợp đồng và 01 Hóa đơn GTGT duy nhất</strong>, đồng thời hưởng <strong>chiết khấu thương mại theo số lượng user</strong> và kỳ hạn 06–12 tháng.</p>
-        </details>
+          <ul class="prin-list">
+            <li>
+              <strong>01. Giá báo VNĐ đã gồm thuế GTGT (0% phí ẩn):</strong> Không thu thêm phụ phí xuất hóa đơn hay phí chuyển đổi ngoại tệ khi thanh toán.
+            </li>
+            <li>
+              <strong>02. Chỉ nhận thanh toán qua TK Pháp nhân Công ty:</strong> Mọi giao dịch B2B đều chuyển khoản vào TK ACB 7796368 — Công ty TNHH Công Nghệ STK.
+            </li>
+            <li>
+              <strong>03. Phát hành Hóa đơn GTGT điện tử ngay trong ngày:</strong> Gửi đầy đủ file PDF bản thể hiện và file XML gốc có mã của Cơ quan Thuế qua email kế toán.
+            </li>
+            <li>
+              <strong>04. Cấp theo email công ty — Không dùng chung:</strong> Đảm bảo tính riêng tư và bảo mật dữ liệu nội bộ; hỗ trợ đổi user miễn phí khi nhân sự nghỉ việc.
+            </li>
+            <li>
+              <strong>05. Hỗ trợ: 08:00 - 23:00 xuyên suốt kỳ hạn hợp đồng:</strong> Cam kết đồng hành kỹ thuật và bảo hành đúng thời hạn ghi trên Hợp đồng dịch vụ.
+            </li>
+          </ul>
+        </div>
 
-        <details class="faq-item">
-          <summary>3. STK Tech kích hoạt tài khoản theo hình thức nào? Khi nhân sự nghỉ việc có đổi user được không?</summary>
-          <p>STK Tech <strong>không bán tài khoản dùng chung (share account)</strong>. Dịch vụ được kích hoạt trực tiếp trên <strong>email công ty hoặc Workspace riêng</strong>, và đội ngũ kỹ thuật hỗ trợ thu hồi / chuyển đổi user khi doanh nghiệp có biến động nhân sự.</p>
-        </details>
+        <!-- Cột phải: Câu hỏi thường gặp chuyên sâu về VAT & B2B -->
+        <div class="faq-col">
+          <details class="faq-item" open>
+            <summary>1. Giá báo cho doanh nghiệp đã bao gồm thuế GTGT (VAT) chưa?</summary>
+            <p>Đã bao gồm. Mọi báo giá tại <strong>stktech.ai</strong> là giá cuối cùng bằng VNĐ <strong>đã gồm thuế GTGT</strong> — doanh nghiệp nhận Hóa đơn GTGT điện tử (SePay eInvoice) ngay trong ngày mà không mất thêm bất kỳ khoản phụ phí nào.</p>
+          </details>
 
-        <details class="faq-item">
-          <summary>4. Làm sao để kiểm tra đúng kênh giao dịch và chứng từ của Công ty TNHH Công Nghệ STK?</summary>
-          <p>Quý khách đối chiếu đúng pháp nhân <strong>CÔNG TY TNHH CÔNG NGHỆ STK (MST 0319648130)</strong>, tài khoản ngân hàng <strong>ACB – 7796368</strong>, tên miền <strong>stktech.ai</strong> và liên hệ xác minh trực tiếp qua Hotline <strong>0353.7979.19</strong> hoặc <strong>Zalo OA STK Tech</strong> (08:00–23:00).</p>
-        </details>
+          <details class="faq-item">
+            <summary>2. Hóa đơn GTGT của STK Tech có hợp lệ để khấu trừ thuế và tính chi phí được trừ khi quyết toán thuế TNDN không?</summary>
+            <p>Hoàn toàn hợp lệ 100%. Hóa đơn được phát hành bởi pháp nhân <strong>Công ty TNHH Công Nghệ STK (MST 0319648130)</strong> qua hệ thống <strong>SePay eInvoice</strong> có mã của Cơ quan Thuế, đi kèm Hợp đồng dịch vụ, Biên bản nghiệm thu và chứng từ chuyển khoản ngân hàng công ty (ACB – 7796368) theo đúng quy định của Luật Thuế GTGT và Luật Thuế TNDN.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>3. Phòng Thu mua có thể gộp nhiều phần mềm vào chung 01 hợp đồng và nhận chiết khấu không?</summary>
+            <p>Có. Doanh nghiệp có thể gộp ChatGPT, Gemini/Veo 3, CapCut, Adobe, Microsoft 365, ElevenLabs, Kaspersky, Zoom... vào <strong>01 Báo giá, 01 Hợp đồng và 01 Hóa đơn GTGT duy nhất</strong>, đồng thời hưởng <strong>chiết khấu thương mại theo bậc số lượng user</strong> (3–9 user, 10–29 user, 30+ user) và kỳ hạn 06–12 tháng.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>4. STK Tech kích hoạt tài khoản theo hình thức nào? Khi nhân sự nghỉ việc có đổi user được không?</summary>
+            <p>STK Tech <strong>không bán tài khoản dùng chung (share account)</strong>. Dịch vụ được kích hoạt trực tiếp trên <strong>email công ty hoặc Workspace riêng</strong>, và đội ngũ kỹ thuật (<strong>Hỗ trợ: 08:00 - 23:00</strong>) hỗ trợ thu hồi / chuyển đổi quyền sang email nhân sự mới miễn phí.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>5. Công ty cần nhận trước dự thảo Hợp đồng và Báo giá đóng dấu để trình duyệt chi thì mất bao lâu?</summary>
+            <p>Chỉ trong <strong>15 phút</strong> sau khi tiếp nhận danh sách phần mềm và Mã số thuế qua Zalo OA hoặc Form đăng ký, chuyên viên B2B của STK Tech sẽ gửi file Báo giá đóng dấu kèm dự thảo Hợp đồng dịch vụ để bộ phận Thu mua &amp; Kế toán trình ký duyệt chi.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>6. Làm sao để kiểm tra đúng kênh giao dịch và chứng từ của Công ty TNHH Công Nghệ STK?</summary>
+            <p>Quý khách đối chiếu đúng pháp nhân <strong>CÔNG TY TNHH CÔNG NGHỆ STK (MST 0319648130)</strong>, tài khoản ngân hàng <strong>ACB – 7796368</strong>, tên miền <strong>stktech.ai</strong> và liên hệ trực tiếp qua Hotline <strong>0353.7979.19</strong> hoặc <strong>Zalo OA STK Tech</strong> (Hỗ trợ: 08:00 - 23:00).</p>
+          </details>
+        </div>
       </div>
     </div>
   </section>
@@ -1530,6 +2140,15 @@
       if (event.key === 'Escape') { closeLightbox(); }
       if (event.key === 'ArrowLeft') { show(current - 1); }
       if (event.key === 'ArrowRight') { show(current + 1); }
+    });
+
+    document.querySelectorAll('.cat-cta[data-pick]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        const budgetInput = document.getElementById('q-budget');
+        if (budgetInput) {
+          budgetInput.value = link.getAttribute('data-pick') || '';
+        }
+      });
     });
 
     const quoteForm = document.getElementById('b2b-quote-form');
